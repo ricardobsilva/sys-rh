@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150803012422) do
+ActiveRecord::Schema.define(version: 20150803012724) do
 
   create_table "functions", force: :cascade do |t|
     t.string   "name",       limit: 255
@@ -53,5 +53,11 @@ ActiveRecord::Schema.define(version: 20150803012422) do
 
   add_index "stockings", ["function_id"], name: "index_stockings_on_function_id", using: :btree
   add_index "stockings", ["local_id"], name: "index_stockings_on_local_id", using: :btree
+
+  create_table "type_locals", force: :cascade do |t|
+    t.string   "name",       limit: 255
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+  end
 
 end

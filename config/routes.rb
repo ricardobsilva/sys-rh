@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :type_locals
+
   resources :instituations
 
   resources :locals
