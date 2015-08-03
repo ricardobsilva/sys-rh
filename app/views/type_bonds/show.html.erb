@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @type_bond.name %>
+</p>
+
+<p>
+  <strong>Abbreviation:</strong>
+  <%= @type_bond.abbreviation %>
+</p>
+
+<%= link_to 'Edit', edit_type_bond_path(@type_bond) %> |
+<%= link_to 'Back', type_bonds_path %>

@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :type_bonds
+
   resources :bonds
 
   resources :type_locals
