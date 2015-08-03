@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Bonds</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Dt admission</th>
+      <th>Workload</th>
+      <th>Obs</th>
+      <th>Person</th>
+      <th>Role</th>
+      <th>Type bond</th>
+      <th>Instituation</th>
+      <th>Situation bond</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @bonds.each do |bond| %>
+      <tr>
+        <td><%= bond.description %></td>
+        <td><%= bond.dt_admission %></td>
+        <td><%= bond.workload %></td>
+        <td><%= bond.obs %></td>
+        <td><%= bond.person_id %></td>
+        <td><%= bond.role_id %></td>
+        <td><%= bond.type_bond_id %></td>
+        <td><%= bond.instituation_id %></td>
+        <td><%= bond.situation_bond_id %></td>
+        <td><%= link_to 'Show', bond %></td>
+        <td><%= link_to 'Edit', edit_bond_path(bond) %></td>
+        <td><%= link_to 'Destroy', bond, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Bond', new_bond_path %>

@@ -1,0 +1,53 @@
+<%= form_for(@bond) do |f| %>
+  <% if @bond.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@bond.errors.count, "error") %> prohibited this bond from being saved:</h2>
+
+      <ul>
+      <% @bond.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_field :description %>
+  </div>
+  <div class="field">
+    <%= f.label :dt_admission %><br>
+    <%= f.date_select :dt_admission %>
+  </div>
+  <div class="field">
+    <%= f.label :workload %><br>
+    <%= f.number_field :workload %>
+  </div>
+  <div class="field">
+    <%= f.label :obs %><br>
+    <%= f.text_area :obs %>
+  </div>
+  <div class="field">
+    <%= f.label :person_id %><br>
+    <%= f.number_field :person_id %>
+  </div>
+  <div class="field">
+    <%= f.label :role_id %><br>
+    <%= f.number_field :role_id %>
+  </div>
+  <div class="field">
+    <%= f.label :type_bond_id %><br>
+    <%= f.number_field :type_bond_id %>
+  </div>
+  <div class="field">
+    <%= f.label :instituation_id %><br>
+    <%= f.number_field :instituation_id %>
+  </div>
+  <div class="field">
+    <%= f.label :situation_bond_id %><br>
+    <%= f.number_field :situation_bond_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

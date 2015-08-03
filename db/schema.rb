@@ -11,7 +11,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150803012724) do
+ActiveRecord::Schema.define(version: 20150803014803) do
+
+  create_table "bonds", force: :cascade do |t|
+    t.string   "description",       limit: 255
+    t.date     "dt_admission"
+    t.integer  "workload",          limit: 4
+    t.text     "obs",               limit: 65535
+    t.integer  "person_id",         limit: 4
+    t.integer  "role_id",           limit: 4
+    t.integer  "type_bond_id",      limit: 4
+    t.integer  "instituation_id",   limit: 4
+    t.integer  "situation_bond_id", limit: 4
+    t.datetime "created_at",                      null: false
+    t.datetime "updated_at",                      null: false
+  end
+
+  add_index "bonds", ["instituation_id"], name: "index_bonds_on_instituation_id", using: :btree
+  add_index "bonds", ["person_id"], name: "index_bonds_on_person_id", using: :btree
+  add_index "bonds", ["role_id"], name: "index_bonds_on_role_id", using: :btree
+  add_index "bonds", ["situation_bond_id"], name: "index_bonds_on_situation_bond_id", using: :btree
+  add_index "bonds", ["type_bond_id"], name: "index_bonds_on_type_bond_id", using: :btree
 
   create_table "functions", force: :cascade do |t|
     t.string   "name",       limit: 255

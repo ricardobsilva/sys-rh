@@ -501,3 +501,89 @@ Started GET "/assets/type_locals.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e464
 
 
 Started GET "/assets/type_locals.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-02 22:27:46 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateBonds (20150803014803)
+  [1m[35m (111.9ms)[0m  CREATE TABLE `bonds` (`id` int(11) auto_increment PRIMARY KEY, `description` varchar(255), `dt_admission` date, `workload` int(11), `obs` text, `person_id` int(11), `role_id` int(11), `type_bond_id` int(11), `instituation_id` int(11), `situation_bond_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (210.8ms)[0m  [1mCREATE  INDEX `index_bonds_on_person_id`  ON `bonds` (`person_id`) [0m
+  [1m[35m (177.6ms)[0m  CREATE  INDEX `index_bonds_on_role_id`  ON `bonds` (`role_id`) 
+  [1m[36m (166.7ms)[0m  [1mCREATE  INDEX `index_bonds_on_type_bond_id`  ON `bonds` (`type_bond_id`) [0m
+  [1m[35m (177.4ms)[0m  CREATE  INDEX `index_bonds_on_instituation_id`  ON `bonds` (`instituation_id`) 
+  [1m[36m (199.0ms)[0m  [1mCREATE  INDEX `index_bonds_on_situation_bond_id`  ON `bonds` (`situation_bond_id`) [0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20150803014803')[0m
+  [1m[35m (39.2ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.4ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'smed-th_development'
+  AND fk.table_name = 'bonds'
+
+  [1m[36m (0.3ms)[0m  [1mSHOW CREATE TABLE `bonds`[0m
+  [1m[35m (0.3ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'smed-th_development'
+  AND fk.table_name = 'functions'
+
+  [1m[36m (0.2ms)[0m  [1mSHOW CREATE TABLE `functions`[0m
+  [1m[35m (0.3ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'smed-th_development'
+  AND fk.table_name = 'instituations'
+
+  [1m[36m (0.1ms)[0m  [1mSHOW CREATE TABLE `instituations`[0m
+  [1m[35m (0.3ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'smed-th_development'
+  AND fk.table_name = 'locals'
+
+  [1m[36m (0.2ms)[0m  [1mSHOW CREATE TABLE `locals`[0m
+  [1m[35m (0.4ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'smed-th_development'
+  AND fk.table_name = 'stockings'
+
+  [1m[36m (0.3ms)[0m  [1mSHOW CREATE TABLE `stockings`[0m
+  [1m[35m (0.3ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'smed-th_development'
+  AND fk.table_name = 'type_locals'
+
+  [1m[36m (0.2ms)[0m  [1mSHOW CREATE TABLE `type_locals`[0m
+
+
+Started GET "/bonds" for 127.0.0.1 at 2015-08-02 22:49:56 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by BondsController#index as HTML
+  [1m[35mBond Load (0.3ms)[0m  SELECT `bonds`.* FROM `bonds`
+  Rendered bonds/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 448ms (Views: 431.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/bonds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-02 22:49:56 -0300
+
+
+Started GET "/assets/bonds.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-02 22:49:56 -0300

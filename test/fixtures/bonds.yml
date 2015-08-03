@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  description: MyString
+  dt_admission: 2015-08-02
+  workload: 1
+  obs: MyText
+  person_id: 1
+  role_id: 1
+  type_bond_id: 1
+  instituation_id: 1
+  situation_bond_id: 1
+
+two:
+  description: MyString
+  dt_admission: 2015-08-02
+  workload: 1
+  obs: MyText
+  person_id: 1
+  role_id: 1
+  type_bond_id: 1
+  instituation_id: 1
+  situation_bond_id: 1

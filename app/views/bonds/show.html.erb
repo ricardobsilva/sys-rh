@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @bond.description %>
+</p>
+
+<p>
+  <strong>Dt admission:</strong>
+  <%= @bond.dt_admission %>
+</p>
+
+<p>
+  <strong>Workload:</strong>
+  <%= @bond.workload %>
+</p>
+
+<p>
+  <strong>Obs:</strong>
+  <%= @bond.obs %>
+</p>
+
+<p>
+  <strong>Person:</strong>
+  <%= @bond.person_id %>
+</p>
+
+<p>
+  <strong>Role:</strong>
+  <%= @bond.role_id %>
+</p>
+
+<p>
+  <strong>Type bond:</strong>
+  <%= @bond.type_bond_id %>
+</p>
+
+<p>
+  <strong>Instituation:</strong>
+  <%= @bond.instituation_id %>
+</p>
+
+<p>
+  <strong>Situation bond:</strong>
+  <%= @bond.situation_bond_id %>
+</p>
+
+<%= link_to 'Edit', edit_bond_path(@bond) %> |
+<%= link_to 'Back', bonds_path %>
