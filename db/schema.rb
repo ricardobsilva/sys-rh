@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150803022648) do
+ActiveRecord::Schema.define(version: 20150803024028) do
 
   create_table "administrative_regions", force: :cascade do |t|
     t.string   "name",       limit: 255
@@ -76,6 +76,24 @@ ActiveRecord::Schema.define(version: 20150803022648) do
 
   add_index "locals", ["institution_id"], name: "index_locals_on_institution_id", using: :btree
   add_index "locals", ["type_local_id"], name: "index_locals_on_type_local_id", using: :btree
+
+  create_table "people", force: :cascade do |t|
+    t.string   "name",        limit: 255
+    t.string   "gender",      limit: 255
+    t.string   "rg",          limit: 255
+    t.string   "cpf",         limit: 255
+    t.date     "birth_date"
+    t.string   "cel",         limit: 255
+    t.string   "tel1",        limit: 255
+    t.string   "tel2",        limit: 255
+    t.integer  "district_id", limit: 4
+    t.integer  "user_id",     limit: 4
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
+  end
+
+  add_index "people", ["district_id"], name: "index_people_on_district_id", using: :btree
+  add_index "people", ["user_id"], name: "index_people_on_user_id", using: :btree
 
   create_table "stockings", force: :cascade do |t|
     t.date     "data"
