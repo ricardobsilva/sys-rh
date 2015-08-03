@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Data:</strong>
+  <%= @stocking.data %>
+</p>
+
+<p>
+  <strong>Workload:</strong>
+  <%= @stocking.workload %>
+</p>
+
+<p>
+  <strong>Obs:</strong>
+  <%= @stocking.obs %>
+</p>
+
+<p>
+  <strong>Function:</strong>
+  <%= @stocking.function_id %>
+</p>
+
+<p>
+  <strong>Local:</strong>
+  <%= @stocking.local_id %>
+</p>
+
+<%= link_to 'Edit', edit_stocking_path(@stocking) %> |
+<%= link_to 'Back', stockings_path %>

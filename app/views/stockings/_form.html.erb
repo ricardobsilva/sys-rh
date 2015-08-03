@@ -1,0 +1,37 @@
+<%= form_for(@stocking) do |f| %>
+  <% if @stocking.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@stocking.errors.count, "error") %> prohibited this stocking from being saved:</h2>
+
+      <ul>
+      <% @stocking.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :data %><br>
+    <%= f.date_select :data %>
+  </div>
+  <div class="field">
+    <%= f.label :workload %><br>
+    <%= f.number_field :workload %>
+  </div>
+  <div class="field">
+    <%= f.label :obs %><br>
+    <%= f.text_area :obs %>
+  </div>
+  <div class="field">
+    <%= f.label :function_id %><br>
+    <%= f.number_field :function_id %>
+  </div>
+  <div class="field">
+    <%= f.label :local_id %><br>
+    <%= f.number_field :local_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

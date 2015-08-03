@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  data: 2015-08-02
+  workload: 1
+  obs: MyText
+  function_id: 1
+  local_id: 1
+
+two:
+  data: 2015-08-02
+  workload: 1
+  obs: MyText
+  function_id: 1
+  local_id: 1

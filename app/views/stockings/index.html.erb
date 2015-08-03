@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Stockings</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Data</th>
+      <th>Workload</th>
+      <th>Obs</th>
+      <th>Function</th>
+      <th>Local</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @stockings.each do |stocking| %>
+      <tr>
+        <td><%= stocking.data %></td>
+        <td><%= stocking.workload %></td>
+        <td><%= stocking.obs %></td>
+        <td><%= stocking.function_id %></td>
+        <td><%= stocking.local_id %></td>
+        <td><%= link_to 'Show', stocking %></td>
+        <td><%= link_to 'Edit', edit_stocking_path(stocking) %></td>
+        <td><%= link_to 'Destroy', stocking, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Stocking', new_stocking_path %>
