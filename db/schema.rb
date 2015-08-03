@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150803035815) do
+ActiveRecord::Schema.define(version: 20150803040508) do
 
   create_table "administrative_regions", force: :cascade do |t|
     t.string   "name",       limit: 255
@@ -62,20 +62,28 @@ ActiveRecord::Schema.define(version: 20150803035815) do
   end
 
   create_table "locals", force: :cascade do |t|
-    t.string   "name",           limit: 255
-    t.string   "name_abr",       limit: 255
-    t.string   "initials",       limit: 255
-    t.string   "tel1",           limit: 255
-    t.string   "tel2",           limit: 255
-    t.string   "tel3",           limit: 255
-    t.integer  "type_local_id",  limit: 4
-    t.integer  "institution_id", limit: 4
-    t.datetime "created_at",                 null: false
-    t.datetime "updated_at",                 null: false
+    t.string   "name",             limit: 255
+    t.string   "name_abr",         limit: 255
+    t.string   "initials",         limit: 255
+    t.string   "tel1",             limit: 255
+    t.string   "tel2",             limit: 255
+    t.string   "tel3",             limit: 255
+    t.integer  "type_local_id",    limit: 4
+    t.integer  "institution_id",   limit: 4
+    t.datetime "created_at",                   null: false
+    t.datetime "updated_at",                   null: false
+    t.string   "patio",            limit: 255
+    t.string   "number_patio_id",  limit: 255
+    t.string   "complement_patio", limit: 255
+    t.string   "zip_code",         limit: 255
+    t.integer  "district_id",      limit: 4
+    t.integer  "type_patio_id",    limit: 4
   end
 
+  add_index "locals", ["district_id"], name: "index_locals_on_district_id", using: :btree
   add_index "locals", ["institution_id"], name: "index_locals_on_institution_id", using: :btree
   add_index "locals", ["type_local_id"], name: "index_locals_on_type_local_id", using: :btree
+  add_index "locals", ["type_patio_id"], name: "index_locals_on_type_patio_id", using: :btree
 
   create_table "people", force: :cascade do |t|
     t.string   "name",          limit: 255
