@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :instituations
+
   resources :locals
 
   resources :functions
