@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :locals
+
   resources :functions
 
   resources :stockings

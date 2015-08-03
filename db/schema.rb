@@ -11,13 +11,29 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150803011409) do
+ActiveRecord::Schema.define(version: 20150803012047) do
 
   create_table "functions", force: :cascade do |t|
     t.string   "name",       limit: 255
     t.datetime "created_at",             null: false
     t.datetime "updated_at",             null: false
   end
+
+  create_table "locals", force: :cascade do |t|
+    t.string   "name",           limit: 255
+    t.string   "name_abr",       limit: 255
+    t.string   "initials",       limit: 255
+    t.string   "tel1",           limit: 255
+    t.string   "tel2",           limit: 255
+    t.string   "tel3",           limit: 255
+    t.integer  "type_local_id",  limit: 4
+    t.integer  "institution_id", limit: 4
+    t.datetime "created_at",                 null: false
+    t.datetime "updated_at",                 null: false
+  end
+
+  add_index "locals", ["institution_id"], name: "index_locals_on_institution_id", using: :btree
+  add_index "locals", ["type_local_id"], name: "index_locals_on_type_local_id", using: :btree
 
   create_table "stockings", force: :cascade do |t|
     t.date     "data"

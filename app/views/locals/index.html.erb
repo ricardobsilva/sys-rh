@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Locals</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Name abr</th>
+      <th>Initials</th>
+      <th>Tel1</th>
+      <th>Tel2</th>
+      <th>Tel3</th>
+      <th>Type local</th>
+      <th>Institution</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @locals.each do |local| %>
+      <tr>
+        <td><%= local.name %></td>
+        <td><%= local.name_abr %></td>
+        <td><%= local.initials %></td>
+        <td><%= local.tel1 %></td>
+        <td><%= local.tel2 %></td>
+        <td><%= local.tel3 %></td>
+        <td><%= local.type_local_id %></td>
+        <td><%= local.institution_id %></td>
+        <td><%= link_to 'Show', local %></td>
+        <td><%= link_to 'Edit', edit_local_path(local) %></td>
+        <td><%= link_to 'Destroy', local, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Local', new_local_path %>

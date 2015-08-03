@@ -244,3 +244,70 @@ Processing by FunctionsController#index as HTML
   [1m[35mFunction Load (0.4ms)[0m  SELECT `functions`.* FROM `functions`
   Rendered functions/index.html.erb within layouts/application (4.4ms)
 Completed 200 OK in 75ms (Views: 73.7ms | ActiveRecord: 0.4ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateLocals (20150803012047)
+  [1m[35m (123.5ms)[0m  CREATE TABLE `locals` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `name_abr` varchar(255), `initials` varchar(255), `tel1` varchar(255), `tel2` varchar(255), `tel3` varchar(255), `type_local_id` int(11), `institution_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (199.3ms)[0m  [1mCREATE  INDEX `index_locals_on_type_local_id`  ON `locals` (`type_local_id`) [0m
+  [1m[35m (177.6ms)[0m  CREATE  INDEX `index_locals_on_institution_id`  ON `locals` (`institution_id`) 
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150803012047')
+  [1m[36m (28.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.4ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'smed-th_development'
+  AND fk.table_name = 'functions'
+[0m
+  [1m[35m (1.4ms)[0m  SHOW CREATE TABLE `functions`
+  [1m[36m (0.4ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'smed-th_development'
+  AND fk.table_name = 'locals'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `locals`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'smed-th_development'
+  AND fk.table_name = 'stockings'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `stockings`
+
+
+Started GET "/locals" for 127.0.0.1 at 2015-08-02 22:21:06 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by LocalsController#index as HTML
+  [1m[35mLocal Load (0.4ms)[0m  SELECT `locals`.* FROM `locals`
+  Rendered locals/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 416ms (Views: 398.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/locals.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-02 22:21:07 -0300
+
+
+Started GET "/assets/locals.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-02 22:21:07 -0300
+
+
+Started GET "/locals/new" for 127.0.0.1 at 2015-08-02 22:21:08 -0300
+Processing by LocalsController#new as HTML
+  Rendered locals/_form.html.erb (22.9ms)
+  Rendered locals/new.html.erb within layouts/application (27.4ms)
+Completed 200 OK in 114ms (Views: 98.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/locals" for 127.0.0.1 at 2015-08-02 22:21:12 -0300
+Processing by LocalsController#index as HTML
+  [1m[36mLocal Load (0.3ms)[0m  [1mSELECT `locals`.* FROM `locals`[0m
+  Rendered locals/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 72ms (Views: 69.8ms | ActiveRecord: 0.3ms)
