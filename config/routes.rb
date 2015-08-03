@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :administrative_regions
+
   resources :type_bonds
 
   resources :bonds
