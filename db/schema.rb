@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150803022141) do
+ActiveRecord::Schema.define(version: 20150803022648) do
 
   create_table "administrative_regions", force: :cascade do |t|
     t.string   "name",       limit: 255
@@ -39,6 +39,15 @@ ActiveRecord::Schema.define(version: 20150803022141) do
   add_index "bonds", ["role_id"], name: "index_bonds_on_role_id", using: :btree
   add_index "bonds", ["situation_bond_id"], name: "index_bonds_on_situation_bond_id", using: :btree
   add_index "bonds", ["type_bond_id"], name: "index_bonds_on_type_bond_id", using: :btree
+
+  create_table "districts", force: :cascade do |t|
+    t.string   "name",                     limit: 255
+    t.integer  "administrative_region_id", limit: 4
+    t.datetime "created_at",                           null: false
+    t.datetime "updated_at",                           null: false
+  end
+
+  add_index "districts", ["administrative_region_id"], name: "index_districts_on_administrative_region_id", using: :btree
 
   create_table "functions", force: :cascade do |t|
     t.string   "name",       limit: 255
