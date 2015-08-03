@@ -1494,3 +1494,120 @@ WHERE fk.referenced_column_name is not null
   AND fk.table_name = 'type_locals'
 
   [1m[36m (0.1ms)[0m  [1mSHOW CREATE TABLE `type_locals`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateTypePatios (20150803035815)
+  [1m[35m (146.9ms)[0m  CREATE TABLE `type_patios` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `initial` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150803035815')
+  [1m[36m (57.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.4ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'smed-th_development'
+  AND fk.table_name = 'administrative_regions'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `administrative_regions`
+  [1m[36m (0.4ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'smed-th_development'
+  AND fk.table_name = 'bonds'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `bonds`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'smed-th_development'
+  AND fk.table_name = 'districts'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `districts`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'smed-th_development'
+  AND fk.table_name = 'functions'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `functions`
+  [1m[36m (0.4ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'smed-th_development'
+  AND fk.table_name = 'instituations'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `instituations`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'smed-th_development'
+  AND fk.table_name = 'locals'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `locals`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'smed-th_development'
+  AND fk.table_name = 'people'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `people`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'smed-th_development'
+  AND fk.table_name = 'stockings'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `stockings`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'smed-th_development'
+  AND fk.table_name = 'type_bonds'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `type_bonds`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'smed-th_development'
+  AND fk.table_name = 'type_locals'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `type_locals`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'smed-th_development'
+  AND fk.table_name = 'type_patios'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `type_patios`

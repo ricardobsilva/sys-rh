@@ -1,0 +1,25 @@
+<%= form_for(@type_patio) do |f| %>
+  <% if @type_patio.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@type_patio.errors.count, "error") %> prohibited this type_patio from being saved:</h2>
+
+      <ul>
+      <% @type_patio.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :initial %><br>
+    <%= f.text_field :initial %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

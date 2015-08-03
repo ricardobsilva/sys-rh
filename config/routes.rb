@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :type_patios
+
   resources :people
 
   resources :districts
