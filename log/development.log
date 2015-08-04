@@ -2315,3 +2315,3599 @@ WHERE fk.referenced_column_name is not null
   AND fk.table_name = 'type_patios'
 
   [1m[36m (0.2ms)[0m  [1mSHOW CREATE TABLE `type_patios`[0m
+
+
+Started GET "/people" for 127.0.0.1 at 2015-08-03 22:38:47 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by PeopleController#index as HTML
+  [1m[35mPerson Load (0.3ms)[0m  SELECT `people`.* FROM `people`
+  Rendered people/index.html.erb within layouts/application (5.2ms)
+Completed 500 Internal Server Error in 316ms
+
+ActionView::Template::Error (couldn't find file 'bootstrap' with type 'text/css'):
+    2: <html>
+    3: <head>
+    4:   <title>SmedTh</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/application.css:15
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___93122710__629320048'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (54.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (28.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (64.0ms)
+
+
+Started GET "/people" for 127.0.0.1 at 2015-08-03 22:42:00 -0300
+Processing by PeopleController#index as HTML
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT `people`.* FROM `people`[0m
+  Rendered people/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 4720ms (Views: 4719.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-03 22:42:05 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-03 22:42:05 -0300
+
+
+Started GET "/assets/administrative_regions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-03 22:42:05 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-03 22:42:05 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-03 22:42:05 -0300
+
+
+Started GET "/assets/bonds.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-03 22:42:05 -0300
+
+
+Started GET "/assets/districts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-03 22:42:05 -0300
+
+
+Started GET "/assets/functions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-03 22:42:05 -0300
+
+
+Started GET "/assets/instituations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-03 22:42:05 -0300
+
+
+Started GET "/assets/locals.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-03 22:42:05 -0300
+
+
+Started GET "/assets/people.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-03 22:42:05 -0300
+
+
+Started GET "/assets/stockings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-03 22:42:05 -0300
+
+
+Started GET "/assets/type_bonds.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-03 22:42:05 -0300
+
+
+Started GET "/assets/type_locals.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-03 22:42:05 -0300
+
+
+Started GET "/assets/type_patios.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-03 22:42:05 -0300
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for 127.0.0.1 at 2015-08-03 22:42:05 -0300
+
+
+Started GET "/people" for 127.0.0.1 at 2015-08-03 22:47:01 -0300
+Processing by PeopleController#index as HTML
+  [1m[35mPerson Load (0.4ms)[0m  SELECT `people`.* FROM `people`
+  Rendered people/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 117ms (Views: 116.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/people" for 127.0.0.1 at 2015-08-03 23:07:51 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by PeopleController#index as HTML
+  [1m[35mPerson Load (0.3ms)[0m  SELECT `people`.* FROM `people`
+  Rendered people/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 1173ms (Views: 1155.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-03 23:07:52 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-03 23:07:52 -0300
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-03 23:07:52 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-03 23:07:52 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-03 23:07:52 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-03 23:07:52 -0300
+
+
+Started GET "/people" for 127.0.0.1 at 2015-08-03 23:08:55 -0300
+Processing by PeopleController#index as HTML
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT `people`.* FROM `people`[0m
+  Rendered people/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 58ms (Views: 56.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-03 23:08:55 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-03 23:08:55 -0300
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-03 23:08:55 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-03 23:08:55 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-03 23:08:55 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-03 23:08:55 -0300
+
+
+Started GET "/people" for 127.0.0.1 at 2015-08-03 23:10:19 -0300
+Processing by PeopleController#index as HTML
+  [1m[35mPerson Load (0.3ms)[0m  SELECT `people`.* FROM `people`
+  Rendered people/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 180ms (Views: 178.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-03 23:10:19 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-03 23:10:19 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-03 23:10:19 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-03 23:10:19 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-03 23:10:19 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-03 23:10:19 -0300
+
+
+Started GET "/people" for 127.0.0.1 at 2015-08-03 23:10:20 -0300
+Processing by PeopleController#index as HTML
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT `people`.* FROM `people`[0m
+  Rendered people/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 71ms (Views: 69.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-03 23:10:20 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-03 23:10:20 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-03 23:10:20 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-03 23:10:20 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-03 23:10:20 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-03 23:10:20 -0300
+
+
+Started GET "/people" for 127.0.0.1 at 2015-08-03 23:15:19 -0300
+Processing by PeopleController#index as HTML
+  [1m[35mPerson Load (0.3ms)[0m  SELECT `people`.* FROM `people`
+  Rendered people/index.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 101ms
+
+ActionView::Template::Error (undefined local variable or method `current_user' for #<#<Class:0xba0d2004>:0xb4a53c50>):
+    78:                      <%= link_to (edit_user_path(current_user)) do%>
+    79:                        <span class="mdi-social-person" style="font-size:14px;">Meus dados</span>
+    80:                      <%end%></li> 
+    81:                      <li><%= link_to t('menu.logout') , destroy_user_session_path, method: :delete %></li>
+    82:           </ul>
+    83:         </li>
+    84:       </ul>
+  app/views/layouts/application.html.erb:81:in `_app_views_layouts_application_html_erb__157900822__632204188'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (17.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (46.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (29.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (65.7ms)
+
+
+Started GET "/people" for 127.0.0.1 at 2015-08-03 23:15:29 -0300
+Processing by PeopleController#index as HTML
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT `people`.* FROM `people`[0m
+  Rendered people/index.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 5ms
+
+SyntaxError (/home/ricardo/Trabalho/semed-rh/app/views/layouts/application.html.erb:100: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  app/views/layouts/application.html.erb:100: syntax error, unexpected keyword_ensure, expecting end-of-input
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (35.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (24.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (50.7ms)
+
+
+Started GET "/people" for 127.0.0.1 at 2015-08-03 23:15:41 -0300
+Processing by PeopleController#index as HTML
+  [1m[35mPerson Load (0.3ms)[0m  SELECT `people`.* FROM `people`
+  Rendered people/index.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 5ms
+
+SyntaxError (/home/ricardo/Trabalho/semed-rh/app/views/layouts/application.html.erb:100: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  app/views/layouts/application.html.erb:100: syntax error, unexpected keyword_ensure, expecting end-of-input
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (39.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (25.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (51.7ms)
+
+
+Started GET "/people" for 127.0.0.1 at 2015-08-03 23:16:27 -0300
+Processing by PeopleController#index as HTML
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT `people`.* FROM `people`[0m
+  Rendered people/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 62ms (Views: 61.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-03 23:16:27 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-03 23:16:27 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-03 23:16:27 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-03 23:16:27 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-03 23:16:27 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-03 23:16:27 -0300
+
+
+Started GET "/people" for 127.0.0.1 at 2015-08-03 23:17:21 -0300
+Processing by PeopleController#index as HTML
+  [1m[35mPerson Load (0.3ms)[0m  SELECT `people`.* FROM `people`
+  Rendered people/index.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 5ms
+
+SyntaxError (/home/ricardo/Trabalho/semed-rh/app/views/layouts/application.html.erb:59: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  app/views/layouts/application.html.erb:59: syntax error, unexpected keyword_ensure, expecting end-of-input
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (38.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (27.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (53.0ms)
+
+
+Started GET "/people" for 127.0.0.1 at 2015-08-03 23:18:03 -0300
+Processing by PeopleController#index as HTML
+  [1m[36mPerson Load (0.4ms)[0m  [1mSELECT `people`.* FROM `people`[0m
+  Rendered people/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 55ms (Views: 53.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-03 23:18:03 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-03 23:18:03 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-03 23:18:03 -0300
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-03 23:18:03 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-03 23:18:03 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-03 23:18:03 -0300
+
+
+Started GET "/people" for 127.0.0.1 at 2015-08-03 23:19:04 -0300
+Processing by PeopleController#index as HTML
+  [1m[35mPerson Load (0.3ms)[0m  SELECT `people`.* FROM `people`
+  Rendered people/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 54ms (Views: 52.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-03 23:19:04 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-03 23:19:04 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-03 23:19:04 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-03 23:19:05 -0300
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-03 23:19:05 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-03 23:19:05 -0300
+
+
+Started GET "/people" for 127.0.0.1 at 2015-08-03 23:19:16 -0300
+Processing by PeopleController#index as HTML
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT `people`.* FROM `people`[0m
+  Rendered people/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 67ms (Views: 65.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-03 23:19:16 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-03 23:19:16 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-03 23:19:16 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-03 23:19:16 -0300
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-03 23:19:16 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-03 23:19:16 -0300
+
+
+Started GET "/people" for 127.0.0.1 at 2015-08-03 23:19:48 -0300
+Processing by PeopleController#index as HTML
+  [1m[35mPerson Load (0.3ms)[0m  SELECT `people`.* FROM `people`
+  Rendered people/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 51ms (Views: 50.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-03 23:19:48 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-03 23:19:48 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-03 23:19:48 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-03 23:19:48 -0300
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-03 23:19:48 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-03 23:19:48 -0300
+
+
+Started GET "/people" for 127.0.0.1 at 2015-08-03 23:20:12 -0300
+Processing by PeopleController#index as HTML
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT `people`.* FROM `people`[0m
+  Rendered people/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 65ms (Views: 64.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-03 23:20:12 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-03 23:20:12 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-03 23:20:12 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-03 23:20:12 -0300
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-03 23:20:12 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-03 23:20:12 -0300
+
+
+Started GET "/people" for 127.0.0.1 at 2015-08-03 23:20:22 -0300
+Processing by PeopleController#index as HTML
+  [1m[35mPerson Load (0.3ms)[0m  SELECT `people`.* FROM `people`
+  Rendered people/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 55ms (Views: 53.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-03 23:20:23 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-03 23:20:23 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-03 23:20:23 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-03 23:20:23 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-03 23:20:23 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-03 23:20:23 -0300
+
+
+Started GET "/people" for 127.0.0.1 at 2015-08-03 23:20:37 -0300
+Processing by PeopleController#index as HTML
+  [1m[36mPerson Load (0.4ms)[0m  [1mSELECT `people`.* FROM `people`[0m
+  Rendered people/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 59ms (Views: 56.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-03 23:20:37 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-03 23:20:37 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-03 23:20:37 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-03 23:20:37 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-03 23:20:37 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-03 23:20:37 -0300
+
+
+Started GET "/people" for 127.0.0.1 at 2015-08-03 23:20:44 -0300
+Processing by PeopleController#index as HTML
+  [1m[35mPerson Load (0.3ms)[0m  SELECT `people`.* FROM `people`
+  Rendered people/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 65ms (Views: 64.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-03 23:20:44 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-03 23:20:44 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-03 23:20:44 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-03 23:20:44 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-03 23:20:44 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-03 23:20:44 -0300
+
+
+Started GET "/people" for 127.0.0.1 at 2015-08-03 23:20:51 -0300
+Processing by PeopleController#index as HTML
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT `people`.* FROM `people`[0m
+  Rendered people/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 60ms (Views: 59.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-03 23:20:51 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-03 23:20:51 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-03 23:20:51 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-03 23:20:51 -0300
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-03 23:20:51 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-03 23:20:51 -0300
+
+
+Started GET "/people" for 127.0.0.1 at 2015-08-03 23:20:59 -0300
+Processing by PeopleController#index as HTML
+  [1m[35mPerson Load (0.3ms)[0m  SELECT `people`.* FROM `people`
+  Rendered people/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 59ms (Views: 57.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-03 23:20:59 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-03 23:20:59 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-03 23:20:59 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-03 23:20:59 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-03 23:20:59 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-03 23:20:59 -0300
+
+
+Started GET "/people" for 127.0.0.1 at 2015-08-03 23:21:04 -0300
+Processing by PeopleController#index as HTML
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT `people`.* FROM `people`[0m
+  Rendered people/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 81ms (Views: 79.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-03 23:21:04 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-03 23:21:04 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-03 23:21:04 -0300
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-03 23:21:04 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-03 23:21:04 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-03 23:21:04 -0300
+
+
+Started GET "/people" for 127.0.0.1 at 2015-08-03 23:21:08 -0300
+Processing by PeopleController#index as HTML
+  [1m[35mPerson Load (0.3ms)[0m  SELECT `people`.* FROM `people`
+  Rendered people/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 57ms (Views: 55.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-03 23:21:08 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-03 23:21:08 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-03 23:21:08 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-03 23:21:08 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-03 23:21:08 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-03 23:21:08 -0300
+
+
+Started GET "/people" for 127.0.0.1 at 2015-08-03 23:21:20 -0300
+Processing by PeopleController#index as HTML
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT `people`.* FROM `people`[0m
+  Rendered people/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 65ms (Views: 62.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-03 23:21:20 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-03 23:21:20 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-03 23:21:20 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-03 23:21:20 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-03 23:21:20 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-03 23:21:20 -0300
+
+
+Started GET "/people" for 127.0.0.1 at 2015-08-03 23:21:39 -0300
+Processing by PeopleController#index as HTML
+  [1m[35mPerson Load (0.6ms)[0m  SELECT `people`.* FROM `people`
+  Rendered people/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 62ms (Views: 61.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-03 23:21:40 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-03 23:21:40 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-03 23:21:40 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-03 23:21:40 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-03 23:21:40 -0300
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-03 23:21:40 -0300
+
+
+Started GET "/people" for 127.0.0.1 at 2015-08-03 23:21:51 -0300
+Processing by PeopleController#index as HTML
+  [1m[36mPerson Load (0.4ms)[0m  [1mSELECT `people`.* FROM `people`[0m
+  Rendered people/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 59ms (Views: 57.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-03 23:21:52 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-03 23:21:52 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-03 23:21:52 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-03 23:21:52 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-03 23:21:52 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-03 23:21:52 -0300
+
+
+Started GET "/people" for 127.0.0.1 at 2015-08-03 23:21:58 -0300
+Processing by PeopleController#index as HTML
+  [1m[35mPerson Load (0.3ms)[0m  SELECT `people`.* FROM `people`
+  Rendered people/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 58ms (Views: 57.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-03 23:21:58 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-03 23:21:58 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-03 23:21:58 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-03 23:21:58 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-03 23:21:58 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-03 23:21:58 -0300
+
+
+Started GET "/people" for 127.0.0.1 at 2015-08-03 23:24:40 -0300
+Processing by PeopleController#index as HTML
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT `people`.* FROM `people`[0m
+  Rendered people/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 60ms (Views: 58.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-03 23:24:40 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-03 23:24:40 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-03 23:24:40 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-03 23:24:40 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-03 23:24:40 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-03 23:24:40 -0300
+
+
+Started GET "/people" for 127.0.0.1 at 2015-08-03 23:25:34 -0300
+Processing by PeopleController#index as HTML
+  [1m[35mPerson Load (0.3ms)[0m  SELECT `people`.* FROM `people`
+  Rendered people/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 71ms (Views: 69.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-03 23:25:34 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-03 23:25:34 -0300
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-03 23:25:34 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-03 23:25:34 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-03 23:25:34 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-03 23:25:34 -0300
+
+
+Started GET "/people" for 127.0.0.1 at 2015-08-03 23:25:45 -0300
+Processing by PeopleController#index as HTML
+  [1m[36mPerson Load (0.4ms)[0m  [1mSELECT `people`.* FROM `people`[0m
+  Rendered people/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 83ms (Views: 82.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-03 23:25:45 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-03 23:25:45 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-03 23:25:45 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-03 23:25:45 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-03 23:25:45 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-03 23:25:45 -0300
+
+
+Started GET "/people" for 127.0.0.1 at 2015-08-03 23:27:56 -0300
+Processing by PeopleController#index as HTML
+  [1m[35mPerson Load (0.3ms)[0m  SELECT `people`.* FROM `people`
+  Rendered people/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 66ms (Views: 65.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-03 23:27:56 -0300
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-03 23:27:56 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-03 23:27:56 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-03 23:27:56 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-03 23:27:56 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-03 23:27:56 -0300
+
+
+Started GET "/people" for 127.0.0.1 at 2015-08-03 23:29:59 -0300
+Processing by PeopleController#index as HTML
+  [1m[36mPerson Load (0.6ms)[0m  [1mSELECT `people`.* FROM `people`[0m
+  Rendered people/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 61ms (Views: 59.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-03 23:29:59 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-03 23:29:59 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-03 23:29:59 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-03 23:29:59 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-03 23:29:59 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-03 23:29:59 -0300
+
+
+Started GET "/people" for 127.0.0.1 at 2015-08-03 23:31:10 -0300
+Processing by PeopleController#index as HTML
+  [1m[35mPerson Load (0.4ms)[0m  SELECT `people`.* FROM `people`
+  Rendered people/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 63ms (Views: 62.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-03 23:31:10 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-03 23:31:10 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-03 23:31:10 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-03 23:31:10 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-03 23:31:10 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-03 23:31:10 -0300
+
+
+Started GET "/people" for 127.0.0.1 at 2015-08-03 23:32:47 -0300
+Processing by PeopleController#index as HTML
+  [1m[36mPerson Load (0.4ms)[0m  [1mSELECT `people`.* FROM `people`[0m
+  Rendered people/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 67ms (Views: 66.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-03 23:32:47 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-03 23:32:47 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-03 23:32:47 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-03 23:32:47 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-03 23:32:47 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-03 23:32:47 -0300
+
+
+Started GET "/people" for 127.0.0.1 at 2015-08-03 23:33:00 -0300
+Processing by PeopleController#index as HTML
+  [1m[35mPerson Load (0.3ms)[0m  SELECT `people`.* FROM `people`
+  Rendered people/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 86ms (Views: 84.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-03 23:33:00 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-03 23:33:00 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-03 23:33:00 -0300
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-03 23:33:00 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-03 23:33:00 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-03 23:33:00 -0300
+
+
+Started GET "/people" for 127.0.0.1 at 2015-08-03 23:33:06 -0300
+Processing by PeopleController#index as HTML
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT `people`.* FROM `people`[0m
+  Rendered people/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 88ms (Views: 86.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-03 23:33:06 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-03 23:33:06 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-03 23:33:06 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-03 23:33:06 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-03 23:33:06 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-03 23:33:06 -0300
+
+
+Started GET "/people" for 127.0.0.1 at 2015-08-03 23:33:15 -0300
+Processing by PeopleController#index as HTML
+  [1m[35mPerson Load (0.3ms)[0m  SELECT `people`.* FROM `people`
+  Rendered people/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 55ms (Views: 54.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-03 23:33:16 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-03 23:33:16 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-03 23:33:16 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-03 23:33:16 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-03 23:33:16 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-03 23:33:16 -0300
+
+
+Started GET "/people" for 127.0.0.1 at 2015-08-03 23:33:21 -0300
+Processing by PeopleController#index as HTML
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT `people`.* FROM `people`[0m
+  Rendered people/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 60ms (Views: 59.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-03 23:33:21 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-03 23:33:21 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-03 23:33:21 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-03 23:33:21 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-03 23:33:21 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-03 23:33:21 -0300
+
+
+Started GET "/people" for 127.0.0.1 at 2015-08-03 23:33:29 -0300
+Processing by PeopleController#index as HTML
+  [1m[35mPerson Load (0.5ms)[0m  SELECT `people`.* FROM `people`
+  Rendered people/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 64ms (Views: 62.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-03 23:33:29 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-03 23:33:29 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-03 23:33:29 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-03 23:33:29 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-03 23:33:29 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-03 23:33:29 -0300
+
+
+Started GET "/people" for 127.0.0.1 at 2015-08-03 23:35:08 -0300
+Processing by PeopleController#index as HTML
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT `people`.* FROM `people`[0m
+  Rendered people/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 70ms (Views: 69.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-03 23:35:08 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-03 23:35:08 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-03 23:35:08 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-03 23:35:08 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-03 23:35:08 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-03 23:35:08 -0300
+
+
+Started GET "/people" for 127.0.0.1 at 2015-08-03 23:35:28 -0300
+Processing by PeopleController#index as HTML
+  [1m[35mPerson Load (0.3ms)[0m  SELECT `people`.* FROM `people`
+  Rendered people/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 89ms (Views: 87.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-03 23:35:28 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-03 23:35:28 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-03 23:35:28 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-03 23:35:28 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-03 23:35:28 -0300
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-03 23:35:28 -0300
+
+
+Started GET "/people" for 127.0.0.1 at 2015-08-03 23:36:06 -0300
+Processing by PeopleController#index as HTML
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT `people`.* FROM `people`[0m
+  Rendered people/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 61ms (Views: 60.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-03 23:36:06 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-03 23:36:06 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-03 23:36:06 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-03 23:36:06 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-03 23:36:06 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-03 23:36:06 -0300
+
+
+Started GET "/people" for 127.0.0.1 at 2015-08-03 23:36:30 -0300
+Processing by PeopleController#index as HTML
+  [1m[35mPerson Load (0.4ms)[0m  SELECT `people`.* FROM `people`
+  Rendered people/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 89ms (Views: 87.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-03 23:36:30 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-03 23:36:30 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-03 23:36:30 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-03 23:36:30 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-03 23:36:30 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-03 23:36:30 -0300
+
+
+Started GET "/people" for 127.0.0.1 at 2015-08-03 23:36:53 -0300
+Processing by PeopleController#index as HTML
+  [1m[36mPerson Load (0.4ms)[0m  [1mSELECT `people`.* FROM `people`[0m
+  Rendered people/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 65ms (Views: 63.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-03 23:36:53 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-03 23:36:53 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-03 23:36:53 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-03 23:36:53 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-03 23:36:53 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-03 23:36:53 -0300
+
+
+Started GET "/people" for 127.0.0.1 at 2015-08-03 23:37:40 -0300
+Processing by PeopleController#index as HTML
+  [1m[35mPerson Load (0.3ms)[0m  SELECT `people`.* FROM `people`
+  Rendered people/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 62ms (Views: 60.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-03 23:37:40 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-03 23:37:40 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-03 23:37:40 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-03 23:37:40 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-03 23:37:40 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-03 23:37:40 -0300
+
+
+Started GET "/people" for 127.0.0.1 at 2015-08-03 23:38:12 -0300
+Processing by PeopleController#index as HTML
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT `people`.* FROM `people`[0m
+  Rendered people/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 71ms (Views: 70.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-03 23:38:12 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-03 23:38:12 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-03 23:38:12 -0300
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-03 23:38:12 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-03 23:38:12 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-03 23:38:12 -0300
+
+
+Started GET "/people" for 127.0.0.1 at 2015-08-03 23:38:30 -0300
+Processing by PeopleController#index as HTML
+  [1m[35mPerson Load (0.3ms)[0m  SELECT `people`.* FROM `people`
+  Rendered people/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 61ms (Views: 60.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-03 23:38:30 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-03 23:38:30 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-03 23:38:30 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-03 23:38:30 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-03 23:38:30 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-03 23:38:30 -0300
+
+
+Started GET "/people" for 127.0.0.1 at 2015-08-03 23:38:59 -0300
+Processing by PeopleController#index as HTML
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT `people`.* FROM `people`[0m
+  Rendered people/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 59ms (Views: 57.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-03 23:38:59 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-03 23:38:59 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-03 23:38:59 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-03 23:38:59 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-03 23:38:59 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-03 23:38:59 -0300
+
+
+Started GET "/people" for 127.0.0.1 at 2015-08-03 23:39:15 -0300
+Processing by PeopleController#index as HTML
+  [1m[35mPerson Load (0.4ms)[0m  SELECT `people`.* FROM `people`
+  Rendered people/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 64ms (Views: 62.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-03 23:39:15 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-03 23:39:15 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-03 23:39:15 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-03 23:39:15 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-03 23:39:15 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-03 23:39:15 -0300
+
+
+Started GET "/people" for 127.0.0.1 at 2015-08-03 23:39:41 -0300
+Processing by PeopleController#index as HTML
+  [1m[36mPerson Load (0.5ms)[0m  [1mSELECT `people`.* FROM `people`[0m
+  Rendered people/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 87ms (Views: 85.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-03 23:39:41 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-03 23:39:41 -0300
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-03 23:39:41 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-03 23:39:41 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-03 23:39:41 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-03 23:39:41 -0300
+
+
+Started GET "/people" for 127.0.0.1 at 2015-08-03 23:40:07 -0300
+Processing by PeopleController#index as HTML
+  [1m[35mPerson Load (0.3ms)[0m  SELECT `people`.* FROM `people`
+  Rendered people/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 67ms (Views: 65.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-03 23:40:07 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-03 23:40:07 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-03 23:40:07 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-03 23:40:07 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-03 23:40:07 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-03 23:40:07 -0300
+
+
+Started GET "/people" for 127.0.0.1 at 2015-08-03 23:40:52 -0300
+Processing by PeopleController#index as HTML
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT `people`.* FROM `people`[0m
+  Rendered people/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 62ms (Views: 61.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-03 23:40:52 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-03 23:40:52 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-03 23:40:52 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-03 23:40:52 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-03 23:40:52 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-03 23:40:52 -0300
+
+
+Started GET "/people" for 127.0.0.1 at 2015-08-03 23:41:10 -0300
+Processing by PeopleController#index as HTML
+  [1m[35mPerson Load (0.4ms)[0m  SELECT `people`.* FROM `people`
+  Rendered people/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 72ms (Views: 70.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-03 23:41:10 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-03 23:41:10 -0300
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-03 23:41:10 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-03 23:41:10 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-03 23:41:10 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-03 23:41:10 -0300
+
+
+Started GET "/people" for 127.0.0.1 at 2015-08-03 23:41:30 -0300
+Processing by PeopleController#index as HTML
+  [1m[36mPerson Load (0.4ms)[0m  [1mSELECT `people`.* FROM `people`[0m
+  Rendered people/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 59ms (Views: 57.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-03 23:41:30 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-03 23:41:30 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-03 23:41:31 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-03 23:41:31 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-03 23:41:31 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-03 23:41:31 -0300
+
+
+Started GET "/routes" for 127.0.0.1 at 2015-08-03 23:44:08 -0300
+
+ActionController::RoutingError (No route matches [GET] "/routes"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (6.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (26.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (185.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (25.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (50.6ms)
+
+
+Started GET "/administrative_regions" for 127.0.0.1 at 2015-08-03 23:44:17 -0300
+Processing by AdministrativeRegionsController#index as HTML
+  [1m[35mAdministrativeRegion Load (0.3ms)[0m  SELECT `administrative_regions`.* FROM `administrative_regions`
+  Rendered administrative_regions/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 72ms (Views: 67.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/administrative_regions" for 127.0.0.1 at 2015-08-03 23:44:27 -0300
+Processing by AdministrativeRegionsController#index as HTML
+  [1m[36mAdministrativeRegion Load (0.4ms)[0m  [1mSELECT `administrative_regions`.* FROM `administrative_regions`[0m
+  Rendered administrative_regions/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 84ms (Views: 82.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-03 23:44:27 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-03 23:44:27 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-03 23:44:27 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-03 23:44:27 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-03 23:44:27 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-03 23:44:27 -0300
+
+
+Started GET "/administrative_regions" for 127.0.0.1 at 2015-08-03 23:46:16 -0300
+Processing by AdministrativeRegionsController#index as HTML
+  [1m[35mAdministrativeRegion Load (0.4ms)[0m  SELECT `administrative_regions`.* FROM `administrative_regions`
+  Rendered administrative_regions/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 58ms (Views: 56.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-03 23:46:16 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-03 23:46:16 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-03 23:46:16 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-03 23:46:16 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-03 23:46:16 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-03 23:46:16 -0300
+
+
+Started GET "/administrative_regions" for 127.0.0.1 at 2015-08-03 23:46:32 -0300
+Processing by AdministrativeRegionsController#index as HTML
+  [1m[36mAdministrativeRegion Load (0.3ms)[0m  [1mSELECT `administrative_regions`.* FROM `administrative_regions`[0m
+  Rendered administrative_regions/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 68ms (Views: 66.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-03 23:46:32 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-03 23:46:32 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-03 23:46:32 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-03 23:46:32 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-03 23:46:32 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-03 23:46:32 -0300
+
+
+Started GET "/administrative_regions" for 127.0.0.1 at 2015-08-03 23:46:40 -0300
+Processing by AdministrativeRegionsController#index as HTML
+  [1m[35mAdministrativeRegion Load (0.3ms)[0m  SELECT `administrative_regions`.* FROM `administrative_regions`
+  Rendered administrative_regions/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 86ms (Views: 84.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-03 23:46:40 -0300
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-03 23:46:40 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-03 23:46:40 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-03 23:46:40 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-03 23:46:40 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-03 23:46:40 -0300
+
+
+Started GET "/administrative_regions" for 127.0.0.1 at 2015-08-03 23:46:53 -0300
+Processing by AdministrativeRegionsController#index as HTML
+  [1m[36mAdministrativeRegion Load (0.3ms)[0m  [1mSELECT `administrative_regions`.* FROM `administrative_regions`[0m
+  Rendered administrative_regions/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 84ms (Views: 83.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-03 23:46:53 -0300
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-03 23:46:53 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-03 23:46:53 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-03 23:46:53 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-03 23:46:53 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-03 23:46:53 -0300
+
+
+Started GET "/administrative_regions" for 127.0.0.1 at 2015-08-03 23:49:35 -0300
+Processing by AdministrativeRegionsController#index as HTML
+  [1m[35mAdministrativeRegion Load (0.3ms)[0m  SELECT `administrative_regions`.* FROM `administrative_regions`
+  Rendered administrative_regions/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 59ms (Views: 57.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-03 23:49:35 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-03 23:49:35 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-03 23:49:35 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-03 23:49:35 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-03 23:49:35 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-03 23:49:35 -0300
+
+
+Started GET "/administrative_regions" for 127.0.0.1 at 2015-08-03 23:50:17 -0300
+Processing by AdministrativeRegionsController#index as HTML
+  [1m[36mAdministrativeRegion Load (0.5ms)[0m  [1mSELECT `administrative_regions`.* FROM `administrative_regions`[0m
+  Rendered administrative_regions/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 73ms (Views: 72.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-03 23:50:17 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-03 23:50:17 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-03 23:50:17 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-03 23:50:17 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-03 23:50:17 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-03 23:50:17 -0300
+
+
+Started GET "/bonds" for 127.0.0.1 at 2015-08-03 23:51:03 -0300
+Processing by BondsController#index as HTML
+  [1m[35mBond Load (0.4ms)[0m  SELECT `bonds`.* FROM `bonds`
+  Rendered bonds/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 69ms (Views: 60.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/bonds" for 127.0.0.1 at 2015-08-03 23:52:29 -0300
+Processing by BondsController#index as HTML
+  [1m[36mBond Load (0.3ms)[0m  [1mSELECT `bonds`.* FROM `bonds`[0m
+  Rendered bonds/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 57ms (Views: 55.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-03 23:52:30 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-03 23:52:30 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-03 23:52:30 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-03 23:52:30 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-03 23:52:30 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-03 23:52:30 -0300
+
+
+Started GET "/bonds" for 127.0.0.1 at 2015-08-03 23:53:22 -0300
+Processing by BondsController#index as HTML
+  [1m[35mBond Load (0.3ms)[0m  SELECT `bonds`.* FROM `bonds`
+  Rendered bonds/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 56ms (Views: 55.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-03 23:53:22 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-03 23:53:22 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-03 23:53:22 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-03 23:53:22 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-03 23:53:22 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-03 23:53:22 -0300
+
+
+Started GET "/bonds" for 127.0.0.1 at 2015-08-03 23:54:09 -0300
+Processing by BondsController#index as HTML
+  [1m[36mBond Load (0.3ms)[0m  [1mSELECT `bonds`.* FROM `bonds`[0m
+  Rendered bonds/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 53ms (Views: 52.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-03 23:54:09 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-03 23:54:09 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-03 23:54:09 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-03 23:54:09 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-03 23:54:09 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-03 23:54:09 -0300
+
+
+Started GET "/bonds" for 127.0.0.1 at 2015-08-03 23:54:52 -0300
+Processing by BondsController#index as HTML
+  [1m[35mBond Load (0.4ms)[0m  SELECT `bonds`.* FROM `bonds`
+  Rendered bonds/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 62ms (Views: 61.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-03 23:54:52 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-03 23:54:52 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-03 23:54:52 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-03 23:54:52 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-03 23:54:52 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-03 23:54:52 -0300
+
+
+Started GET "/bonds/new" for 127.0.0.1 at 2015-08-03 23:55:04 -0300
+Processing by BondsController#new as HTML
+  Rendered bonds/_form.html.erb (104.1ms)
+  Rendered bonds/new.html.erb within layouts/application (138.5ms)
+Completed 200 OK in 233ms (Views: 213.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/bonds" for 127.0.0.1 at 2015-08-03 23:56:35 -0300
+Processing by BondsController#index as HTML
+  [1m[36mBond Load (0.3ms)[0m  [1mSELECT `bonds`.* FROM `bonds`[0m
+  Rendered bonds/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 56ms (Views: 54.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-03 23:56:35 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-03 23:56:35 -0300
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-03 23:56:35 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-03 23:56:35 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-03 23:56:35 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-03 23:56:35 -0300
+
+
+Started GET "/bonds" for 127.0.0.1 at 2015-08-03 23:56:42 -0300
+Processing by BondsController#index as HTML
+  [1m[35mBond Load (0.3ms)[0m  SELECT `bonds`.* FROM `bonds`
+  Rendered bonds/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 55ms (Views: 54.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-03 23:56:42 -0300
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-03 23:56:42 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-03 23:56:42 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-03 23:56:42 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-03 23:56:42 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-03 23:56:42 -0300
+
+
+Started GET "/bonds" for 127.0.0.1 at 2015-08-03 23:58:53 -0300
+Processing by BondsController#index as HTML
+  [1m[36mBond Load (0.6ms)[0m  [1mSELECT `bonds`.* FROM `bonds`[0m
+  Rendered bonds/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 58ms (Views: 56.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-03 23:58:53 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-03 23:58:53 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-03 23:58:53 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-03 23:58:53 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-03 23:58:53 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-03 23:58:53 -0300
+
+
+Started GET "/bonds" for 127.0.0.1 at 2015-08-04 00:00:02 -0300
+Processing by BondsController#index as HTML
+  [1m[35mBond Load (0.3ms)[0m  SELECT `bonds`.* FROM `bonds`
+  Rendered bonds/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 54ms (Views: 53.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-04 00:00:02 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-04 00:00:02 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-04 00:00:02 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-04 00:00:02 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-04 00:00:02 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-04 00:00:02 -0300
+
+
+Started GET "/bonds/new" for 127.0.0.1 at 2015-08-04 00:00:22 -0300
+Processing by BondsController#new as HTML
+  Rendered bonds/_form.html.erb (8.1ms)
+  Rendered bonds/new.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 69ms (Views: 68.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/bonds" for 127.0.0.1 at 2015-08-04 00:00:25 -0300
+Processing by BondsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Eg4JkrlpNRhfBiIX7lex4O4zUFkhS2H/niOuf0y6gPKISzzYsFOzWNCUxjJgh5h0Pbih8ceKHcKJs9o/k4iTbw==", "bond"=>{"description"=>"", "dt_admission(1i)"=>"2015", "dt_admission(2i)"=>"8", "dt_admission(3i)"=>"4", "workload"=>"", "obs"=>"", "person_id"=>"", "role_id"=>"", "type_bond_id"=>"", "instituation_id"=>"", "situation_bond_id"=>""}, "commit"=>"Create Bond"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `bonds` (`description`, `obs`, `dt_admission`, `created_at`, `updated_at`) VALUES ('', '', '2015-08-04', '2015-08-04 03:00:25.167125', '2015-08-04 03:00:25.167125')
+  [1m[36m (50.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/bonds/1
+Completed 302 Found in 57ms (ActiveRecord: 51.0ms)
+
+
+Started GET "/bonds/1" for 127.0.0.1 at 2015-08-04 00:00:25 -0300
+Processing by BondsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mBond Load (0.6ms)[0m  SELECT  `bonds`.* FROM `bonds` WHERE `bonds`.`id` = 1 LIMIT 1
+  Rendered bonds/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 110ms (Views: 70.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/bonds" for 127.0.0.1 at 2015-08-04 00:00:26 -0300
+Processing by BondsController#index as HTML
+  [1m[36mBond Load (0.3ms)[0m  [1mSELECT `bonds`.* FROM `bonds`[0m
+  Rendered bonds/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 54ms (Views: 52.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/bonds" for 127.0.0.1 at 2015-08-04 00:01:39 -0300
+Processing by BondsController#index as HTML
+  [1m[35mBond Load (0.3ms)[0m  SELECT `bonds`.* FROM `bonds`
+  Rendered bonds/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 59ms (Views: 57.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-04 00:01:39 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-04 00:01:39 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-04 00:01:39 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-04 00:01:39 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-04 00:01:39 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-04 00:01:39 -0300
+
+
+Started GET "/bonds/1/edit" for 127.0.0.1 at 2015-08-04 00:01:45 -0300
+Processing by BondsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBond Load (0.3ms)[0m  [1mSELECT  `bonds`.* FROM `bonds` WHERE `bonds`.`id` = 1 LIMIT 1[0m
+  Rendered bonds/_form.html.erb (8.4ms)
+  Rendered bonds/edit.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 91ms (Views: 89.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/bonds" for 127.0.0.1 at 2015-08-04 00:03:08 -0300
+Processing by BondsController#index as HTML
+  [1m[35mBond Load (0.4ms)[0m  SELECT `bonds`.* FROM `bonds`
+  Rendered bonds/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 62ms (Views: 60.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-04 00:03:08 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-04 00:03:08 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-04 00:03:08 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-04 00:03:08 -0300
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-04 00:03:08 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-04 00:03:08 -0300
+
+
+Started GET "/bonds" for 127.0.0.1 at 2015-08-04 00:03:15 -0300
+Processing by BondsController#index as HTML
+  [1m[36mBond Load (0.4ms)[0m  [1mSELECT `bonds`.* FROM `bonds`[0m
+  Rendered bonds/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 66ms (Views: 65.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-04 00:03:15 -0300
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-04 00:03:15 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-04 00:03:15 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-04 00:03:15 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-04 00:03:15 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-04 00:03:15 -0300
+
+
+Started GET "/districts" for 127.0.0.1 at 2015-08-04 00:07:02 -0300
+Processing by DistrictsController#index as HTML
+  [1m[35mDistrict Load (0.5ms)[0m  SELECT `districts`.* FROM `districts`
+  Rendered districts/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 73ms (Views: 64.8ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/districts" for 127.0.0.1 at 2015-08-04 00:07:40 -0300
+Processing by DistrictsController#index as HTML
+  [1m[36mDistrict Load (0.3ms)[0m  [1mSELECT `districts`.* FROM `districts`[0m
+  Rendered districts/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 59ms (Views: 57.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-04 00:07:40 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-04 00:07:40 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-04 00:07:40 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-04 00:07:40 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-04 00:07:40 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-04 00:07:40 -0300
+
+
+Started GET "/districts" for 127.0.0.1 at 2015-08-04 00:08:23 -0300
+Processing by DistrictsController#index as HTML
+  [1m[35mDistrict Load (0.6ms)[0m  SELECT `districts`.* FROM `districts`
+  Rendered districts/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 66ms (Views: 65.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-04 00:08:23 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-04 00:08:23 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-04 00:08:23 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-04 00:08:23 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-04 00:08:23 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-04 00:08:23 -0300
+
+
+Started GET "/districts/new" for 127.0.0.1 at 2015-08-04 00:08:27 -0300
+Processing by DistrictsController#new as HTML
+  Rendered districts/_form.html.erb (3.7ms)
+  Rendered districts/new.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 88ms (Views: 82.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/districts" for 127.0.0.1 at 2015-08-04 00:09:11 -0300
+Processing by DistrictsController#index as HTML
+  [1m[36mDistrict Load (0.3ms)[0m  [1mSELECT `districts`.* FROM `districts`[0m
+  Rendered districts/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 58ms (Views: 57.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-04 00:09:11 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-04 00:09:11 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-04 00:09:11 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-04 00:09:11 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-04 00:09:11 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-04 00:09:11 -0300
+
+
+Started GET "/districts" for 127.0.0.1 at 2015-08-04 00:09:27 -0300
+Processing by DistrictsController#index as HTML
+  [1m[35mDistrict Load (0.4ms)[0m  SELECT `districts`.* FROM `districts`
+  Rendered districts/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 61ms (Views: 59.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-04 00:09:27 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-04 00:09:27 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-04 00:09:27 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-04 00:09:27 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-04 00:09:27 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-04 00:09:27 -0300
+
+
+Started GET "/districts" for 127.0.0.1 at 2015-08-04 00:09:44 -0300
+Processing by DistrictsController#index as HTML
+  [1m[36mDistrict Load (0.3ms)[0m  [1mSELECT `districts`.* FROM `districts`[0m
+  Rendered districts/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 58ms (Views: 57.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-04 00:09:44 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-04 00:09:44 -0300
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-04 00:09:44 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-04 00:09:44 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-04 00:09:44 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-04 00:09:44 -0300
+
+
+Started GET "/districts/new" for 127.0.0.1 at 2015-08-04 00:09:46 -0300
+Processing by DistrictsController#new as HTML
+  Rendered districts/_form.html.erb (1.9ms)
+  Rendered districts/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 63ms (Views: 62.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/districts" for 127.0.0.1 at 2015-08-04 00:09:48 -0300
+Processing by DistrictsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mAoqbDCgY4DoBnp29ZV2rdfwYTNvO/LG7zEQyN8imDcCTx8mOZrlwGeUnlN7RV85BHuQm4n6jvv4oWSIABCLqg==", "district"=>{"name"=>"", "administrative_region_id"=>""}, "commit"=>"Create District"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `districts` (`name`, `created_at`, `updated_at`) VALUES ('', '2015-08-04 03:09:48.008355', '2015-08-04 03:09:48.008355')[0m
+  [1m[35m (52.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/districts/1
+Completed 302 Found in 57ms (ActiveRecord: 52.6ms)
+
+
+Started GET "/districts/1" for 127.0.0.1 at 2015-08-04 00:09:48 -0300
+Processing by DistrictsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDistrict Load (0.4ms)[0m  [1mSELECT  `districts`.* FROM `districts` WHERE `districts`.`id` = 1 LIMIT 1[0m
+  Rendered districts/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 65ms (Views: 62.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/districts" for 127.0.0.1 at 2015-08-04 00:09:49 -0300
+Processing by DistrictsController#index as HTML
+  [1m[35mDistrict Load (0.3ms)[0m  SELECT `districts`.* FROM `districts`
+  Rendered districts/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 57ms (Views: 56.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/functions" for 127.0.0.1 at 2015-08-04 00:10:08 -0300
+Processing by FunctionsController#index as HTML
+  [1m[36mFunction Load (0.3ms)[0m  [1mSELECT `functions`.* FROM `functions`[0m
+  Rendered functions/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 66ms (Views: 58.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/functions" for 127.0.0.1 at 2015-08-04 00:11:05 -0300
+Processing by FunctionsController#index as HTML
+  [1m[35mFunction Load (0.3ms)[0m  SELECT `functions`.* FROM `functions`
+  Rendered functions/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 76ms (Views: 74.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-04 00:11:05 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-04 00:11:05 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-04 00:11:05 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-04 00:11:05 -0300
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-04 00:11:05 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-04 00:11:05 -0300
+
+
+Started GET "/functions" for 127.0.0.1 at 2015-08-04 00:11:18 -0300
+Processing by FunctionsController#index as HTML
+  [1m[36mFunction Load (0.3ms)[0m  [1mSELECT `functions`.* FROM `functions`[0m
+  Rendered functions/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 56ms (Views: 53.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-04 00:11:18 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-04 00:11:18 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-04 00:11:18 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-04 00:11:18 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-04 00:11:18 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-04 00:11:18 -0300
+
+
+Started GET "/functions" for 127.0.0.1 at 2015-08-04 00:12:19 -0300
+Processing by FunctionsController#index as HTML
+  [1m[35mFunction Load (0.3ms)[0m  SELECT `functions`.* FROM `functions`
+  Rendered functions/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 57ms (Views: 56.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-04 00:12:19 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-04 00:12:19 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-04 00:12:19 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-04 00:12:19 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-04 00:12:19 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-04 00:12:19 -0300
+
+
+Started GET "/functions" for 127.0.0.1 at 2015-08-04 00:12:56 -0300
+Processing by FunctionsController#index as HTML
+  [1m[36mFunction Load (0.3ms)[0m  [1mSELECT `functions`.* FROM `functions`[0m
+  Rendered functions/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 61ms (Views: 59.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-04 00:12:56 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-04 00:12:56 -0300
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-04 00:12:56 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-04 00:12:56 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-04 00:12:56 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-04 00:12:56 -0300
+
+
+Started GET "/functions" for 127.0.0.1 at 2015-08-04 00:13:26 -0300
+Processing by FunctionsController#index as HTML
+  [1m[35mFunction Load (0.4ms)[0m  SELECT `functions`.* FROM `functions`
+  Rendered functions/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 80ms (Views: 79.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-04 00:13:26 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-04 00:13:26 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-04 00:13:26 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-04 00:13:26 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-04 00:13:26 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-04 00:13:26 -0300
+
+
+Started GET "/functions/new" for 127.0.0.1 at 2015-08-04 00:13:26 -0300
+Processing by FunctionsController#new as HTML
+  Rendered functions/_form.html.erb (3.1ms)
+  Rendered functions/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 100ms (Views: 95.9ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/functions" for 127.0.0.1 at 2015-08-04 00:13:27 -0300
+Processing by FunctionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+MzaGRG7pItjXJuHX2q+2BW6qxvF4tnBFVsvy7/uf/Fiie9TGIEiy+zOf6LRupdMxjFasyMjpfwCy1uLYNxsbA==", "function"=>{"name"=>""}, "commit"=>"Create Function"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `functions` (`name`, `created_at`, `updated_at`) VALUES ('', '2015-08-04 03:13:27.746459', '2015-08-04 03:13:27.746459')
+  [1m[36m (94.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/functions/1
+Completed 302 Found in 100ms (ActiveRecord: 94.9ms)
+
+
+Started GET "/functions/1" for 127.0.0.1 at 2015-08-04 00:13:27 -0300
+Processing by FunctionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mFunction Load (0.3ms)[0m  SELECT  `functions`.* FROM `functions` WHERE `functions`.`id` = 1 LIMIT 1
+  Rendered functions/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 64ms (Views: 62.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/functions" for 127.0.0.1 at 2015-08-04 00:13:29 -0300
+Processing by FunctionsController#index as HTML
+  [1m[36mFunction Load (0.3ms)[0m  [1mSELECT `functions`.* FROM `functions`[0m
+  Rendered functions/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 60ms (Views: 59.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/functions" for 127.0.0.1 at 2015-08-04 00:14:33 -0300
+Processing by FunctionsController#index as HTML
+  [1m[35mFunction Load (0.3ms)[0m  SELECT `functions`.* FROM `functions`
+  Rendered functions/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 60ms (Views: 59.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-04 00:14:33 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-04 00:14:33 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-04 00:14:33 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-04 00:14:33 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-04 00:14:33 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-04 00:14:33 -0300
+
+
+Started GET "/functions" for 127.0.0.1 at 2015-08-04 00:14:38 -0300
+Processing by FunctionsController#index as HTML
+  [1m[36mFunction Load (0.3ms)[0m  [1mSELECT `functions`.* FROM `functions`[0m
+  Rendered functions/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 60ms (Views: 58.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-04 00:14:38 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-04 00:14:38 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-04 00:14:38 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-04 00:14:38 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-04 00:14:38 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-04 00:14:38 -0300
+
+
+Started GET "/functions" for 127.0.0.1 at 2015-08-04 00:14:43 -0300
+Processing by FunctionsController#index as HTML
+  [1m[35mFunction Load (0.3ms)[0m  SELECT `functions`.* FROM `functions`
+  Rendered functions/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 58ms (Views: 56.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-04 00:14:43 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-04 00:14:43 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-04 00:14:43 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-04 00:14:43 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-04 00:14:43 -0300
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-04 00:14:43 -0300
+
+
+Started GET "/functions" for 127.0.0.1 at 2015-08-04 00:22:43 -0300
+Processing by FunctionsController#index as HTML
+  [1m[36mFunction Load (0.3ms)[0m  [1mSELECT `functions`.* FROM `functions`[0m
+  Rendered functions/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 59ms (Views: 58.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-04 00:22:43 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-04 00:22:43 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-04 00:22:43 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-04 00:22:43 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-04 00:22:43 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-04 00:22:43 -0300
+
+
+Started GET "/instituations" for 127.0.0.1 at 2015-08-04 00:22:56 -0300
+Processing by InstituationsController#index as HTML
+  [1m[35mInstituation Load (0.3ms)[0m  SELECT `instituations`.* FROM `instituations`
+  Rendered instituations/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 73ms (Views: 58.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/instituations" for 127.0.0.1 at 2015-08-04 00:24:02 -0300
+Processing by InstituationsController#index as HTML
+  [1m[36mInstituation Load (0.3ms)[0m  [1mSELECT `instituations`.* FROM `instituations`[0m
+  Rendered instituations/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 54ms (Views: 53.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-04 00:24:03 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-04 00:24:03 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-04 00:24:03 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-04 00:24:03 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-04 00:24:03 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-04 00:24:03 -0300
+
+
+Started GET "/instituations/new" for 127.0.0.1 at 2015-08-04 00:24:04 -0300
+Processing by InstituationsController#new as HTML
+  Rendered instituations/_form.html.erb (3.6ms)
+  Rendered instituations/new.html.erb within layouts/application (19.5ms)
+Completed 200 OK in 93ms (Views: 87.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/instituations" for 127.0.0.1 at 2015-08-04 00:24:05 -0300
+Processing by InstituationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7z1jTRQdmL/rFci7ZMB2ytwnydVoRPyT1Rc/eZ4IHtV1eFYHHSce/2SHLJ7qEF9eD6w4fY6FgK7Ch0s5QToNSA==", "instituation"=>{"name"=>""}, "commit"=>"Create Instituation"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `instituations` (`name`, `created_at`, `updated_at`) VALUES ('', '2015-08-04 03:24:05.823912', '2015-08-04 03:24:05.823912')[0m
+  [1m[35m (104.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/instituations/1
+Completed 302 Found in 108ms (ActiveRecord: 104.6ms)
+
+
+Started GET "/instituations/1" for 127.0.0.1 at 2015-08-04 00:24:05 -0300
+Processing by InstituationsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mInstituation Load (1.7ms)[0m  [1mSELECT  `instituations`.* FROM `instituations` WHERE `instituations`.`id` = 1 LIMIT 1[0m
+  Rendered instituations/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 88ms (Views: 83.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/instituations" for 127.0.0.1 at 2015-08-04 00:24:07 -0300
+Processing by InstituationsController#index as HTML
+  [1m[35mInstituation Load (0.3ms)[0m  SELECT `instituations`.* FROM `instituations`
+  Rendered instituations/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 64ms (Views: 63.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/instituations" for 127.0.0.1 at 2015-08-04 00:24:15 -0300
+Processing by InstituationsController#index as HTML
+  [1m[36mInstituation Load (0.3ms)[0m  [1mSELECT `instituations`.* FROM `instituations`[0m
+  Rendered instituations/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 92ms (Views: 90.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-04 00:24:15 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-04 00:24:15 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-04 00:24:15 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-04 00:24:15 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-04 00:24:15 -0300
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-04 00:24:15 -0300
+
+
+Started GET "/instituations" for 127.0.0.1 at 2015-08-04 00:24:28 -0300
+Processing by InstituationsController#index as HTML
+  [1m[35mInstituation Load (0.3ms)[0m  SELECT `instituations`.* FROM `instituations`
+  Rendered instituations/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 63ms (Views: 61.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-04 00:24:28 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-04 00:24:28 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-04 00:24:28 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-04 00:24:28 -0300
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-04 00:24:28 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-04 00:24:28 -0300
+
+
+Started GET "/instituations" for 127.0.0.1 at 2015-08-04 00:24:36 -0300
+Processing by InstituationsController#index as HTML
+  [1m[36mInstituation Load (0.3ms)[0m  [1mSELECT `instituations`.* FROM `instituations`[0m
+  Rendered instituations/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 60ms (Views: 59.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-04 00:24:36 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-04 00:24:36 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-04 00:24:36 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-04 00:24:36 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-04 00:24:36 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-04 00:24:36 -0300
+
+
+Started GET "/instituations" for 127.0.0.1 at 2015-08-04 00:27:16 -0300
+Processing by InstituationsController#index as HTML
+  [1m[35mInstituation Load (0.4ms)[0m  SELECT `instituations`.* FROM `instituations`
+  Rendered instituations/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 59ms (Views: 58.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-04 00:27:16 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-04 00:27:16 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-04 00:27:16 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-04 00:27:16 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-04 00:27:16 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-04 00:27:16 -0300
+
+
+Started GET "/locals" for 127.0.0.1 at 2015-08-04 00:27:20 -0300
+Processing by LocalsController#index as HTML
+  [1m[36mLocal Load (0.4ms)[0m  [1mSELECT `locals`.* FROM `locals`[0m
+  Rendered locals/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 71ms (Views: 59.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/locals" for 127.0.0.1 at 2015-08-04 00:27:38 -0300
+Processing by LocalsController#index as HTML
+  [1m[35mLocal Load (0.3ms)[0m  SELECT `locals`.* FROM `locals`
+  Rendered locals/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 70ms (Views: 69.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-04 00:27:38 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-04 00:27:38 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-04 00:27:38 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-04 00:27:38 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-04 00:27:38 -0300
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-04 00:27:38 -0300
+
+
+Started GET "/locals" for 127.0.0.1 at 2015-08-04 00:27:54 -0300
+Processing by LocalsController#index as HTML
+  [1m[36mLocal Load (0.4ms)[0m  [1mSELECT `locals`.* FROM `locals`[0m
+  Rendered locals/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 56ms (Views: 55.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-04 00:27:54 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-04 00:27:54 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-04 00:27:54 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-04 00:27:54 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-04 00:27:54 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-04 00:27:54 -0300
+
+
+Started GET "/locals/new" for 127.0.0.1 at 2015-08-04 00:27:57 -0300
+Processing by LocalsController#new as HTML
+  Rendered locals/_form.html.erb (6.5ms)
+  Rendered locals/new.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 78ms (Views: 61.6ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/locals" for 127.0.0.1 at 2015-08-04 00:27:58 -0300
+Processing by LocalsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Rap40JY3FKBqr6X09xnpC3BWCmJJHgBnGbhKZlPQIxbf702anw2S4OU9QdF5ycCfo937yq/ffFoOKD4mjOIwiw==", "local"=>{"name"=>"", "name_abr"=>"", "initials"=>"", "tel1"=>"", "tel2"=>"", "tel3"=>"", "type_local_id"=>"", "institution_id"=>""}, "commit"=>"Create Local"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `locals` (`name`, `name_abr`, `initials`, `tel1`, `tel2`, `tel3`, `created_at`, `updated_at`) VALUES ('', '', '', '', '', '', '2015-08-04 03:27:58.359879', '2015-08-04 03:27:58.359879')[0m
+  [1m[35m (76.5ms)[0m  COMMIT
+Redirected to http://localhost:3000/locals/1
+Completed 302 Found in 84ms (ActiveRecord: 77.0ms)
+
+
+Started GET "/locals/1" for 127.0.0.1 at 2015-08-04 00:27:58 -0300
+Processing by LocalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLocal Load (0.4ms)[0m  [1mSELECT  `locals`.* FROM `locals` WHERE `locals`.`id` = 1 LIMIT 1[0m
+  Rendered locals/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 66ms (Views: 64.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/locals" for 127.0.0.1 at 2015-08-04 00:27:59 -0300
+Processing by LocalsController#index as HTML
+  [1m[35mLocal Load (0.5ms)[0m  SELECT `locals`.* FROM `locals`
+  Rendered locals/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 57ms (Views: 55.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/locals" for 127.0.0.1 at 2015-08-04 00:28:23 -0300
+Processing by LocalsController#index as HTML
+  [1m[36mLocal Load (0.4ms)[0m  [1mSELECT `locals`.* FROM `locals`[0m
+  Rendered locals/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 79ms (Views: 76.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-04 00:28:23 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-04 00:28:23 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-04 00:28:23 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-04 00:28:23 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-04 00:28:23 -0300
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-04 00:28:23 -0300
+
+
+Started GET "/locals" for 127.0.0.1 at 2015-08-04 00:29:10 -0300
+Processing by LocalsController#index as HTML
+  [1m[35mLocal Load (0.3ms)[0m  SELECT `locals`.* FROM `locals`
+  Rendered locals/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 68ms (Views: 66.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-04 00:29:10 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-04 00:29:10 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-04 00:29:10 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-04 00:29:10 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-04 00:29:10 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-04 00:29:10 -0300
+
+
+Started GET "/locals" for 127.0.0.1 at 2015-08-04 00:32:47 -0300
+Processing by LocalsController#index as HTML
+  [1m[36mLocal Load (0.3ms)[0m  [1mSELECT `locals`.* FROM `locals`[0m
+  Rendered locals/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 57ms (Views: 55.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-04 00:32:47 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-04 00:32:47 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-04 00:32:47 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-04 00:32:47 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-04 00:32:47 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-04 00:32:47 -0300
+
+
+Started GET "/people" for 127.0.0.1 at 2015-08-04 00:33:00 -0300
+Processing by PeopleController#index as HTML
+  [1m[35mPerson Load (0.3ms)[0m  SELECT `people`.* FROM `people`
+  Rendered people/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 57ms (Views: 55.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/people" for 127.0.0.1 at 2015-08-04 00:33:20 -0300
+Processing by PeopleController#index as HTML
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT `people`.* FROM `people`[0m
+  Rendered people/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 65ms (Views: 63.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-04 00:33:20 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-04 00:33:20 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-04 00:33:20 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-04 00:33:20 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-04 00:33:20 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-04 00:33:20 -0300
+
+
+Started GET "/people" for 127.0.0.1 at 2015-08-04 00:33:40 -0300
+Processing by PeopleController#index as HTML
+  [1m[35mPerson Load (0.3ms)[0m  SELECT `people`.* FROM `people`
+  Rendered people/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 55ms (Views: 53.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-04 00:33:40 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-04 00:33:40 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-04 00:33:40 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-04 00:33:40 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-04 00:33:40 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-04 00:33:40 -0300
+
+
+Started GET "/people/new" for 127.0.0.1 at 2015-08-04 00:33:43 -0300
+Processing by PeopleController#new as HTML
+  Rendered people/_form.html.erb (10.9ms)
+  Rendered people/new.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 111ms (Views: 96.7ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/people" for 127.0.0.1 at 2015-08-04 00:33:45 -0300
+Processing by PeopleController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"v7XLFXtbmIVBd2bMaP/Cka9/m2ywzpEZQcpM2DYyruIl8P5fcmEexc7lgunmL+sFfPRqxFYP7SRWWjiY6QC9fw==", "person"=>{"name"=>"", "gender"=>"", "rg"=>"", "cpf"=>"", "birth_date(1i)"=>"2015", "birth_date(2i)"=>"8", "birth_date(3i)"=>"4", "cel"=>"", "tel1"=>"", "tel2"=>"", "district_id"=>"", "user_id"=>""}, "commit"=>"Create Person"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `people` (`name`, `gender`, `rg`, `cpf`, `cel`, `tel1`, `tel2`, `birth_date`, `created_at`, `updated_at`) VALUES ('', '', '', '', '', '', '', '2015-08-04', '2015-08-04 03:33:45.208183', '2015-08-04 03:33:45.208183')
+  [1m[36m (38.6ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/people/1
+Completed 302 Found in 46ms (ActiveRecord: 39.0ms)
+
+
+Started GET "/people/1" for 127.0.0.1 at 2015-08-04 00:33:45 -0300
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPerson Load (0.4ms)[0m  SELECT  `people`.* FROM `people` WHERE `people`.`id` = 1 LIMIT 1
+  Rendered people/show.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 68ms (Views: 65.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/people" for 127.0.0.1 at 2015-08-04 00:33:46 -0300
+Processing by PeopleController#index as HTML
+  [1m[36mPerson Load (0.4ms)[0m  [1mSELECT `people`.* FROM `people`[0m
+  Rendered people/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 115ms (Views: 113.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/people" for 127.0.0.1 at 2015-08-04 00:35:03 -0300
+Processing by PeopleController#index as HTML
+  [1m[35mPerson Load (0.3ms)[0m  SELECT `people`.* FROM `people`
+  Rendered people/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 73ms (Views: 71.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-04 00:35:03 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-04 00:35:03 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-04 00:35:04 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-04 00:35:04 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-04 00:35:04 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-04 00:35:04 -0300
+
+
+Started GET "/people" for 127.0.0.1 at 2015-08-04 00:35:14 -0300
+Processing by PeopleController#index as HTML
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT `people`.* FROM `people`[0m
+  Rendered people/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 60ms (Views: 58.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-04 00:35:14 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-04 00:35:14 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-04 00:35:14 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-04 00:35:14 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-04 00:35:14 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-04 00:35:14 -0300
+
+
+Started GET "/people/1/edit" for 127.0.0.1 at 2015-08-04 00:35:26 -0300
+Processing by PeopleController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPerson Load (0.4ms)[0m  SELECT  `people`.* FROM `people` WHERE `people`.`id` = 1 LIMIT 1
+  Rendered people/_form.html.erb (9.9ms)
+  Rendered people/edit.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 80ms (Views: 78.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/people" for 127.0.0.1 at 2015-08-04 00:35:43 -0300
+Processing by PeopleController#index as HTML
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT `people`.* FROM `people`[0m
+  Rendered people/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 72ms (Views: 71.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-04 00:35:43 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-04 00:35:43 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-04 00:35:43 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-04 00:35:43 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-04 00:35:43 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-04 00:35:44 -0300
+
+
+Started DELETE "/people/1" for 127.0.0.1 at 2015-08-04 00:35:50 -0300
+Processing by PeopleController#destroy as HTML
+  Parameters: {"authenticity_token"=>"0VHWzIEytYBztCNRPk2cW4QK5fZ62325z28j2IJ2X0xLFOOGiAgzwPwmx3SwnbXPV4EUXpwaAYTY/1eYXURM0Q==", "id"=>"1"}
+  [1m[35mPerson Load (0.5ms)[0m  SELECT  `people`.* FROM `people` WHERE `people`.`id` = 1 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (17.8ms)[0m  DELETE FROM `people` WHERE `people`.`id` = 1
+  [1m[36m (47.8ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/people
+Completed 302 Found in 71ms (ActiveRecord: 66.1ms)
+
+
+Started GET "/people" for 127.0.0.1 at 2015-08-04 00:35:50 -0300
+Processing by PeopleController#index as HTML
+  [1m[35mPerson Load (1.1ms)[0m  SELECT `people`.* FROM `people`
+  Rendered people/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 60ms (Views: 57.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/people" for 127.0.0.1 at 2015-08-04 00:42:12 -0300
+Processing by PeopleController#index as HTML
+  [1m[36mPerson Load (0.4ms)[0m  [1mSELECT `people`.* FROM `people`[0m
+  Rendered people/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 59ms (Views: 58.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-04 00:42:12 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-04 00:42:12 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-04 00:42:12 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-04 00:42:12 -0300
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-04 00:42:12 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-04 00:42:12 -0300
+
+
+Started GET "/people" for 127.0.0.1 at 2015-08-04 01:05:20 -0300
+Processing by PeopleController#index as HTML
+  [1m[35mPerson Load (0.4ms)[0m  SELECT `people`.* FROM `people`
+  Rendered people/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 67ms (Views: 65.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-04 01:05:20 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-04 01:05:20 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-04 01:05:20 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-04 01:05:20 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-04 01:05:20 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-04 01:05:20 -0300
+
+
+Started GET "/people" for 127.0.0.1 at 2015-08-04 01:06:51 -0300
+Processing by PeopleController#index as HTML
+  [1m[36mPerson Load (0.4ms)[0m  [1mSELECT `people`.* FROM `people`[0m
+  Rendered people/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 55ms (Views: 54.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-04 01:06:51 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-04 01:06:51 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-04 01:06:51 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-04 01:06:51 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-04 01:06:51 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-04 01:06:51 -0300
+
+
+Started GET "/stockings" for 127.0.0.1 at 2015-08-04 01:17:09 -0300
+Processing by StockingsController#index as HTML
+  [1m[35mStocking Load (0.3ms)[0m  SELECT `stockings`.* FROM `stockings`
+  Rendered stockings/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 85ms (Views: 65.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/type_locals" for 127.0.0.1 at 2015-08-04 01:20:30 -0300
+Processing by TypeLocalsController#index as HTML
+  [1m[36mTypeLocal Load (0.3ms)[0m  [1mSELECT `type_locals`.* FROM `type_locals`[0m
+  Rendered type_locals/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 61ms (Views: 56.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/type_locals" for 127.0.0.1 at 2015-08-04 01:21:15 -0300
+Processing by TypeLocalsController#index as HTML
+  [1m[35mTypeLocal Load (0.3ms)[0m  SELECT `type_locals`.* FROM `type_locals`
+  Rendered type_locals/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 53ms (Views: 51.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-04 01:21:15 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-04 01:21:15 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-04 01:21:15 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-04 01:21:15 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-04 01:21:15 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-04 01:21:15 -0300
+
+
+Started GET "/type_locals" for 127.0.0.1 at 2015-08-04 01:21:48 -0300
+Processing by TypeLocalsController#index as HTML
+  [1m[36mTypeLocal Load (0.3ms)[0m  [1mSELECT `type_locals`.* FROM `type_locals`[0m
+  Rendered type_locals/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 55ms (Views: 53.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-04 01:21:48 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-04 01:21:48 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-04 01:21:48 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-04 01:21:48 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-04 01:21:48 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-04 01:21:48 -0300
+
+
+Started GET "/type_locals" for 127.0.0.1 at 2015-08-04 01:28:16 -0300
+Processing by TypeLocalsController#index as HTML
+  [1m[35mTypeLocal Load (0.3ms)[0m  SELECT `type_locals`.* FROM `type_locals`
+  Rendered type_locals/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 62ms (Views: 60.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-04 01:28:16 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-04 01:28:16 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-04 01:28:16 -0300
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-04 01:28:16 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-04 01:28:16 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-04 01:28:16 -0300
+
+
+Started GET "/type_bonds" for 127.0.0.1 at 2015-08-04 01:28:23 -0300
+Processing by TypeBondsController#index as HTML
+  [1m[36mTypeBond Load (0.3ms)[0m  [1mSELECT `type_bonds`.* FROM `type_bonds`[0m
+  Rendered type_bonds/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 92ms (Views: 73.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/type_bonds/new" for 127.0.0.1 at 2015-08-04 01:28:25 -0300
+Processing by TypeBondsController#new as HTML
+  Rendered type_bonds/_form.html.erb (5.8ms)
+  Rendered type_bonds/new.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 120ms (Views: 115.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/type_bonds" for 127.0.0.1 at 2015-08-04 01:28:27 -0300
+Processing by TypeBondsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"j2KxJEoObDvth4wafuxXH0hVPS1zLJdztJvLvRjmdmUVJ4RuQzTqe2IVaD/wPH6Lm97MhZXt606jC7/9x9Rl+A==", "type_bond"=>{"name"=>"", "abbreviation"=>""}, "commit"=>"Create Type bond"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `type_bonds` (`name`, `abbreviation`, `created_at`, `updated_at`) VALUES ('', '', '2015-08-04 04:28:27.044726', '2015-08-04 04:28:27.044726')[0m
+  [1m[35m (71.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/type_bonds/1
+Completed 302 Found in 76ms (ActiveRecord: 71.8ms)
+
+
+Started GET "/type_bonds/1" for 127.0.0.1 at 2015-08-04 01:28:27 -0300
+Processing by TypeBondsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTypeBond Load (0.4ms)[0m  [1mSELECT  `type_bonds`.* FROM `type_bonds` WHERE `type_bonds`.`id` = 1 LIMIT 1[0m
+  Rendered type_bonds/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 54ms (Views: 52.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/type_bonds" for 127.0.0.1 at 2015-08-04 01:28:28 -0300
+Processing by TypeBondsController#index as HTML
+  [1m[35mTypeBond Load (0.3ms)[0m  SELECT `type_bonds`.* FROM `type_bonds`
+  Rendered type_bonds/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 57ms (Views: 56.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/type_bonds" for 127.0.0.1 at 2015-08-04 01:32:33 -0300
+Processing by TypeBondsController#index as HTML
+  [1m[36mTypeBond Load (0.4ms)[0m  [1mSELECT `type_bonds`.* FROM `type_bonds`[0m
+  Rendered type_bonds/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 56ms (Views: 55.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/type_patios" for 127.0.0.1 at 2015-08-04 01:32:41 -0300
+Processing by TypePatiosController#index as HTML
+  [1m[35mTypePatio Load (0.3ms)[0m  SELECT `type_patios`.* FROM `type_patios`
+  Rendered type_patios/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 65ms (Views: 53.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/type_patios/new" for 127.0.0.1 at 2015-08-04 01:32:44 -0300
+Processing by TypePatiosController#new as HTML
+  Rendered type_patios/_form.html.erb (3.4ms)
+  Rendered type_patios/new.html.erb within layouts/application (19.9ms)
+Completed 200 OK in 78ms (Views: 74.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/type_patios" for 127.0.0.1 at 2015-08-04 01:32:45 -0300
+Processing by TypePatiosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Mf0RrVna9Ywaz0CaSZlVchWdFjgUTME69+/94wS7g/6ruCTnUOBzzJVdpL/HSXzmxhbnkPKNvQfgf4mj24mQYw==", "type_patio"=>{"name"=>"", "initial"=>""}, "commit"=>"Create Type patio"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `type_patios` (`name`, `initial`, `created_at`, `updated_at`) VALUES ('', '', '2015-08-04 04:32:45.046936', '2015-08-04 04:32:45.046936')
+  [1m[36m (108.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/type_patios/1
+Completed 302 Found in 114ms (ActiveRecord: 108.7ms)
+
+
+Started GET "/type_patios/1" for 127.0.0.1 at 2015-08-04 01:32:45 -0300
+Processing by TypePatiosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTypePatio Load (0.3ms)[0m  SELECT  `type_patios`.* FROM `type_patios` WHERE `type_patios`.`id` = 1 LIMIT 1
+  Rendered type_patios/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 56ms (Views: 54.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/type_patios" for 127.0.0.1 at 2015-08-04 01:32:46 -0300
+Processing by TypePatiosController#index as HTML
+  [1m[36mTypePatio Load (0.3ms)[0m  [1mSELECT `type_patios`.* FROM `type_patios`[0m
+  Rendered type_patios/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 53ms (Views: 51.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/type_patios" for 127.0.0.1 at 2015-08-04 01:34:58 -0300
+Processing by TypePatiosController#index as HTML
+  [1m[35mTypePatio Load (0.3ms)[0m  SELECT `type_patios`.* FROM `type_patios`
+  Rendered type_patios/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 58ms (Views: 57.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-04 01:34:58 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-04 01:34:58 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-04 01:34:58 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-04 01:34:58 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-04 01:34:58 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-04 01:34:58 -0300
+
+
+Started GET "/people" for 127.0.0.1 at 2015-08-04 01:35:01 -0300
+Processing by PeopleController#index as HTML
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT `people`.* FROM `people`[0m
+  Rendered people/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 49ms (Views: 47.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/people" for 127.0.0.1 at 2015-08-04 01:35:03 -0300
+Processing by PeopleController#index as HTML
+  [1m[35mPerson Load (0.4ms)[0m  SELECT `people`.* FROM `people`
+  Rendered people/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 51ms (Views: 49.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/people" for 127.0.0.1 at 2015-08-04 01:35:58 -0300
+Processing by PeopleController#index as HTML
+  [1m[36mPerson Load (0.4ms)[0m  [1mSELECT `people`.* FROM `people`[0m
+  Rendered people/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 60ms (Views: 58.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-04 01:35:58 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-04 01:35:58 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-04 01:35:58 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-04 01:35:58 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-04 01:35:58 -0300
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-04 01:35:58 -0300
+
+
+Started GET "/locals" for 127.0.0.1 at 2015-08-04 01:36:00 -0300
+Processing by LocalsController#index as HTML
+  [1m[35mLocal Load (0.3ms)[0m  SELECT `locals`.* FROM `locals`
+  Rendered locals/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 64ms (Views: 62.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/locals" for 127.0.0.1 at 2015-08-04 01:36:31 -0300
+Processing by LocalsController#index as HTML
+  [1m[36mLocal Load (0.4ms)[0m  [1mSELECT `locals`.* FROM `locals`[0m
+  Rendered locals/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 60ms (Views: 58.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-04 01:36:31 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-04 01:36:31 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-04 01:36:31 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-04 01:36:31 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-04 01:36:31 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-04 01:36:31 -0300
+
+
+Started GET "/type_locals" for 127.0.0.1 at 2015-08-04 01:36:33 -0300
+Processing by TypeLocalsController#index as HTML
+  [1m[35mTypeLocal Load (0.3ms)[0m  SELECT `type_locals`.* FROM `type_locals`
+  Rendered type_locals/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 63ms (Views: 61.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/type_locals" for 127.0.0.1 at 2015-08-04 01:36:55 -0300
+Processing by TypeLocalsController#index as HTML
+  [1m[36mTypeLocal Load (0.4ms)[0m  [1mSELECT `type_locals`.* FROM `type_locals`[0m
+  Rendered type_locals/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 90ms (Views: 88.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-04 01:36:56 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-04 01:36:56 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-04 01:36:56 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-04 01:36:56 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-04 01:36:56 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-04 01:36:56 -0300
+
+
+Started GET "/type_locals" for 127.0.0.1 at 2015-08-04 01:37:42 -0300
+Processing by TypeLocalsController#index as HTML
+  [1m[35mTypeLocal Load (0.3ms)[0m  SELECT `type_locals`.* FROM `type_locals`
+  Rendered type_locals/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 58ms (Views: 57.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-04 01:37:42 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-04 01:37:42 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-04 01:37:42 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-04 01:37:42 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-04 01:37:42 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-04 01:37:42 -0300
+
+
+Started GET "/bonds" for 127.0.0.1 at 2015-08-04 01:37:57 -0300
+Processing by BondsController#index as HTML
+  [1m[36mBond Load (0.3ms)[0m  [1mSELECT `bonds`.* FROM `bonds`[0m
+  Rendered bonds/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 61ms (Views: 60.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/bonds" for 127.0.0.1 at 2015-08-04 01:38:43 -0300
+Processing by BondsController#index as HTML
+  [1m[35mBond Load (0.3ms)[0m  SELECT `bonds`.* FROM `bonds`
+  Rendered bonds/index.html.erb within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 89ms
+
+ActionView::Template::Error (undefined local variable or method `instituitions_path' for #<#<Class:0xb4f46eb0>:0xba2a0200>):
+    100:             <li><%= 
+    101:                     #if policy(TypeInsurance).index?  
+    102:                       link_to "instituições" , instituitions_path 
+    103:                     #end
+    104:                     %></li>
+    105:             <!--<li role="separator" class="divider"></li>
+    106:             <li><a href="#">Separated link</a></li>-->
+  app/views/layouts/application.html.erb:103:in `_app_views_layouts_application_html_erb__157900822__585857748'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (36.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (26.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (53.6ms)
+
+
+Started GET "/bonds" for 127.0.0.1 at 2015-08-04 01:38:51 -0300
+Processing by BondsController#index as HTML
+  [1m[36mBond Load (0.4ms)[0m  [1mSELECT `bonds`.* FROM `bonds`[0m
+  Rendered bonds/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 59ms (Views: 57.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-04 01:38:51 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-04 01:38:51 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-04 01:38:51 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-04 01:38:51 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-04 01:38:51 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-04 01:38:51 -0300
+
+
+Started GET "/bonds" for 127.0.0.1 at 2015-08-04 01:39:02 -0300
+Processing by BondsController#index as HTML
+  [1m[35mBond Load (0.3ms)[0m  SELECT `bonds`.* FROM `bonds`
+  Rendered bonds/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 68ms (Views: 66.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-04 01:39:02 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-04 01:39:02 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-04 01:39:02 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-04 01:39:02 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-04 01:39:02 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-04 01:39:02 -0300
+
+
+Started GET "/bonds" for 127.0.0.1 at 2015-08-04 01:39:08 -0300
+Processing by BondsController#index as HTML
+  [1m[36mBond Load (0.4ms)[0m  [1mSELECT `bonds`.* FROM `bonds`[0m
+  Rendered bonds/index.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 97ms
+
+ActionView::Template::Error (undefined local variable or method `exams_path' for #<#<Class:0xb4f46eb0>:0xb359ab9c>):
+    100:             <li><%= 
+    101:                     #if policy(TypeInsurance).index?  
+    102:                       link_to "avaliação" , exams_path 
+    103:                     #end
+    104:                     %>
+    105:             </li>
+    106:             <!--<li role="separator" class="divider"></li>
+  app/views/layouts/application.html.erb:103:in `_app_views_layouts_application_html_erb__157900822__642987568'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (38.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (26.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (53.6ms)
+
+
+Started GET "/bonds" for 127.0.0.1 at 2015-08-04 01:39:41 -0300
+Processing by BondsController#index as HTML
+  [1m[35mBond Load (0.4ms)[0m  SELECT `bonds`.* FROM `bonds`
+  Rendered bonds/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 67ms (Views: 65.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-04 01:39:42 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-04 01:39:42 -0300
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-04 01:39:42 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-04 01:39:42 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-04 01:39:42 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-04 01:39:42 -0300
+
+
+Started GET "/instituations" for 127.0.0.1 at 2015-08-04 01:39:44 -0300
+Processing by InstituationsController#index as HTML
+  [1m[36mInstituation Load (0.3ms)[0m  [1mSELECT `instituations`.* FROM `instituations`[0m
+  Rendered instituations/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 57ms (Views: 56.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/instituations" for 127.0.0.1 at 2015-08-04 01:40:37 -0300
+Processing by InstituationsController#index as HTML
+  [1m[35mInstituation Load (0.3ms)[0m  SELECT `instituations`.* FROM `instituations`
+  Rendered instituations/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 59ms (Views: 58.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-04 01:40:37 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-04 01:40:37 -0300
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-04 01:40:37 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-04 01:40:37 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-04 01:40:37 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-04 01:40:37 -0300
+
+
+Started GET "/administrative_regions" for 127.0.0.1 at 2015-08-04 01:40:39 -0300
+Processing by AdministrativeRegionsController#index as HTML
+  [1m[36mAdministrativeRegion Load (0.3ms)[0m  [1mSELECT `administrative_regions`.* FROM `administrative_regions`[0m
+  Rendered administrative_regions/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 53ms (Views: 51.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/administrative_regions" for 127.0.0.1 at 2015-08-04 01:41:34 -0300
+Processing by AdministrativeRegionsController#index as HTML
+  [1m[35mAdministrativeRegion Load (0.3ms)[0m  SELECT `administrative_regions`.* FROM `administrative_regions`
+  Rendered administrative_regions/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 58ms (Views: 56.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-f6a4fa940d7974a5ceadba7c00ac1d701710805a71fe6630bedf9f8efd8f10b7.css?body=1" for 127.0.0.1 at 2015-08-04 01:41:34 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-04 01:41:34 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-04 01:41:34 -0300
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-08-04 01:41:34 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-04 01:41:34 -0300
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-04 01:41:34 -0300
+
+
+Started GET "/type_patios" for 127.0.0.1 at 2015-08-04 01:41:36 -0300
+Processing by TypePatiosController#index as HTML
+  [1m[36mTypePatio Load (0.3ms)[0m  [1mSELECT `type_patios`.* FROM `type_patios`[0m
+  Rendered type_patios/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 51ms (Views: 49.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/locals" for 127.0.0.1 at 2015-08-04 01:41:43 -0300
+Processing by LocalsController#index as HTML
+  [1m[35mLocal Load (0.3ms)[0m  SELECT `locals`.* FROM `locals`
+  Rendered locals/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 60ms (Views: 59.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/people" for 127.0.0.1 at 2015-08-04 01:41:45 -0300
+Processing by PeopleController#index as HTML
+  [1m[36mPerson Load (0.8ms)[0m  [1mSELECT `people`.* FROM `people`[0m
+  Rendered people/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 59ms (Views: 56.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/locals" for 127.0.0.1 at 2015-08-04 01:41:46 -0300
+Processing by LocalsController#index as HTML
+  [1m[35mLocal Load (0.3ms)[0m  SELECT `locals`.* FROM `locals`
+  Rendered locals/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 61ms (Views: 60.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/type_locals" for 127.0.0.1 at 2015-08-04 01:41:48 -0300
+Processing by TypeLocalsController#index as HTML
+  [1m[36mTypeLocal Load (0.3ms)[0m  [1mSELECT `type_locals`.* FROM `type_locals`[0m
+  Rendered type_locals/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 55ms (Views: 54.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/administrative_regions" for 127.0.0.1 at 2015-08-04 01:41:50 -0300
+Processing by AdministrativeRegionsController#index as HTML
+  [1m[35mAdministrativeRegion Load (0.3ms)[0m  SELECT `administrative_regions`.* FROM `administrative_regions`
+  Rendered administrative_regions/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 59ms (Views: 58.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/districts" for 127.0.0.1 at 2015-08-04 01:41:51 -0300
+Processing by DistrictsController#index as HTML
+  [1m[36mDistrict Load (0.3ms)[0m  [1mSELECT `districts`.* FROM `districts`[0m
+  Rendered districts/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 70ms (Views: 69.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/type_patios" for 127.0.0.1 at 2015-08-04 01:41:53 -0300
+Processing by TypePatiosController#index as HTML
+  [1m[35mTypePatio Load (0.3ms)[0m  SELECT `type_patios`.* FROM `type_patios`
+  Rendered type_patios/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 58ms (Views: 57.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/bonds" for 127.0.0.1 at 2015-08-04 01:41:55 -0300
+Processing by BondsController#index as HTML
+  [1m[36mBond Load (0.3ms)[0m  [1mSELECT `bonds`.* FROM `bonds`[0m
+  Rendered bonds/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 53ms (Views: 52.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/functions" for 127.0.0.1 at 2015-08-04 01:41:57 -0300
+Processing by FunctionsController#index as HTML
+  [1m[35mFunction Load (0.3ms)[0m  SELECT `functions`.* FROM `functions`
+  Rendered functions/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 59ms (Views: 57.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/instituations" for 127.0.0.1 at 2015-08-04 01:41:58 -0300
+Processing by InstituationsController#index as HTML
+  [1m[36mInstituation Load (0.4ms)[0m  [1mSELECT `instituations`.* FROM `instituations`[0m
+  Rendered instituations/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 60ms (Views: 59.3ms | ActiveRecord: 0.4ms)

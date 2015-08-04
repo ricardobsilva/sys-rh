@@ -1,19 +1,17 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Bonds</h1>
+<h1>Vínculos</h1>
 
-<table>
+<%= link_to 'novo registro', new_bond_path,  class: 'btn btn-sm btn-primary pull-right' %>
+<table class=" table table-striped">
   <thead>
     <tr>
-      <th>Description</th>
-      <th>Dt admission</th>
-      <th>Workload</th>
-      <th>Obs</th>
-      <th>Person</th>
-      <th>Role</th>
-      <th>Type bond</th>
-      <th>Instituation</th>
-      <th>Situation bond</th>
+      <th>Descrição</th>
+      <th>Pessoa</th>
+      <th>Papel</th>
+      <th>Tipo</th>
+      <th>Instituição</th>
+      <th>Situação</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -22,17 +20,18 @@
     <% @bonds.each do |bond| %>
       <tr>
         <td><%= bond.description %></td>
-        <td><%= bond.dt_admission %></td>
-        <td><%= bond.workload %></td>
-        <td><%= bond.obs %></td>
         <td><%= bond.person_id %></td>
         <td><%= bond.role_id %></td>
         <td><%= bond.type_bond_id %></td>
         <td><%= bond.instituation_id %></td>
         <td><%= bond.situation_bond_id %></td>
-        <td><%= link_to 'Show', bond %></td>
-        <td><%= link_to 'Edit', edit_bond_path(bond) %></td>
-        <td><%= link_to 'Destroy', bond, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td>
+        <div class="btn-group pull-right">
+          <%#= link_to 'Show', bond %>
+          <%= link_to 'editar', edit_bond_path(bond) ,  class: 'btn btn-xs btn-warning' %>
+          <%= link_to 'deletar', bond, method: :delete, data: { confirm: 'Quer mesmo deletar?' },  class: 'btn btn-xs btn-warning'  %>
+        </div>
+        </td>
       </tr>
     <% end %>
   </tbody>
@@ -40,4 +39,3 @@
 
 <br>
 
-<%= link_to 'New Bond', new_bond_path %>

@@ -1,12 +1,13 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Districts</h1>
+<h1>Bairros</h1>
+<%= link_to 'novo registro', new_district_path ,  class: 'btn btn-sm btn-primary pull-right' %>
 
-<table>
+<table class=" table table-striped">
   <thead>
     <tr>
-      <th>Name</th>
-      <th>Administrative region</th>
+      <th>Nome</th>
+      <th>Região Administrativa</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -16,9 +17,13 @@
       <tr>
         <td><%= district.name %></td>
         <td><%= district.administrative_region_id %></td>
-        <td><%= link_to 'Show', district %></td>
-        <td><%= link_to 'Edit', edit_district_path(district) %></td>
-        <td><%= link_to 'Destroy', district, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td>
+        <div class="btn-group pull-right">
+          <%#= link_to 'Show', district %>
+          <%= link_to 'editar', edit_district_path(district), class: 'btn btn-xs btn-warning' %>
+          <%= link_to 'deletar', district, method: :delete, data: { confirm: 'quer mesmo deletar?' } , class: 'btn btn-xs btn-warning' %>
+        </div>  
+        </td>
       </tr>
     <% end %>
   </tbody>
@@ -26,4 +31,3 @@
 
 <br>
 
-<%= link_to 'New District', new_district_path %>

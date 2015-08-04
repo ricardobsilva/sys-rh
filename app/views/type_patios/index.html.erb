@@ -1,12 +1,13 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Type Patios</h1>
+<h1>Tipos de Logradouro</h1>
+<%= link_to 'novo registro', new_type_patio_path ,  class: 'btn btn-sm btn-primary pull-right' %>
 
-<table>
+<table  class =" table table-striped">
   <thead>
     <tr>
-      <th>Name</th>
-      <th>Initial</th>
+      <th>Nome</th>
+      <th>Iniciais</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -16,9 +17,13 @@
       <tr>
         <td><%= type_patio.name %></td>
         <td><%= type_patio.initial %></td>
-        <td><%= link_to 'Show', type_patio %></td>
-        <td><%= link_to 'Edit', edit_type_patio_path(type_patio) %></td>
-        <td><%= link_to 'Destroy', type_patio, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td>
+        <div class="btn-group pull-right">
+        <%#= link_to 'Show', type_patio %>
+          <%= link_to 'editar', edit_type_patio_path(type_patio), class: 'btn btn-xs btn-warning'  %>
+          <%= link_to 'deletar', type_patio, method: :delete, data: { confirm: 'quer mesmo deletar?' }, class: 'btn btn-xs btn-warning'  %>
+        </div>
+        </td>
       </tr>
     <% end %>
   </tbody>
@@ -26,4 +31,3 @@
 
 <br>
 
-<%= link_to 'New Type patio', new_type_patio_path %>
