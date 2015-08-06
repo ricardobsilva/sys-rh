@@ -25,9 +25,13 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'bootstrap-sass', :git => 'https://github.com/twbs/bootstrap-sass.git', :branch => 'next'
 
-
+# paginação
 gem 'will_paginate-bootstrap'
 gem 'will_paginate', '~> 3.0.6'
+
+
+#devise (autenticação)
+gem 'devise'
 
 
 # Use ActiveModel has_secure_password
