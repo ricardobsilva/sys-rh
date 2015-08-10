@@ -33,6 +33,8 @@ gem 'will_paginate', '~> 3.0.6'
 #devise (autenticação)
 gem 'devise'
 
+gem 'start'
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

@@ -12,38 +12,46 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
+    <%= f.label 'nome' %><br>
+    <%= f.text_field :name , class: 'form-control' %>
   </div>
-  <div class="field">
-    <%= f.label :name_abr %><br>
-    <%= f.text_field :name_abr %>
+  <div class="row">
+    <div class="col-md-4">
+      <%= f.label 'abreviação' %><br>
+      <%= f.text_field :name_abr, class: 'form-control' %>
+    </div>
+    <div class="col-md-4">
+      <%= f.label 'iniciais' %><br>
+      <%= f.text_field :initials, class: 'form-control' %>
+    </div>
+  </div>  
+  <div class="row">
+    <div class="col-md-4">
+      <%= f.label :tel1 %><br>
+      <%= f.text_field :tel1 , class: 'form-control' %>
+    </div>
+    <div class="col-md-4">
+      <%= f.label :tel2 %><br>
+      <%= f.text_field :tel2 , class: 'form-control' %>
+    </div>
+    <div class="col-md-4">
+      <%= f.label :tel3 %><br>
+      <%= f.text_field :tel3 , class: 'form-control' %>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :initials %><br>
-    <%= f.text_field :initials %>
-  </div>
-  <div class="field">
-    <%= f.label :tel1 %><br>
-    <%= f.text_field :tel1 %>
-  </div>
-  <div class="field">
-    <%= f.label :tel2 %><br>
-    <%= f.text_field :tel2 %>
-  </div>
-  <div class="field">
-    <%= f.label :tel3 %><br>
-    <%= f.text_field :tel3 %>
-  </div>
-  <div class="field">
-    <%= f.label :type_local_id %><br>
-    <%= f.number_field :type_local_id %>
-  </div>
-  <div class="field">
-    <%= f.label :institution_id %><br>
-    <%= f.number_field :institution_id %>
-  </div>
+  <div class="row">
+    <div class="col-md-3">
+      <%= f.label 'tipo de local' %><br>
+      <%= f.number_field :type_local_id , class: 'form-control' %>
+    </div>
+    <div class="col-md-3">
+      <%= f.label 'instituição' %><br>
+      <%= f.number_field :institution_id , class: 'form-control' %>
+    </div>
+  </div>  
+  <br>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "salvar", class: 'btn btn-success' %> |
+    <%= link_to 'voltar', locals_path %>
   </div>
 <% end %>

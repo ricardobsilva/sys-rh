@@ -77,6 +77,12 @@
                       #end
                       %>
               </li>
+              <li><%= 
+                      #if policy(TypeInsurance).index?  
+                        link_to "usuários" , users_path 
+                      #end
+                      %>
+              </li>
               <li class="dropdown-header"><strong>.</strong></li>
               <li class="dropdown-header"><strong>Localização</strong></li>
               <li class="dropdown-header"><strong>.</strong></li>
@@ -98,6 +104,7 @@
                       #end
                       %>
               </li>
+
               <li class="dropdown-header"><strong>.</strong></li>
               <li class="dropdown-header"><strong>Profissional</strong></li>
               <li class="dropdown-header"><strong>.</strong></li>

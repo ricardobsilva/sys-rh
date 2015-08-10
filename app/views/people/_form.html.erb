@@ -12,46 +12,55 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
+    <%= f.label 'nome' %><br>
+    <%= f.text_field :name, class: 'form-control' %>
+  </div>
+  <div class="row">
+    <div class="col-md-3">
+        <%= f.label 'gênero' %><br>
+        <%= f.text_field :gender, class: 'form-control' %>     
+    </div>
+    <div class="col-md-3">  
+        <%= f.label :rg %><br>
+        <%= f.text_field :rg , class: 'form-control' %>
+    </div>
+    <div class="col-md-3">  
+        <%= f.label :cpf %><br>
+        <%= f.text_field :cpf , class: 'form-control' %>
+    </div>  
+  </div>
+  
+  <div class="field">
+    <%= f.label 'nascimento' %><br>
+    <%= f.date_select :birth_date , class: 'form-control'%>
+  </div>
+  <div class="row">
+      <div class="col-md-3">
+        <%= f.label :cel %><br>
+        <%= f.text_field :cel, class: 'form-control' %>
+      </div>
+      <div class="col-md-3">
+        <%= f.label :tel1 %><br>
+        <%= f.text_field :tel1 , class: 'form-control' %>
+      </div>
+      <div class="col-md-3">
+        <%= f.label :tel2 %><br>
+        <%= f.text_field :tel2 , class: 'form-control' %>
+      </div>
+  </div>
+  <div class="row">    
+    <div class="col-md-6">
+      <%= f.label 'bairro' %><br>
+      <%= f.number_field :district_id,  class: 'form-control' %>
+    </div>
   </div>
   <div class="field">
-    <%= f.label :gender %><br>
-    <%= f.text_field :gender %>
+    <%= f.label 'usuário' %><br>
+    <%= f.number_field :user_id, class: 'form-control' %>
   </div>
-  <div class="field">
-    <%= f.label :rg %><br>
-    <%= f.text_field :rg %>
-  </div>
-  <div class="field">
-    <%= f.label :cpf %><br>
-    <%= f.text_field :cpf %>
-  </div>
-  <div class="field">
-    <%= f.label :birth_date %><br>
-    <%= f.date_select :birth_date %>
-  </div>
-  <div class="field">
-    <%= f.label :cel %><br>
-    <%= f.text_field :cel %>
-  </div>
-  <div class="field">
-    <%= f.label :tel1 %><br>
-    <%= f.text_field :tel1 %>
-  </div>
-  <div class="field">
-    <%= f.label :tel2 %><br>
-    <%= f.text_field :tel2 %>
-  </div>
-  <div class="field">
-    <%= f.label :district_id %><br>
-    <%= f.number_field :district_id %>
-  </div>
-  <div class="field">
-    <%= f.label :user_id %><br>
-    <%= f.number_field :user_id %>
-  </div>
+  <br>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "salvar", class: 'btn btn-success' %> |
+    <%= link_to 'voltar', people_path %>
   </div>
 <% end %>

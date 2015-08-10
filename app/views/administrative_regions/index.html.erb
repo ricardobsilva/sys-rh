@@ -15,10 +15,10 @@
   <tbody>
     <% @administrative_regions.each do |administrative_region| %>
       <tr>
+        <td><%= administrative_region.name %></td>
+        <td><%= administrative_region.initials %></td>
         <td>
         <div class="btn-group pull-right">
-          <%= administrative_region.name %>
-          <%= administrative_region.initials %>
           <%#= link_to 'Show', administrative_region %>
           <%= link_to 'editar', edit_administrative_region_path(administrative_region) , class: 'btn btn-xs btn-warning' %>
           <%= link_to 'deletar', administrative_region, method: :delete, data: { confirm: 'Quer mesmo excluir?' }, class: 'btn btn-xs btn-warning' %>
