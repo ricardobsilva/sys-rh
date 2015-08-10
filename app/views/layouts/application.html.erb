@@ -7,7 +7,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<%- if user_signed_in?%>
+<%#- if user_signed_in?%>
   <nav class="navbar navbar-default">
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
@@ -134,7 +134,7 @@
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
   </nav>
-<% end if%>  
+<%# end if%>  
 <div class="container">
 	<%= yield %>
 </div>

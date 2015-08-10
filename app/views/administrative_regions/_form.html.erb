@@ -10,16 +10,20 @@
       </ul>
     </div>
   <% end %>
+  
+    <div class="field">
+      <%= f.label 'nome' %><br>
+      <%= f.text_field :name , class: 'form-control' %>
+    </div>
+    <div class="iniciais">
+      <%= f.label :initials %><br>
+      <%= f.text_field :initials, class: 'form-control' %>
+    </div>
+    <br>
+    <div class="actions">
+      <%= f.submit "salvar", class: 'btn btn-success' %>
+      <%= link_to 'voltar', administrative_regions_path %>
+    </div>
 
-  <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :initials %><br>
-    <%= f.text_field :initials %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+  
 <% end %>

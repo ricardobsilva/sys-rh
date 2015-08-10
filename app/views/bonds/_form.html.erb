@@ -12,42 +12,49 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :description %><br>
-    <%= f.text_field :description %>
+    <%= f.label 'descrição' %><br>
+    <%= f.text_field :description,  class: 'form-control' %>
   </div>
   <div class="field">
-    <%= f.label :dt_admission %><br>
-    <%= f.date_select :dt_admission %>
+    <%= f.label 'data de admissão' %><br>
+    <%= f.date_select :dt_admission,  class: 'form-control' %>
   </div>
+  
   <div class="field">
-    <%= f.label :workload %><br>
-    <%= f.number_field :workload %>
+    <%= f.label 'observação' %><br>
+    <%= f.text_area :obs,  class: 'form-control' %>
   </div>
-  <div class="field">
-    <%= f.label :obs %><br>
-    <%= f.text_area :obs %>
-  </div>
-  <div class="field">
-    <%= f.label :person_id %><br>
-    <%= f.number_field :person_id %>
-  </div>
-  <div class="field">
-    <%= f.label :role_id %><br>
-    <%= f.number_field :role_id %>
-  </div>
-  <div class="field">
-    <%= f.label :type_bond_id %><br>
-    <%= f.number_field :type_bond_id %>
-  </div>
-  <div class="field">
-    <%= f.label :instituation_id %><br>
-    <%= f.number_field :instituation_id %>
-  </div>
-  <div class="field">
-    <%= f.label :situation_bond_id %><br>
-    <%= f.number_field :situation_bond_id %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+  <div class='row'>
+      <div class="col-md-4">
+        <%= f.label 'pessoa' %><br>
+        <%= f.number_field :person_id,  class: 'form-control' %>
+      </div>
+      <div class="col-md-4">
+        <%= f.label 'função' %><br>
+        <%= f.number_field :role_id,  class: 'form-control' %>
+      </div>
+      <div class="col-md-4">
+        <%= f.label 'carga horária' %><br>
+        <%= f.number_field :workload,  class: 'form-control' %>
+      </div>
+  </div>    
+  <div class="row">
+      <div class="col-md-4"> 
+        <%= f.label 'tipo de vínculo'%><br>
+        <%= f.number_field :type_bond_id,  class: 'form-control' %>
+      </div>
+     <div class="col-md-4"> 
+        <%= f.label 'instituição' %><br>
+        <%= f.number_field :instituation_id,  class: 'form-control' %>
+     </div>
+     <div class="col-md-4"> 
+        <%= f.label 'situação' %><br>
+        <%= f.number_field :situation_bond_id,  class: 'form-control' %>
+      </div>
+  <div>  
+  </br></br></br>  
+    <div class="actions col-md-4"  style="margin-top: 20px;">
+      <%= f.submit "salvar", class: 'btn btn-success' %> |
+      <%= link_to 'voltar', bonds_path %>
+    </div>
 <% end %>
