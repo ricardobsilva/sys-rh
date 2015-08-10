@@ -1,5 +1,6 @@
 class StockingsController < ApplicationController
   before_action :set_stocking, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!
 
   # GET /stockings
   # GET /stockings.json

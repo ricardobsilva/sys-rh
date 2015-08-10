@@ -7,7 +7,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<%#- if user_signed_in?%>
+<%- if user_signed_in?%>
   <nav class="navbar navbar-default">
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
@@ -130,19 +130,22 @@
             </ul>
           </li>
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Logado com <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">meus dados</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="#">sair</a></li>
-            </ul>
-          </li>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><strong>logado com </strong> <%= current_user.email %> <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li>
+                     <%#= link_to (edit_user_path(current_user)) do%>
+                       
+                     <%#end%></li> 
+                     <li><%= link_to t('menu.logout') , destroy_user_session_path, method: :delete %></li>
+          </ul>
+        </li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
   </nav>
-<%# end if%>  
 <div class="container">
+<% end if%>  
+
 	<%= yield %>
 </div>
 </body>

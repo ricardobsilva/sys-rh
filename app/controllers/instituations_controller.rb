@@ -1,6 +1,6 @@
 class InstituationsController < ApplicationController
   before_action :set_instituation, only: [:show, :edit, :update, :destroy]
-
+  before_action :authenticate_user!
   # GET /instituations
   # GET /instituations.json
   def index

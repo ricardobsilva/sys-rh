@@ -1,6 +1,6 @@
 class FunctionsController < ApplicationController
   before_action :set_function, only: [:show, :edit, :update, :destroy]
-
+  before_action :authenticate_user!
   # GET /functions
   # GET /functions.json
   def index

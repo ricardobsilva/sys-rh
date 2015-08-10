@@ -1,5 +1,6 @@
 class TypePatiosController < ApplicationController
   before_action :set_type_patio, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!
 
   # GET /type_patios
   # GET /type_patios.json

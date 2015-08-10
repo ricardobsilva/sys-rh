@@ -1,6 +1,6 @@
 class AdministrativeRegionsController < ApplicationController
   before_action :set_administrative_region, only: [:show, :edit, :update, :destroy]
-
+  before_action :authenticate_user!
   # GET /administrative_regions
   # GET /administrative_regions.json
   def index

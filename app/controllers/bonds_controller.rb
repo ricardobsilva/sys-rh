@@ -1,6 +1,6 @@
 class BondsController < ApplicationController
   before_action :set_bond, only: [:show, :edit, :update, :destroy]
-
+  before_action :authenticate_user!
   # GET /bonds
   # GET /bonds.json
   def index

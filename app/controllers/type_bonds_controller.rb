@@ -1,5 +1,6 @@
 class TypeBondsController < ApplicationController
   before_action :set_type_bond, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!
 
   # GET /type_bonds
   # GET /type_bonds.json

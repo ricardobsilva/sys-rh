@@ -1,5 +1,6 @@
 class TypeLocalsController < ApplicationController
   before_action :set_type_local, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!
 
   # GET /type_locals
   # GET /type_locals.json
