@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Person:</strong>
+  <%= @frequency.person_id %>
+</p>
+
+<p>
+  <strong>Frequency date:</strong>
+  <%= @frequency.frequency_date %>
+</p>
+
+<p>
+  <strong>Time input:</strong>
+  <%= @frequency.time_input %>
+</p>
+
+<p>
+  <strong>Time output:</strong>
+  <%= @frequency.time_output %>
+</p>
+
+<%= link_to 'Edit', edit_frequency_path(@frequency) %> |
+<%= link_to 'Back', frequencies_path %>

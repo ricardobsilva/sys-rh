@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  person_id: 1
+  frequency_date: 2015-11-05
+  time_input: 2015-11-05 21:52:21
+  time_output: 2015-11-05 21:52:21
+
+two:
+  person_id: 1
+  frequency_date: 2015-11-05
+  time_input: 2015-11-05 21:52:21
+  time_output: 2015-11-05 21:52:21

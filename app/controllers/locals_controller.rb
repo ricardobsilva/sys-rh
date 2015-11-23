@@ -16,6 +16,7 @@ class LocalsController < ApplicationController
   # GET /locals/new
   def new
     @local = Local.new
+    @type_locals = TypeLocal.all
   end
 
   # GET /locals/1/edit

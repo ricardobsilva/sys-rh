@@ -18,7 +18,7 @@
   <div class="row">
     <div class="col-md-3">
         <%= f.label 'gênero' %><br>
-        <%= f.text_field :gender, class: 'form-control' %>     
+        <%= select("post", "gender", Person::GENRE, {include_blank: false}) %>     
     </div>
     <div class="col-md-3">  
         <%= f.label :rg %><br>
@@ -51,12 +51,8 @@
   <div class="row">    
     <div class="col-md-6">
       <%= f.label 'bairro' %><br>
-      <%= f.number_field :district_id,  class: 'form-control' %>
+      <%= collection_select(:district, :district_id, @districts, :id, :name, prompt: true) %>
     </div>
-  </div>
-  <div class="field">
-    <%= f.label 'usuário' %><br>
-    <%= f.number_field :user_id, class: 'form-control' %>
   </div>
   <br>
   <div class="actions">

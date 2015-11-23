@@ -30,8 +30,10 @@
       </div>
     </div> 
   </div>
+  <br>
   <div class="field">
-    <%#= f.collection_select(:people_id,People.all,:id,:name,{ :prompt => 'escolha' },{class: 'form-control'})%>
+    <%= f.label 'Pessoa a qual esse usuário pertence'%><br>
+    <%= collection_select(:person, :person_id, Person.all, :id, :name, prompt: true) %>
     </div> 
   <br>
 

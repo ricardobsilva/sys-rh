@@ -1,0 +1,54 @@
+<%= form_for(@frequency) do |f| %>
+  <% if @frequency.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@frequency.errors.count, "error") %> prohibited this frequency from being saved:</h2>
+
+      <ul>
+      <% @frequency.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  
+  <div class="row col-md-offset-1">  
+    <div class="col-md-4">
+      <%= f.label "Selecione a pessoa" %><br>
+      <%= f.number_field :person_id , class: 'form-control' %>
+    </div>
+    <div class="col-md-3">
+      <%= f.label "data de registro" %><br>
+      <%= f.date_select :frequency_date , class: 'form-control' %>
+    </div>
+    <div class="col-md-2">
+      <%= f.label "hora de entrada" %><br>
+      <%= f.time_select :time_input , class: 'form-control' %>
+    </div>
+    <div class="col-md-2">
+      <%= f.label "hora de saída" %><br>
+      <%= f.time_select :time_output , class: 'form-control' %>
+    </div>
+  </div>
+  <br><br>  
+  <div class="col-md-10 col-md-offset-1">
+    <h4>Frequencia mensal desse funcionário</h4>
+    <table class="table table-striped">
+      <tr>
+        <th>data</th>
+        <th>hora entrada</th>
+        <th>hora saída</th>
+      </tr>
+      <tr>
+        <td class="active">23/11/2015</td>
+        <td class="active">07:00</td>
+        <td class="active">17:00</td>
+      </tr>
+    </table>
+  </div>
+
+
+  <div class="actions">
+    <%= f.submit "registrar frequencia", class: 'btn btn-success'  %>
+  </div>
+<% end %>

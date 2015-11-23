@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150810015337) do
+ActiveRecord::Schema.define(version: 20151105235221) do
 
   create_table "administrative_regions", force: :cascade do |t|
     t.string   "name",       limit: 255
@@ -48,6 +48,17 @@ ActiveRecord::Schema.define(version: 20150810015337) do
   end
 
   add_index "districts", ["administrative_region_id"], name: "index_districts_on_administrative_region_id", using: :btree
+
+  create_table "frequencies", force: :cascade do |t|
+    t.integer  "person_id",      limit: 4
+    t.date     "frequency_date"
+    t.time     "time_input"
+    t.time     "time_output"
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
+  end
+
+  add_index "frequencies", ["person_id"], name: "index_frequencies_on_person_id", using: :btree
 
   create_table "functions", force: :cascade do |t|
     t.string   "name",       limit: 255
@@ -155,11 +166,11 @@ ActiveRecord::Schema.define(version: 20150810015337) do
     t.string   "last_sign_in_ip",        limit: 255
     t.datetime "created_at",                                      null: false
     t.datetime "updated_at",                                      null: false
-    t.integer  "people_id",              limit: 4
+    t.integer  "person_id",              limit: 4
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
-  add_index "users", ["people_id"], name: "index_users_on_people_id", using: :btree
+  add_index "users", ["person_id"], name: "index_users_on_person_id", using: :btree
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
 
 end

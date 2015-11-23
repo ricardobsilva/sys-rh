@@ -27,7 +27,7 @@
   <div class='row'>
       <div class="col-md-4">
         <%= f.label 'pessoa' %><br>
-        <%= f.number_field :person_id,  class: 'form-control' %>
+         <%= collection_select(:person, :person_id, Person.all, :id, :name, prompt: true) %>
       </div>
       <div class="col-md-4">
         <%= f.label 'função' %><br>
@@ -41,11 +41,11 @@
   <div class="row">
       <div class="col-md-4"> 
         <%= f.label 'tipo de vínculo'%><br>
-        <%= f.number_field :type_bond_id,  class: 'form-control' %>
+        <%= collection_select(:type_bond, :type_bond_id, TypeBond.all, :id, :name, prompt: true) %>
       </div>
      <div class="col-md-4"> 
         <%= f.label 'instituição' %><br>
-        <%= f.number_field :instituation_id,  class: 'form-control' %>
+        <%= collection_select(:instituation, :instituation_id, Instituation.all, :id, :name, prompt: true) %>
      </div>
      <div class="col-md-4"> 
         <%= f.label 'situação' %><br>
