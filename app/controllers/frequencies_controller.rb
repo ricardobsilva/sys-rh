@@ -1,5 +1,6 @@
 class FrequenciesController < ApplicationController
   before_action :set_frequency, only: [:show, :edit, :update, :destroy]
+  before_action :set_frequencies_for_person , only: [:frequency_list]
   before_action :authenticate_user!
   # GET /frequencies
   # GET /frequencies.json
@@ -15,6 +16,12 @@ class FrequenciesController < ApplicationController
   # GET /frequencies/new
   def new
     @frequency = Frequency.new
+  end
+
+  def frequency_list
+    render partial: "table_frequencies",
+             locals: { frequencies: @frequencies},
+             layout: false
   end
 
   # GET /frequencies/1/edit
@@ -66,6 +73,10 @@ class FrequenciesController < ApplicationController
     def set_frequency
       @frequency = Frequency.find(params[:id])
       #@frequency_for_person = Frequency.find_by(id)
+    end
+
+    def set_frequencies_for_person
+      @frequencies = Frequency.where(person_id: params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

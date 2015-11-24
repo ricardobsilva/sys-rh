@@ -1,0 +1,7 @@
+<% frequencies.each do |frequency| %>
+  <tr>
+    <td><%= frequency.frequency_date.strftime('%d/%m/%Y') %></td>
+    <td><%= frequency.time_input.to_s(:time) %></td>
+    <td><%= frequency.time_output.to_s(:time) %></td>
+  </tr>
+<% end %>
