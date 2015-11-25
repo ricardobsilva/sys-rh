@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
-  resources :frequencies
+
+  resources :frequencies do
+    member do
+      get 'myfrequencies' , to: 'frequencies#frequency_list'
+    end
+  end
 
   devise_for :users
   resources :type_patios

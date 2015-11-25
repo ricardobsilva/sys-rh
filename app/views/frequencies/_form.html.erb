@@ -11,11 +11,11 @@
     </div>
   <% end %>
 
-  
-  <div class="row col-md-offset-1">  
+
+  <div class="row col-md-offset-1">
     <div class="col-md-4">
       <%= f.label "Selecione a pessoa" %><br>
-      <%= f.number_field :person_id , class: 'form-control' %>
+      <%= f.collection_select(:person_id , Person.all, :id ,:name , {prompt: true} , {class: 'form-control'}) %>
     </div>
     <div class="col-md-3">
       <%= f.label "data de registro" %><br>
@@ -30,20 +30,18 @@
       <%= f.time_select :time_output , class: 'form-control' %>
     </div>
   </div>
-  <br><br>  
+  <br><br>
   <div class="col-md-10 col-md-offset-1">
     <h4>Frequencia mensal desse funcionário</h4>
     <table class="table table-striped">
-      <tr>
-        <th>data</th>
-        <th>hora entrada</th>
-        <th>hora saída</th>
-      </tr>
-      <tr>
-        <td class="active">23/11/2015</td>
-        <td class="active">07:00</td>
-        <td class="active">17:00</td>
-      </tr>
+      <thead>
+        <tr>
+          <th>data</th>
+          <th>hora entrada</th>
+          <th>hora saída</th>
+        </tr>
+      </thead>
+      <tbody id="table_content"></tbody>
     </table>
   </div>
 
