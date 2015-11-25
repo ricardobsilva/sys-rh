@@ -35,7 +35,7 @@ class FrequenciesController < ApplicationController
 
     respond_to do |format|
       if @frequency.save
-        format.html { redirect_to @frequency, notice: 'Frequency was successfully created.' }
+        format.html { redirect_to new_frequency_path, notice: 'Frequency was successfully created.' }
         format.json { render :show, status: :created, location: @frequency }
       else
         format.html { render :new }

@@ -1,8 +1,9 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Frequencias Cadastradas</h1>
+<%= link_to 'novo registro', new_frequency_path, class: 'btn btn-primary pull-right' %>
 
-<table>
+<table class="table table-striped">
   <thead>
     <tr>
       <th>Person</th>
@@ -20,9 +21,9 @@
         <td><%= frequency.frequency_date %></td>
         <td><%= frequency.time_input %></td>
         <td><%= frequency.time_output %></td>
-        <td><%= link_to 'Show', frequency %></td>
-        <td><%= link_to 'Edit', edit_frequency_path(frequency) %></td>
-        <td><%= link_to 'Destroy', frequency, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'exibir', frequency %></td>
+        <td><%= link_to 'editar', edit_frequency_path(frequency) %></td>
+        <td><%#= link_to 'deletar', frequency, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -30,4 +31,3 @@
 
 <br>
 
-<%= link_to 'New Frequency', new_frequency_path %>
