@@ -27,7 +27,7 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
-#gem 'bootstrap-sass', :git => 'https://github.com/twbs/bootstrap-sass.git', :branch => 'next'
+gem 'bootstrap-sass', :git => 'https://github.com/twbs/bootstrap-sass.git', :branch => 'next'
 
 # paginação
 gem 'will_paginate-bootstrap'
@@ -60,3 +60,4 @@ group :development, :test do
   gem 'spring'
 end
 
+ruby '2.2.0'
