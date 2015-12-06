@@ -9,7 +9,8 @@ jQuery ->
 
   callForFrequencies = (id) ->
     $.ajax
-      url: id+"/myfrequencies"
+      url: "/frequencies/#{id}/myfrequencies"
       success: (data) ->
-        $('#table_content').empty
+        $('#table_content').empty()
         $('#table_content').append "#{data}"
+
