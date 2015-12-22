@@ -20483,3 +20483,315 @@ Load paths:
   Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (1.6ms)
   Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
   Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (56.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-12-21 23:55:12 -0200
+  [1m[36mActiveRecord::SchemaMigration Load (225.9ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by FrequenciesController#index as HTML
+Completed 401 Unauthorized in 53ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-12-21 23:55:13 -0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (73.3ms)
+Completed 200 OK in 6676ms (Views: 6585.5ms | ActiveRecord: 70.1ms)
+
+
+Started GET "/assets/application.self-87a5173fbc49317c3b261d394c8c00a9dde12bb4ec470c9137e39594906225c2.css?body=1" for 127.0.0.1 at 2015-12-21 23:55:20 -0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-12-21 23:55:20 -0200
+
+
+Started GET "/assets/administrative_regions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-21 23:55:20 -0200
+
+
+Started GET "/assets/bonds.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-21 23:55:20 -0200
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-12-21 23:55:20 -0200
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for 127.0.0.1 at 2015-12-21 23:55:20 -0200
+
+
+Started GET "/assets/districts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-21 23:55:20 -0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-12-21 23:55:20 -0200
+
+
+Started GET "/assets/frequencies.self-77e327c4386c87fd3d150d8fd69e53bbecdce00172cbfdf06db02049b66e6cb7.js?body=1" for 127.0.0.1 at 2015-12-21 23:55:20 -0200
+
+
+Started GET "/assets/functions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-21 23:55:20 -0200
+
+
+Started GET "/assets/instituations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-21 23:55:20 -0200
+
+
+Started GET "/assets/locals.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-21 23:55:20 -0200
+
+
+Started GET "/assets/people.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-21 23:55:20 -0200
+
+
+Started GET "/assets/stockings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-21 23:55:20 -0200
+
+
+Started GET "/assets/type_bonds.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-21 23:55:20 -0200
+
+
+Started GET "/assets/type_locals.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-21 23:55:20 -0200
+
+
+Started GET "/assets/type_patios.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-21 23:55:20 -0200
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-21 23:55:20 -0200
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-12-21 23:55:25 -0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xYABgyF7pPC+1NR2jb+1ZUxM+Qw0+1+5MjyppV8sgubEu9xBiEY22gEPWSXGbQJAIflAgFOdj7YH+HDsExhesg==", "user"=>{"email"=>"admin@admin.com", "password"=>"[FILTERED]"}, "commit"=>"entrar"}
+  [1m[35mUser Load (48.4ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`email` = 'admin@admin.com'  ORDER BY `users`.`id` ASC LIMIT 1
+Completed 401 Unauthorized in 103ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xYABgyF7pPC+1NR2jb+1ZUxM+Qw0+1+5MjyppV8sgubEu9xBiEY22gEPWSXGbQJAIflAgFOdj7YH+HDsExhesg==", "user"=>{"email"=>"admin@admin.com", "password"=>"[FILTERED]"}, "commit"=>"entrar"}
+  Rendered devise/sessions/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 264ms (Views: 100.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-12-21 23:56:44 -0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BU2/KjE+WueYwtrkIiEWkPSFLmpZ1vvxgjxBw+Lyn98EdmLomAPIzScZV7dp86G1mTCX5j6wK/63+JiKrsZDiw==", "user"=>{"email"=>"ricardo@ricardo.com", "password"=>"[FILTERED]"}, "commit"=>"entrar"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'ricardo@ricardo.com'  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (25.9ms)[0m  [1mUPDATE `users` SET `last_sign_in_at` = '2015-11-04 02:26:32.000000', `current_sign_in_at` = '2015-12-22 01:56:44.302718', `sign_in_count` = 6, `updated_at` = '2015-12-22 01:56:44.305139' WHERE `users`.`id` = 1[0m
+  [1m[35m (94.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 425ms (ActiveRecord: 120.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-12-21 23:56:44 -0200
+Processing by FrequenciesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mFrequency Load (0.4ms)[0m  SELECT `frequencies`.* FROM `frequencies`
+  Rendered frequencies/index.html.erb within layouts/application (69.4ms)
+Completed 200 OK in 172ms (Views: 113.2ms | ActiveRecord: 54.4ms)
+
+
+Started GET "/people" for 127.0.0.1 at 2015-12-21 23:56:50 -0200
+Processing by PeopleController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mPerson Load (32.7ms)[0m  SELECT `people`.* FROM `people`
+  Rendered people/index.html.erb within layouts/application (50.6ms)
+Completed 200 OK in 209ms (Views: 147.3ms | ActiveRecord: 34.4ms)
+
+
+Started GET "/people/1/edit" for 127.0.0.1 at 2015-12-21 23:56:52 -0200
+Processing by PeopleController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPerson Load (22.7ms)[0m  [1mSELECT  `people`.* FROM `people` WHERE `people`.`id` = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered people/_form.html.erb (26.3ms)
+  Rendered people/edit.html.erb within layouts/application (53.2ms)
+Completed 500 Internal Server Error in 104ms
+
+ActionView::Template::Error (undefined method `map' for nil:NilClass):
+    51:   <div class="row">
+    52:     <div class="col-md-6">
+    53:       <%= f.label 'bairro' %><br>
+    54:       <%= f.collection_select(:district_id, @districts, :id, :name, prompt: false) %>
+    55:     </div>
+    56:   </div>
+    57:   <br>
+  app/views/people/_form.html.erb:54:in `block in _app_views_people__form_html_erb__484172256__640990258'
+  app/views/people/_form.html.erb:1:in `_app_views_people__form_html_erb__484172256__640990258'
+  app/views/people/edit.html.erb:3:in `_app_views_people_edit_html_erb___380164973__641029798'
+
+
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.0ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.6ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (43.0ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (28.3ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (67.8ms)
+
+
+Started GET "/people/1/edit" for 127.0.0.1 at 2015-12-21 23:56:53 -0200
+Processing by PeopleController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPerson Load (0.4ms)[0m  [1mSELECT  `people`.* FROM `people` WHERE `people`.`id` = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered people/_form.html.erb (11.1ms)
+  Rendered people/edit.html.erb within layouts/application (12.6ms)
+Completed 500 Internal Server Error in 19ms
+
+ActionView::Template::Error (undefined method `map' for nil:NilClass):
+    51:   <div class="row">
+    52:     <div class="col-md-6">
+    53:       <%= f.label 'bairro' %><br>
+    54:       <%= f.collection_select(:district_id, @districts, :id, :name, prompt: false) %>
+    55:     </div>
+    56:   </div>
+    57:   <br>
+  app/views/people/_form.html.erb:54:in `block in _app_views_people__form_html_erb__484172256__643420888'
+  app/views/people/_form.html.erb:1:in `_app_views_people__form_html_erb__484172256__643420888'
+  app/views/people/edit.html.erb:3:in `_app_views_people_edit_html_erb___380164973__643291578'
+
+
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.0ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.7ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (40.6ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (25.3ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (51.1ms)
+
+
+Started GET "/people/1/edit" for 127.0.0.1 at 2015-12-21 23:58:51 -0200
+Processing by PeopleController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPerson Load (0.4ms)[0m  [1mSELECT  `people`.* FROM `people` WHERE `people`.`id` = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.8ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered people/_form.html.erb (13.3ms)
+  Rendered people/edit.html.erb within layouts/application (14.4ms)
+Completed 500 Internal Server Error in 22ms
+
+ActionView::Template::Error (undefined method `map' for :id:Symbol):
+    51:   <div class="row">
+    52:     <div class="col-md-6">
+    53:       <%= f.label 'bairro' %><br>
+    54:       <%= collection_select(:district_id, @districts, :id, :name, prompt: false) %>
+    55:     </div>
+    56:   </div>
+    57:   <br>
+  app/views/people/_form.html.erb:54:in `block in _app_views_people__form_html_erb__484172256__645652838'
+  app/views/people/_form.html.erb:1:in `_app_views_people__form_html_erb__484172256__645652838'
+  app/views/people/edit.html.erb:3:in `_app_views_people_edit_html_erb___380164973__643291578'
+
+
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (19.0ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (10.5ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (58.0ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (1.7ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (29.2ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (59.2ms)
+
+
+Started GET "/people/1/edit" for 127.0.0.1 at 2015-12-21 23:58:55 -0200
+Processing by PeopleController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPerson Load (0.4ms)[0m  [1mSELECT  `people`.* FROM `people` WHERE `people`.`id` = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered people/_form.html.erb (17.8ms)
+  Rendered people/edit.html.erb within layouts/application (18.9ms)
+Completed 500 Internal Server Error in 24ms
+
+ActionView::Template::Error (undefined method `map' for nil:NilClass):
+    51:   <div class="row">
+    52:     <div class="col-md-6">
+    53:       <%= f.label 'bairro' %><br>
+    54:       <%= f.collection_select(:district_id, @districts, :id, :name, prompt: false) %>
+    55:     </div>
+    56:   </div>
+    57:   <br>
+  app/views/people/_form.html.erb:54:in `block in _app_views_people__form_html_erb__484172256__643842018'
+  app/views/people/_form.html.erb:1:in `_app_views_people__form_html_erb__484172256__643842018'
+  app/views/people/edit.html.erb:3:in `_app_views_people_edit_html_erb___380164973__643291578'
+
+
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (15.0ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.3ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (47.7ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (33.1ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (62.3ms)
+
+
+Started GET "/people/1/edit" for 127.0.0.1 at 2015-12-22 00:00:29 -0200
+Processing by PeopleController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT  `people`.* FROM `people` WHERE `people`.`id` = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered people/_form.html.erb (10.2ms)
+  Rendered people/edit.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 138ms (Views: 135.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-87a5173fbc49317c3b261d394c8c00a9dde12bb4ec470c9137e39594906225c2.css?body=1" for 127.0.0.1 at 2015-12-22 00:00:29 -0200
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for 127.0.0.1 at 2015-12-22 00:00:29 -0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-12-22 00:00:29 -0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-12-22 00:00:29 -0200
+
+
+Started GET "/assets/administrative_regions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-22 00:00:29 -0200
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-12-22 00:00:29 -0200
+
+
+Started GET "/assets/bonds.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-22 00:00:29 -0200
+
+
+Started GET "/assets/districts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-22 00:00:29 -0200
+
+
+Started GET "/assets/frequencies.self-77e327c4386c87fd3d150d8fd69e53bbecdce00172cbfdf06db02049b66e6cb7.js?body=1" for 127.0.0.1 at 2015-12-22 00:00:29 -0200
+
+
+Started GET "/assets/functions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-22 00:00:29 -0200
+
+
+Started GET "/assets/instituations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-22 00:00:29 -0200
+
+
+Started GET "/assets/locals.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-22 00:00:29 -0200
+
+
+Started GET "/assets/people.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-22 00:00:29 -0200
+
+
+Started GET "/assets/stockings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-22 00:00:29 -0200
+
+
+Started GET "/assets/type_bonds.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-22 00:00:29 -0200
+
+
+Started GET "/assets/type_locals.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-22 00:00:29 -0200
+
+
+Started GET "/assets/type_patios.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-22 00:00:29 -0200
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-22 00:00:29 -0200
