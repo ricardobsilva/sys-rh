@@ -96,6 +96,7 @@ class FrequenciesController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_frequency
       @frequency = Frequency.find(params[:id])
+      #@frequency_for_person = Frequency.find_by(id)
     end
 
     def set_frequencies_for_person
