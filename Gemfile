@@ -35,7 +35,7 @@ gem 'will_paginate-bootstrap'
 gem 'will_paginate', '~> 3.0.6'
 
 #devise (autenticação)
-gem 'devise'
+#gem 'devise'
 
 gem 'start'
 
