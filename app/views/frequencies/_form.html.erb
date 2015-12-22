@@ -15,7 +15,7 @@
   <div class="row col-md-offset-1">
     <div class="col-md-4">
       <%= f.label "Selecione a pessoa" %><br>
-      <%= f.collection_select(:person_id , Person.all @districts || [], :id ,:name , {prompt: true} , {class: 'form-control'}) %>
+      <%= f.collection_select(:person_id , Person.all  || [], :id ,:name , {prompt: true} , {class: 'form-control'}) %>
     </div>
     <div class="col-md-3">
       <%= f.label "data de registro" %><br>
