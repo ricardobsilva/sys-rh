@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 GIT
   remote: https://github.com/twbs/bootstrap-sass.git
   revision: a73cc0f0e5c794206e9a70bc0b67e67cf37c1bca
@@ -7,6 +9,7 @@ GIT
       autoprefixer-rails (>= 5.2.1)
       sass (>= 3.3.4)
 
+>>>>>>> upstream/master
 GEM
   remote: https://rubygems.org/
   specs:
@@ -52,6 +55,9 @@ GEM
     bcrypt (3.1.10)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
+    bootstrap-sass (3.3.5.1)
+      autoprefixer-rails (>= 5.0.0.1)
+      sass (>= 3.3.0)
     builder (3.2.2)
     byebug (5.0.0)
       columnize (= 0.9.0)
@@ -177,7 +183,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bootstrap-sass!
+  bootstrap-sass (~> 3.3, >= 3.3.5.1)
   byebug
   coffee-rails (~> 4.1.0)
   devise

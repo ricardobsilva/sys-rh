@@ -4,6 +4,10 @@ Rails.application.routes.draw do
     member do
       get 'myfrequencies' , to: 'frequencies#frequency_list'
     end
+
+    collection do
+      get 'findbycpf/:cpf' , to: 'frequencies#find_by_cpf'
+    end
   end
 
   devise_for :users

@@ -18,18 +18,18 @@
   <div class="row">
     <div class="col-md-3">
         <%= f.label 'gênero' %><br>
-        <%= select("post", "gender", Person::GENRE, {include_blank: false}) %>
+        <%= select("post", "gender", Person::GENRE, {include_blank: false}) %>     
     </div>
-    <div class="col-md-3">
+    <div class="col-md-3">  
         <%= f.label :rg %><br>
         <%= f.text_field :rg , class: 'form-control' %>
     </div>
-    <div class="col-md-3">
+    <div class="col-md-3">  
         <%= f.label :cpf %><br>
         <%= f.text_field :cpf , class: 'form-control' %>
-    </div>
+    </div>  
   </div>
-
+  
   <div class="field">
     <%= f.label 'nascimento' %><br>
     <%= f.date_select :birth_date , class: 'form-control'%>
@@ -48,12 +48,10 @@
         <%= f.text_field :tel2 , class: 'form-control' %>
       </div>
   </div>
-  <div class="row">
+  <div class="row">    
     <div class="col-md-6">
       <%= f.label 'bairro' %><br>
-
-      <%= f.collection_select(:district_id, @districts || [], :id, :name, prompt: false) %>
-
+      <%= collection_select(:district, :district_id, @districts, :id, :name, prompt: true) %>
     </div>
   </div>
   <br>

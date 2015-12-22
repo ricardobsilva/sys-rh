@@ -22,6 +22,8 @@ class FrequenciesController < ApplicationController
     @frequency = Frequency.new
     if session.has_key?(:id_user)
       @frequency.person_id = session[:id_user]
+    else
+      @frequency.person_id = nil
     end
   end
 
@@ -34,9 +36,11 @@ class FrequenciesController < ApplicationController
   def find_by_cpf
     frequencies = []
 
-    unless @person.blank?
+    if !@person.blank?
       frequencies = @person.frequencies
       session[:id_user] = @person.id
+    else
+      session.delete(:id_user)
     end
 
     render partial: "table_frequencies_index",
@@ -92,6 +96,7 @@ class FrequenciesController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_frequency
       @frequency = Frequency.find(params[:id])
+      #@frequency_for_person = Frequency.find_by(id)
     end
 
     def set_frequencies_for_person
