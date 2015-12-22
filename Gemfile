@@ -14,7 +14,7 @@ gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
-#heroku 
+#heroku
 gem 'rails_12factor', group: :production
 gem 'pg', group: :production
 
@@ -27,12 +27,12 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
-gem 'bootstrap-sass', :git => 'https://github.com/twbs/bootstrap-sass.git', :branch => 'next'
+
+gem 'bootstrap-sass', '~> 3.3', '>= 3.3.5.1'
 
 # paginação
 gem 'will_paginate-bootstrap'
 gem 'will_paginate', '~> 3.0.6'
-
 
 #devise (autenticação)
 gem 'devise'
@@ -59,5 +59,8 @@ group :development, :test do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
+<<<<<<< HEAD
+=======
 
 ruby '2.2.0'
+>>>>>>> upstream/master
