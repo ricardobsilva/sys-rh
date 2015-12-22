@@ -1,0 +1,11 @@
+<% frequencies.each do |frequency| %>
+  <tr>
+    <td><%= frequency.id %></td>
+    <td><%= frequency.frequency_date.strftime('%d/%m/%Y') %></td>
+    <td><%= frequency.time_input.to_s(:time) %></td>
+    <td><%= frequency.time_output.to_s(:time) %></td>
+    <td><%= link_to 'Show', frequency %></td>
+    <td><%= link_to 'Edit', edit_frequency_path(frequency) %></td>
+    <td><%= link_to 'Destroy', frequency, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
