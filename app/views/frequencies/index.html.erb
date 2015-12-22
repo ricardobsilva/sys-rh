@@ -1,8 +1,24 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Frequencias Cadastradas</h1>
+<%= link_to 'novo registro', new_frequency_path, class: 'btn btn-primary pull-right' %>
 
+
+<table class="table table-striped">
+
+
+<div class="row">
+  <div class="col-lg-offset-8 col-lg-4">
+    <div class="input-group">
+      <input id="edit_search" type="text" class="form-control" maxlength="11" placeholder="Buscar por CPF">
+      <span class="input-group-btn">
+        <button id="btn_search" class="btn btn-default" type="button">Buscar</button>
+      </span>
+    </div>
+  </div>
+</div>
 <table>
+
   <thead>
     <tr>
       <th>Person</th>
@@ -13,16 +29,16 @@
     </tr>
   </thead>
 
-  <tbody>
+  <tbody id="table_content">
     <% @frequencies.each do |frequency| %>
       <tr>
         <td><%= frequency.person_id %></td>
         <td><%= frequency.frequency_date %></td>
         <td><%= frequency.time_input %></td>
         <td><%= frequency.time_output %></td>
-        <td><%= link_to 'Show', frequency %></td>
-        <td><%= link_to 'Edit', edit_frequency_path(frequency) %></td>
-        <td><%= link_to 'Destroy', frequency, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'exibir', frequency %></td>
+        <td><%= link_to 'editar', edit_frequency_path(frequency) %></td>
+        <td><%#= link_to 'deletar', frequency, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -30,4 +46,3 @@
 
 <br>
 
-<%= link_to 'New Frequency', new_frequency_path %>

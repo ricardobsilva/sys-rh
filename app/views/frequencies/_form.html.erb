@@ -41,7 +41,11 @@
           <th>hora saída</th>
         </tr>
       </thead>
-      <tbody id="table_content"></tbody>
+      <tbody id="table_content">
+        <%=  render partial: "table_frequencies",
+             locals: { frequencies: @frequencies},
+             layout: false %>
+      </tbody>
     </table>
   </div>
 
