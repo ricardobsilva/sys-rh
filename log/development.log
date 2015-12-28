@@ -36487,3 +36487,1606 @@ Processing by FrequenciesController#new as HTML
   Rendered frequencies/_form.html.erb (61.8ms)
   Rendered frequencies/new.html.erb within layouts/application (75.4ms)
 Completed 200 OK in 186ms (Views: 183.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/frequencies" for 127.0.0.1 at 2015-12-28 02:11:54 -0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by FrequenciesController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mFrequency Load (0.3ms)[0m  [1mSELECT `frequencies`.* FROM `frequencies`[0m
+  Rendered frequencies/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 409ms (Views: 363.6ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/application.self-96e43dc6a6e82b550ae8a0e1bac81d33661216727a28e619b70e13d41f489607.css?body=1" for 127.0.0.1 at 2015-12-28 02:11:55 -0200
+
+
+Started GET "/assets/administrative_regions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:11:55 -0200
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-12-28 02:11:55 -0200
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-12-28 02:11:55 -0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-12-28 02:11:55 -0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-12-28 02:11:55 -0200
+
+
+Started GET "/assets/bonds.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:11:55 -0200
+
+
+Started GET "/assets/districts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:11:55 -0200
+
+
+Started GET "/assets/frequencies.self-77e327c4386c87fd3d150d8fd69e53bbecdce00172cbfdf06db02049b66e6cb7.js?body=1" for 127.0.0.1 at 2015-12-28 02:11:55 -0200
+
+
+Started GET "/assets/functions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:11:55 -0200
+
+
+Started GET "/assets/instituations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:11:55 -0200
+
+
+Started GET "/assets/locals.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:11:55 -0200
+
+
+Started GET "/assets/people.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:11:55 -0200
+
+
+Started GET "/assets/stockings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:11:55 -0200
+
+
+Started GET "/assets/type_bonds.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:11:55 -0200
+
+
+Started GET "/assets/type_locals.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:11:55 -0200
+
+
+Started GET "/assets/type_patios.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:11:55 -0200
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:11:55 -0200
+
+
+Started GET "/frequencies" for 127.0.0.1 at 2015-12-28 02:12:52 -0200
+Processing by FrequenciesController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mFrequency Load (0.3ms)[0m  [1mSELECT `frequencies`.* FROM `frequencies`[0m
+  Rendered frequencies/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 155ms (Views: 152.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-12-28 02:12:52 -0200
+
+
+Started GET "/assets/application.self-96e43dc6a6e82b550ae8a0e1bac81d33661216727a28e619b70e13d41f489607.css?body=1" for 127.0.0.1 at 2015-12-28 02:12:52 -0200
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-12-28 02:12:52 -0200
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-12-28 02:12:52 -0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-12-28 02:12:52 -0200
+
+
+Started GET "/assets/administrative_regions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:12:52 -0200
+
+
+Started GET "/assets/bonds.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:12:52 -0200
+
+
+Started GET "/assets/districts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:12:52 -0200
+
+
+Started GET "/assets/frequencies.self-77e327c4386c87fd3d150d8fd69e53bbecdce00172cbfdf06db02049b66e6cb7.js?body=1" for 127.0.0.1 at 2015-12-28 02:12:52 -0200
+
+
+Started GET "/assets/functions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:12:52 -0200
+
+
+Started GET "/assets/instituations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:12:52 -0200
+
+
+Started GET "/assets/locals.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:12:52 -0200
+
+
+Started GET "/assets/people.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:12:52 -0200
+
+
+Started GET "/assets/stockings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:12:52 -0200
+
+
+Started GET "/assets/type_bonds.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:12:52 -0200
+
+
+Started GET "/assets/type_locals.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:12:52 -0200
+
+
+Started GET "/assets/type_patios.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:12:52 -0200
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:12:52 -0200
+
+
+Started GET "/frequencies" for 127.0.0.1 at 2015-12-28 02:13:17 -0200
+Processing by FrequenciesController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mFrequency Load (0.4ms)[0m  [1mSELECT `frequencies`.* FROM `frequencies`[0m
+  Rendered frequencies/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 152ms (Views: 149.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.self-96e43dc6a6e82b550ae8a0e1bac81d33661216727a28e619b70e13d41f489607.css?body=1" for 127.0.0.1 at 2015-12-28 02:13:17 -0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-12-28 02:13:17 -0200
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-12-28 02:13:17 -0200
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-12-28 02:13:17 -0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-12-28 02:13:17 -0200
+
+
+Started GET "/assets/administrative_regions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:13:17 -0200
+
+
+Started GET "/assets/bonds.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:13:17 -0200
+
+
+Started GET "/assets/districts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:13:17 -0200
+
+
+Started GET "/assets/frequencies.self-77e327c4386c87fd3d150d8fd69e53bbecdce00172cbfdf06db02049b66e6cb7.js?body=1" for 127.0.0.1 at 2015-12-28 02:13:17 -0200
+
+
+Started GET "/assets/functions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:13:17 -0200
+
+
+Started GET "/assets/instituations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:13:17 -0200
+
+
+Started GET "/assets/locals.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:13:17 -0200
+
+
+Started GET "/assets/people.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:13:17 -0200
+
+
+Started GET "/assets/stockings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:13:17 -0200
+
+
+Started GET "/assets/type_bonds.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:13:17 -0200
+
+
+Started GET "/assets/type_locals.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:13:17 -0200
+
+
+Started GET "/assets/type_patios.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:13:17 -0200
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:13:17 -0200
+
+
+Started GET "/frequencies" for 127.0.0.1 at 2015-12-28 02:13:46 -0200
+Processing by FrequenciesController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mFrequency Load (0.3ms)[0m  [1mSELECT `frequencies`.* FROM `frequencies`[0m
+  Rendered frequencies/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 114ms (Views: 108.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.self-96e43dc6a6e82b550ae8a0e1bac81d33661216727a28e619b70e13d41f489607.css?body=1" for 127.0.0.1 at 2015-12-28 02:13:46 -0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-12-28 02:13:46 -0200
+
+
+Started GET "/assets/administrative_regions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:13:46 -0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-12-28 02:13:46 -0200
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-12-28 02:13:46 -0200
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-12-28 02:13:46 -0200
+
+
+Started GET "/assets/bonds.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:13:46 -0200
+
+
+Started GET "/assets/districts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:13:46 -0200
+
+
+Started GET "/assets/frequencies.self-77e327c4386c87fd3d150d8fd69e53bbecdce00172cbfdf06db02049b66e6cb7.js?body=1" for 127.0.0.1 at 2015-12-28 02:13:46 -0200
+
+
+Started GET "/assets/functions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:13:46 -0200
+
+
+Started GET "/assets/instituations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:13:46 -0200
+
+
+Started GET "/assets/locals.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:13:46 -0200
+
+
+Started GET "/assets/people.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:13:46 -0200
+
+
+Started GET "/assets/stockings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:13:46 -0200
+
+
+Started GET "/assets/type_bonds.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:13:46 -0200
+
+
+Started GET "/assets/type_locals.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:13:46 -0200
+
+
+Started GET "/assets/type_patios.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:13:46 -0200
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:13:46 -0200
+
+
+Started GET "/frequencies" for 127.0.0.1 at 2015-12-28 02:13:59 -0200
+Processing by FrequenciesController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mFrequency Load (0.3ms)[0m  [1mSELECT `frequencies`.* FROM `frequencies`[0m
+  Rendered frequencies/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 115ms (Views: 111.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.self-96e43dc6a6e82b550ae8a0e1bac81d33661216727a28e619b70e13d41f489607.css?body=1" for 127.0.0.1 at 2015-12-28 02:13:59 -0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-12-28 02:13:59 -0200
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-12-28 02:13:59 -0200
+
+
+Started GET "/assets/administrative_regions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:13:59 -0200
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-12-28 02:13:59 -0200
+
+
+Started GET "/assets/bonds.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:13:59 -0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-12-28 02:13:59 -0200
+
+
+Started GET "/assets/frequencies.self-77e327c4386c87fd3d150d8fd69e53bbecdce00172cbfdf06db02049b66e6cb7.js?body=1" for 127.0.0.1 at 2015-12-28 02:13:59 -0200
+
+
+Started GET "/assets/districts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:13:59 -0200
+
+
+Started GET "/assets/functions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:13:59 -0200
+
+
+Started GET "/assets/instituations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:13:59 -0200
+
+
+Started GET "/assets/locals.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:13:59 -0200
+
+
+Started GET "/assets/people.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:13:59 -0200
+
+
+Started GET "/assets/stockings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:13:59 -0200
+
+
+Started GET "/assets/type_bonds.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:13:59 -0200
+
+
+Started GET "/assets/type_locals.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:13:59 -0200
+
+
+Started GET "/assets/type_patios.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:13:59 -0200
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:13:59 -0200
+
+
+Started GET "/frequencies" for 127.0.0.1 at 2015-12-28 02:14:16 -0200
+Processing by FrequenciesController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mFrequency Load (0.3ms)[0m  [1mSELECT `frequencies`.* FROM `frequencies`[0m
+  Rendered frequencies/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 119ms (Views: 116.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-12-28 02:14:16 -0200
+
+
+Started GET "/assets/application.self-96e43dc6a6e82b550ae8a0e1bac81d33661216727a28e619b70e13d41f489607.css?body=1" for 127.0.0.1 at 2015-12-28 02:14:16 -0200
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-12-28 02:14:16 -0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-12-28 02:14:16 -0200
+
+
+Started GET "/assets/administrative_regions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:14:16 -0200
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-12-28 02:14:16 -0200
+
+
+Started GET "/assets/bonds.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:14:16 -0200
+
+
+Started GET "/assets/districts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:14:16 -0200
+
+
+Started GET "/assets/frequencies.self-77e327c4386c87fd3d150d8fd69e53bbecdce00172cbfdf06db02049b66e6cb7.js?body=1" for 127.0.0.1 at 2015-12-28 02:14:17 -0200
+
+
+Started GET "/assets/functions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:14:17 -0200
+
+
+Started GET "/assets/instituations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:14:17 -0200
+
+
+Started GET "/assets/locals.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:14:17 -0200
+
+
+Started GET "/assets/people.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:14:17 -0200
+
+
+Started GET "/assets/stockings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:14:17 -0200
+
+
+Started GET "/assets/type_bonds.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:14:17 -0200
+
+
+Started GET "/assets/type_locals.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:14:17 -0200
+
+
+Started GET "/assets/type_patios.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:14:17 -0200
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:14:17 -0200
+
+
+Started GET "/frequencies" for 127.0.0.1 at 2015-12-28 02:14:31 -0200
+Processing by FrequenciesController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mFrequency Load (1.0ms)[0m  [1mSELECT `frequencies`.* FROM `frequencies`[0m
+  [1m[35mPerson Load (0.4ms)[0m  SELECT  `people`.* FROM `people` WHERE `people`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `people`.* FROM `people` WHERE `people`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `people`.* FROM `people` WHERE `people`.`id` = 1 LIMIT 1  [["id", 1]]
+  [1m[36mPerson Load (0.4ms)[0m  [1mSELECT  `people`.* FROM `people` WHERE `people`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `people`.* FROM `people` WHERE `people`.`id` = 2 LIMIT 1  [["id", 2]]
+  Rendered frequencies/index.html.erb within layouts/application (90.3ms)
+Completed 200 OK in 204ms (Views: 198.7ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/assets/application.self-96e43dc6a6e82b550ae8a0e1bac81d33661216727a28e619b70e13d41f489607.css?body=1" for 127.0.0.1 at 2015-12-28 02:14:32 -0200
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-12-28 02:14:32 -0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-12-28 02:14:32 -0200
+
+
+Started GET "/assets/administrative_regions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:14:32 -0200
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-12-28 02:14:32 -0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-12-28 02:14:32 -0200
+
+
+Started GET "/assets/bonds.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:14:32 -0200
+
+
+Started GET "/assets/districts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:14:32 -0200
+
+
+Started GET "/assets/frequencies.self-77e327c4386c87fd3d150d8fd69e53bbecdce00172cbfdf06db02049b66e6cb7.js?body=1" for 127.0.0.1 at 2015-12-28 02:14:32 -0200
+
+
+Started GET "/assets/functions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:14:32 -0200
+
+
+Started GET "/assets/instituations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:14:32 -0200
+
+
+Started GET "/assets/locals.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:14:32 -0200
+
+
+Started GET "/assets/people.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:14:32 -0200
+
+
+Started GET "/assets/stockings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:14:32 -0200
+
+
+Started GET "/assets/type_bonds.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:14:32 -0200
+
+
+Started GET "/assets/type_locals.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:14:32 -0200
+
+
+Started GET "/assets/type_patios.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:14:32 -0200
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:14:32 -0200
+
+
+Started GET "/frequencies" for 127.0.0.1 at 2015-12-28 02:14:59 -0200
+Processing by FrequenciesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mFrequency Load (0.4ms)[0m  SELECT `frequencies`.* FROM `frequencies`
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT  `people`.* FROM `people` WHERE `people`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `people`.* FROM `people` WHERE `people`.`id` = 1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `people`.* FROM `people` WHERE `people`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mPerson Load (0.4ms)[0m  SELECT  `people`.* FROM `people` WHERE `people`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `people`.* FROM `people` WHERE `people`.`id` = 2 LIMIT 1[0m  [["id", 2]]
+  Rendered frequencies/index.html.erb within layouts/application (36.3ms)
+Completed 200 OK in 174ms (Views: 147.2ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/assets/application.self-96e43dc6a6e82b550ae8a0e1bac81d33661216727a28e619b70e13d41f489607.css?body=1" for 127.0.0.1 at 2015-12-28 02:15:00 -0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-12-28 02:15:00 -0200
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-12-28 02:15:00 -0200
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-12-28 02:15:00 -0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-12-28 02:15:00 -0200
+
+
+Started GET "/assets/administrative_regions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:15:00 -0200
+
+
+Started GET "/assets/bonds.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:15:00 -0200
+
+
+Started GET "/assets/districts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:15:00 -0200
+
+
+Started GET "/assets/frequencies.self-77e327c4386c87fd3d150d8fd69e53bbecdce00172cbfdf06db02049b66e6cb7.js?body=1" for 127.0.0.1 at 2015-12-28 02:15:00 -0200
+
+
+Started GET "/assets/functions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:15:00 -0200
+
+
+Started GET "/assets/instituations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:15:00 -0200
+
+
+Started GET "/assets/locals.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:15:00 -0200
+
+
+Started GET "/assets/people.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:15:00 -0200
+
+
+Started GET "/assets/stockings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:15:00 -0200
+
+
+Started GET "/assets/type_bonds.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:15:00 -0200
+
+
+Started GET "/assets/type_locals.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:15:00 -0200
+
+
+Started GET "/assets/type_patios.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:15:00 -0200
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:15:00 -0200
+
+
+Started GET "/frequencies" for 127.0.0.1 at 2015-12-28 02:15:23 -0200
+Processing by FrequenciesController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mFrequency Load (0.3ms)[0m  [1mSELECT `frequencies`.* FROM `frequencies`[0m
+  [1m[35mPerson Load (0.4ms)[0m  SELECT  `people`.* FROM `people` WHERE `people`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `people`.* FROM `people` WHERE `people`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `people`.* FROM `people` WHERE `people`.`id` = 1 LIMIT 1  [["id", 1]]
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT  `people`.* FROM `people` WHERE `people`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `people`.* FROM `people` WHERE `people`.`id` = 2 LIMIT 1  [["id", 2]]
+  Rendered frequencies/index.html.erb within layouts/application (35.5ms)
+Completed 200 OK in 179ms (Views: 154.7ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/application.self-96e43dc6a6e82b550ae8a0e1bac81d33661216727a28e619b70e13d41f489607.css?body=1" for 127.0.0.1 at 2015-12-28 02:15:24 -0200
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-12-28 02:15:24 -0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-12-28 02:15:24 -0200
+
+
+Started GET "/assets/administrative_regions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:15:24 -0200
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-12-28 02:15:24 -0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-12-28 02:15:24 -0200
+
+
+Started GET "/assets/bonds.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:15:24 -0200
+
+
+Started GET "/assets/districts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:15:24 -0200
+
+
+Started GET "/assets/frequencies.self-77e327c4386c87fd3d150d8fd69e53bbecdce00172cbfdf06db02049b66e6cb7.js?body=1" for 127.0.0.1 at 2015-12-28 02:15:24 -0200
+
+
+Started GET "/assets/functions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:15:24 -0200
+
+
+Started GET "/assets/instituations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:15:24 -0200
+
+
+Started GET "/assets/locals.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:15:24 -0200
+
+
+Started GET "/assets/people.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:15:24 -0200
+
+
+Started GET "/assets/stockings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:15:24 -0200
+
+
+Started GET "/assets/type_bonds.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:15:24 -0200
+
+
+Started GET "/assets/type_locals.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:15:24 -0200
+
+
+Started GET "/assets/type_patios.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:15:24 -0200
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:15:24 -0200
+
+
+Started GET "/frequencies" for 127.0.0.1 at 2015-12-28 02:16:02 -0200
+Processing by FrequenciesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered frequencies/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 146ms (Views: 141.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-12-28 02:16:02 -0200
+
+
+Started GET "/assets/application.self-96e43dc6a6e82b550ae8a0e1bac81d33661216727a28e619b70e13d41f489607.css?body=1" for 127.0.0.1 at 2015-12-28 02:16:02 -0200
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-12-28 02:16:02 -0200
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-12-28 02:16:02 -0200
+
+
+Started GET "/assets/administrative_regions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:16:02 -0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-12-28 02:16:02 -0200
+
+
+Started GET "/assets/bonds.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:16:02 -0200
+
+
+Started GET "/assets/districts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:16:02 -0200
+
+
+Started GET "/assets/frequencies.self-77e327c4386c87fd3d150d8fd69e53bbecdce00172cbfdf06db02049b66e6cb7.js?body=1" for 127.0.0.1 at 2015-12-28 02:16:02 -0200
+
+
+Started GET "/assets/functions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:16:02 -0200
+
+
+Started GET "/assets/instituations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:16:02 -0200
+
+
+Started GET "/assets/locals.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:16:02 -0200
+
+
+Started GET "/assets/people.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:16:02 -0200
+
+
+Started GET "/assets/stockings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:16:02 -0200
+
+
+Started GET "/assets/type_bonds.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:16:02 -0200
+
+
+Started GET "/assets/type_locals.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:16:02 -0200
+
+
+Started GET "/assets/type_patios.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:16:02 -0200
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:16:02 -0200
+
+
+Started GET "/frequencies" for 127.0.0.1 at 2015-12-28 02:16:06 -0200
+Processing by FrequenciesController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mFrequency Load (0.3ms)[0m  [1mSELECT `frequencies`.* FROM `frequencies`[0m
+  [1m[35mPerson Load (0.3ms)[0m  SELECT  `people`.* FROM `people` WHERE `people`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `people`.* FROM `people` WHERE `people`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `people`.* FROM `people` WHERE `people`.`id` = 1 LIMIT 1  [["id", 1]]
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT  `people`.* FROM `people` WHERE `people`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `people`.* FROM `people` WHERE `people`.`id` = 2 LIMIT 1  [["id", 2]]
+  Rendered frequencies/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 127ms (Views: 123.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-12-28 02:16:06 -0200
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-12-28 02:16:06 -0200
+
+
+Started GET "/assets/application.self-96e43dc6a6e82b550ae8a0e1bac81d33661216727a28e619b70e13d41f489607.css?body=1" for 127.0.0.1 at 2015-12-28 02:16:06 -0200
+
+
+Started GET "/assets/administrative_regions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:16:06 -0200
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-12-28 02:16:06 -0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-12-28 02:16:06 -0200
+
+
+Started GET "/assets/bonds.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:16:06 -0200
+
+
+Started GET "/assets/districts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:16:06 -0200
+
+
+Started GET "/assets/frequencies.self-77e327c4386c87fd3d150d8fd69e53bbecdce00172cbfdf06db02049b66e6cb7.js?body=1" for 127.0.0.1 at 2015-12-28 02:16:06 -0200
+
+
+Started GET "/assets/functions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:16:06 -0200
+
+
+Started GET "/assets/instituations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:16:06 -0200
+
+
+Started GET "/assets/locals.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:16:06 -0200
+
+
+Started GET "/assets/people.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:16:06 -0200
+
+
+Started GET "/assets/stockings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:16:06 -0200
+
+
+Started GET "/assets/type_bonds.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:16:06 -0200
+
+
+Started GET "/assets/type_locals.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:16:06 -0200
+
+
+Started GET "/assets/type_patios.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:16:06 -0200
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:16:06 -0200
+
+
+Started GET "/frequencies" for 127.0.0.1 at 2015-12-28 02:17:15 -0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by FrequenciesController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mFrequency Load (0.3ms)[0m  [1mSELECT `frequencies`.* FROM `frequencies`[0m
+  Rendered frequencies/index.html.erb within layouts/application (15.3ms)
+Completed 200 OK in 441ms (Views: 386.4ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/application.self-96e43dc6a6e82b550ae8a0e1bac81d33661216727a28e619b70e13d41f489607.css?body=1" for 127.0.0.1 at 2015-12-28 02:17:15 -0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-12-28 02:17:15 -0200
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-12-28 02:17:15 -0200
+
+
+Started GET "/assets/administrative_regions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:17:15 -0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-12-28 02:17:15 -0200
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-12-28 02:17:15 -0200
+
+
+Started GET "/assets/bonds.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:17:15 -0200
+
+
+Started GET "/assets/districts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:17:15 -0200
+
+
+Started GET "/assets/frequencies.self-77e327c4386c87fd3d150d8fd69e53bbecdce00172cbfdf06db02049b66e6cb7.js?body=1" for 127.0.0.1 at 2015-12-28 02:17:15 -0200
+
+
+Started GET "/assets/functions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:17:15 -0200
+
+
+Started GET "/assets/instituations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:17:15 -0200
+
+
+Started GET "/assets/locals.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:17:15 -0200
+
+
+Started GET "/assets/people.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:17:15 -0200
+
+
+Started GET "/assets/stockings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:17:15 -0200
+
+
+Started GET "/assets/type_bonds.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:17:15 -0200
+
+
+Started GET "/assets/type_locals.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:17:15 -0200
+
+
+Started GET "/assets/type_patios.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:17:15 -0200
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:17:15 -0200
+
+
+Started GET "/frequencies" for 127.0.0.1 at 2015-12-28 02:17:30 -0200
+Processing by FrequenciesController#index as HTML
+  [1m[35mUser Load (0.8ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mFrequency Load (0.4ms)[0m  [1mSELECT `frequencies`.* FROM `frequencies`[0m
+  Rendered frequencies/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 125ms (Views: 120.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.self-96e43dc6a6e82b550ae8a0e1bac81d33661216727a28e619b70e13d41f489607.css?body=1" for 127.0.0.1 at 2015-12-28 02:17:30 -0200
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-12-28 02:17:30 -0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-12-28 02:17:30 -0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-12-28 02:17:30 -0200
+
+
+Started GET "/assets/administrative_regions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:17:30 -0200
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-12-28 02:17:30 -0200
+
+
+Started GET "/assets/bonds.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:17:30 -0200
+
+
+Started GET "/assets/districts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:17:30 -0200
+
+
+Started GET "/assets/frequencies.self-77e327c4386c87fd3d150d8fd69e53bbecdce00172cbfdf06db02049b66e6cb7.js?body=1" for 127.0.0.1 at 2015-12-28 02:17:30 -0200
+
+
+Started GET "/assets/functions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:17:30 -0200
+
+
+Started GET "/assets/instituations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:17:30 -0200
+
+
+Started GET "/assets/locals.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:17:30 -0200
+
+
+Started GET "/assets/people.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:17:30 -0200
+
+
+Started GET "/assets/stockings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:17:30 -0200
+
+
+Started GET "/assets/type_bonds.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:17:30 -0200
+
+
+Started GET "/assets/type_locals.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:17:30 -0200
+
+
+Started GET "/assets/type_patios.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:17:30 -0200
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:17:30 -0200
+
+
+Started GET "/frequencies" for 127.0.0.1 at 2015-12-28 02:17:36 -0200
+Processing by FrequenciesController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mFrequency Load (0.3ms)[0m  [1mSELECT `frequencies`.* FROM `frequencies`[0m
+  Rendered frequencies/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 125ms (Views: 121.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.self-96e43dc6a6e82b550ae8a0e1bac81d33661216727a28e619b70e13d41f489607.css?body=1" for 127.0.0.1 at 2015-12-28 02:17:36 -0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-12-28 02:17:36 -0200
+
+
+Started GET "/assets/administrative_regions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:17:36 -0200
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-12-28 02:17:36 -0200
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-12-28 02:17:36 -0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-12-28 02:17:36 -0200
+
+
+Started GET "/assets/bonds.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:17:36 -0200
+
+
+Started GET "/assets/districts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:17:36 -0200
+
+
+Started GET "/assets/frequencies.self-77e327c4386c87fd3d150d8fd69e53bbecdce00172cbfdf06db02049b66e6cb7.js?body=1" for 127.0.0.1 at 2015-12-28 02:17:36 -0200
+
+
+Started GET "/assets/functions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:17:36 -0200
+
+
+Started GET "/assets/instituations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:17:36 -0200
+
+
+Started GET "/assets/locals.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:17:36 -0200
+
+
+Started GET "/assets/people.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:17:36 -0200
+
+
+Started GET "/assets/stockings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:17:36 -0200
+
+
+Started GET "/assets/type_bonds.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:17:36 -0200
+
+
+Started GET "/assets/type_locals.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:17:36 -0200
+
+
+Started GET "/assets/type_patios.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:17:36 -0200
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:17:36 -0200
+
+
+Started GET "/frequencies" for 127.0.0.1 at 2015-12-28 02:20:21 -0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by FrequenciesController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mFrequency Load (0.4ms)[0m  [1mSELECT `frequencies`.* FROM `frequencies`[0m
+  Rendered frequencies/index.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 428ms (Views: 376.3ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/assets/application.self-96e43dc6a6e82b550ae8a0e1bac81d33661216727a28e619b70e13d41f489607.css?body=1" for 127.0.0.1 at 2015-12-28 02:20:22 -0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-12-28 02:20:22 -0200
+
+
+Started GET "/assets/administrative_regions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:20:22 -0200
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-12-28 02:20:22 -0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-12-28 02:20:22 -0200
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-12-28 02:20:22 -0200
+
+
+Started GET "/assets/bonds.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:20:22 -0200
+
+
+Started GET "/assets/districts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:20:22 -0200
+
+
+Started GET "/assets/functions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:20:22 -0200
+
+
+Started GET "/assets/frequencies.self-77e327c4386c87fd3d150d8fd69e53bbecdce00172cbfdf06db02049b66e6cb7.js?body=1" for 127.0.0.1 at 2015-12-28 02:20:22 -0200
+
+
+Started GET "/assets/instituations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:20:22 -0200
+
+
+Started GET "/assets/locals.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:20:22 -0200
+
+
+Started GET "/assets/people.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:20:22 -0200
+
+
+Started GET "/assets/stockings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:20:22 -0200
+
+
+Started GET "/assets/type_bonds.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:20:22 -0200
+
+
+Started GET "/assets/type_locals.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:20:22 -0200
+
+
+Started GET "/assets/type_patios.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:20:22 -0200
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:20:22 -0200
+
+
+Started GET "/people" for 127.0.0.1 at 2015-12-28 02:20:27 -0200
+Processing by PeopleController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT `people`.* FROM `people`[0m
+  Rendered people/index.html.erb within layouts/application (18.6ms)
+Completed 200 OK in 161ms (Views: 148.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/people/1/edit" for 127.0.0.1 at 2015-12-28 02:20:28 -0200
+Processing by PeopleController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPerson Load (0.4ms)[0m  SELECT  `people`.* FROM `people` WHERE `people`.`id` = 1 LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered people/_form.html.erb (29.2ms)
+  Rendered people/edit.html.erb within layouts/application (34.6ms)
+Completed 200 OK in 186ms (Views: 180.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/frequencies" for 127.0.0.1 at 2015-12-28 02:20:31 -0200
+Processing by FrequenciesController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mFrequency Load (0.4ms)[0m  [1mSELECT `frequencies`.* FROM `frequencies`[0m
+  Rendered frequencies/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 140ms (Views: 135.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/frequencies/new" for 127.0.0.1 at 2015-12-28 02:20:38 -0200
+Processing by FrequenciesController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mPerson Load (0.4ms)[0m  [1mSELECT `people`.* FROM `people`[0m
+  [1m[35mFrequency Load (0.3ms)[0m  SELECT `frequencies`.* FROM `frequencies` WHERE `frequencies`.`person_id` IS NULL
+  Rendered frequencies/_table_frequencies.html.erb (1.5ms)
+  Rendered frequencies/_form.html.erb (14.7ms)
+  Rendered frequencies/new.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 121ms (Views: 117.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/frequencies" for 127.0.0.1 at 2015-12-28 02:20:42 -0200
+Processing by FrequenciesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mFrequency Load (0.3ms)[0m  SELECT `frequencies`.* FROM `frequencies`
+  Rendered frequencies/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 113ms (Views: 110.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/frequencies/7" for 127.0.0.1 at 2015-12-28 02:20:43 -0200
+Processing by FrequenciesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mFrequency Load (0.4ms)[0m  [1mSELECT  `frequencies`.* FROM `frequencies` WHERE `frequencies`.`id` = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered frequencies/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 139ms (Views: 133.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/frequencies" for 127.0.0.1 at 2015-12-28 02:20:44 -0200
+Processing by FrequenciesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mFrequency Load (0.3ms)[0m  SELECT `frequencies`.* FROM `frequencies`
+  Rendered frequencies/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 125ms (Views: 122.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/frequencies/8/edit" for 127.0.0.1 at 2015-12-28 02:20:45 -0200
+Processing by FrequenciesController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mFrequency Load (0.3ms)[0m  [1mSELECT  `frequencies`.* FROM `frequencies` WHERE `frequencies`.`id` = 8 LIMIT 1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT `people`.* FROM `people`[0m
+  Rendered frequencies/_table_frequencies.html.erb (7.3ms)
+  Rendered frequencies/_form.html.erb (23.1ms)
+  Rendered frequencies/edit.html.erb within layouts/application (25.5ms)
+Completed 500 Internal Server Error in 43ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <% frequencies.each do |frequency| %>
+    2:   <tr>
+    3:     <td><%= frequency.frequency_date.strftime('%d/%m/%Y') %></td>
+    4:     <td><%= frequency.time_input.to_s(:time) %></td>
+  app/views/frequencies/_table_frequencies.html.erb:1:in `_app_views_frequencies__table_frequencies_html_erb___175647952__633849478'
+  app/views/frequencies/_form.html.erb:45:in `block in _app_views_frequencies__form_html_erb___581714432__634664038'
+  app/views/frequencies/_form.html.erb:1:in `_app_views_frequencies__form_html_erb___581714432__634664038'
+  app/views/frequencies/edit.html.erb:3:in `_app_views_frequencies_edit_html_erb__1028429181__643029288'
+
+
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.3ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (44.6ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (31.7ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (70.8ms)
+
+
+Started GET "/frequencies/8/edit" for 127.0.0.1 at 2015-12-28 02:20:46 -0200
+Processing by FrequenciesController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mFrequency Load (0.4ms)[0m  SELECT  `frequencies`.* FROM `frequencies` WHERE `frequencies`.`id` = 8 LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mPerson Load (0.4ms)[0m  SELECT `people`.* FROM `people`
+  Rendered frequencies/_table_frequencies.html.erb (4.1ms)
+  Rendered frequencies/_form.html.erb (16.3ms)
+  Rendered frequencies/edit.html.erb within layouts/application (17.9ms)
+Completed 500 Internal Server Error in 24ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <% frequencies.each do |frequency| %>
+    2:   <tr>
+    3:     <td><%= frequency.frequency_date.strftime('%d/%m/%Y') %></td>
+    4:     <td><%= frequency.time_input.to_s(:time) %></td>
+  app/views/frequencies/_table_frequencies.html.erb:1:in `_app_views_frequencies__table_frequencies_html_erb___175647952__630580728'
+  app/views/frequencies/_form.html.erb:45:in `block in _app_views_frequencies__form_html_erb___581714432__631858528'
+  app/views/frequencies/_form.html.erb:1:in `_app_views_frequencies__form_html_erb___581714432__631858528'
+  app/views/frequencies/edit.html.erb:3:in `_app_views_frequencies_edit_html_erb__1028429181__631788748'
+
+
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.3ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.9ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (42.0ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (25.8ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (51.8ms)
+
+
+Started GET "/frequencies" for 127.0.0.1 at 2015-12-28 02:21:47 -0200
+Processing by FrequenciesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mFrequency Load (0.4ms)[0m  SELECT `frequencies`.* FROM `frequencies`
+  Rendered frequencies/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 119ms (Views: 116.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.self-96e43dc6a6e82b550ae8a0e1bac81d33661216727a28e619b70e13d41f489607.css?body=1" for 127.0.0.1 at 2015-12-28 02:21:47 -0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-12-28 02:21:47 -0200
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-12-28 02:21:47 -0200
+
+
+Started GET "/assets/administrative_regions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:21:47 -0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-12-28 02:21:47 -0200
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-12-28 02:21:47 -0200
+
+
+Started GET "/assets/bonds.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:21:47 -0200
+
+
+Started GET "/assets/districts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:21:47 -0200
+
+
+Started GET "/assets/frequencies.self-77e327c4386c87fd3d150d8fd69e53bbecdce00172cbfdf06db02049b66e6cb7.js?body=1" for 127.0.0.1 at 2015-12-28 02:21:47 -0200
+
+
+Started GET "/assets/functions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:21:47 -0200
+
+
+Started GET "/assets/instituations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:21:47 -0200
+
+
+Started GET "/assets/locals.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:21:47 -0200
+
+
+Started GET "/assets/people.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:21:47 -0200
+
+
+Started GET "/assets/stockings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:21:47 -0200
+
+
+Started GET "/assets/type_bonds.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:21:47 -0200
+
+
+Started GET "/assets/type_locals.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:21:47 -0200
+
+
+Started GET "/assets/type_patios.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:21:47 -0200
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:21:47 -0200
+
+
+Started GET "/frequencies/findbycpf/" for 127.0.0.1 at 2015-12-28 02:21:53 -0200
+Processing by FrequenciesController#show as */*
+  Parameters: {"id"=>"findbycpf"}
+  [1m[36mFrequency Load (0.3ms)[0m  [1mSELECT  `frequencies`.* FROM `frequencies` WHERE `frequencies`.`id` = 0 LIMIT 1[0m
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find Frequency with 'id'=findbycpf):
+  app/controllers/frequencies_controller.rb:98:in `set_frequency'
+
+
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.4ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.8ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.1ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (29.4ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (29.8ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (57.6ms)
+
+
+Started GET "/frequencies/findbycpf/" for 127.0.0.1 at 2015-12-28 02:21:54 -0200
+Processing by FrequenciesController#show as */*
+  Parameters: {"id"=>"findbycpf"}
+  [1m[35mFrequency Load (0.3ms)[0m  SELECT  `frequencies`.* FROM `frequencies` WHERE `frequencies`.`id` = 0 LIMIT 1
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find Frequency with 'id'=findbycpf):
+  app/controllers/frequencies_controller.rb:98:in `set_frequency'
+
+
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.4ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.9ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.0ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (31.5ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (26.3ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (55.7ms)
+
+
+Started GET "/frequencies/findbycpf/" for 127.0.0.1 at 2015-12-28 02:21:55 -0200
+Processing by FrequenciesController#show as */*
+  Parameters: {"id"=>"findbycpf"}
+  [1m[36mFrequency Load (0.7ms)[0m  [1mSELECT  `frequencies`.* FROM `frequencies` WHERE `frequencies`.`id` = 0 LIMIT 1[0m
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find Frequency with 'id'=findbycpf):
+  app/controllers/frequencies_controller.rb:98:in `set_frequency'
+
+
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.3ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.8ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.1ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (28.2ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (25.7ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (53.2ms)
+
+
+Started GET "/frequencies/findbycpf/" for 127.0.0.1 at 2015-12-28 02:21:55 -0200
+Processing by FrequenciesController#show as */*
+  Parameters: {"id"=>"findbycpf"}
+  [1m[35mFrequency Load (0.3ms)[0m  SELECT  `frequencies`.* FROM `frequencies` WHERE `frequencies`.`id` = 0 LIMIT 1
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find Frequency with 'id'=findbycpf):
+  app/controllers/frequencies_controller.rb:98:in `set_frequency'
+
+
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.2ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.8ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.0ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (28.0ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (25.7ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (54.5ms)
+
+
+Started GET "/frequencies/findbycpf/" for 127.0.0.1 at 2015-12-28 02:21:55 -0200
+Processing by FrequenciesController#show as */*
+  Parameters: {"id"=>"findbycpf"}
+  [1m[36mFrequency Load (0.4ms)[0m  [1mSELECT  `frequencies`.* FROM `frequencies` WHERE `frequencies`.`id` = 0 LIMIT 1[0m
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find Frequency with 'id'=findbycpf):
+  app/controllers/frequencies_controller.rb:98:in `set_frequency'
+
+
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.2ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.9ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.0ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (31.2ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (26.4ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (54.6ms)
+
+
+Started GET "/frequencies/findbycpf/" for 127.0.0.1 at 2015-12-28 02:21:55 -0200
+Processing by FrequenciesController#show as */*
+  Parameters: {"id"=>"findbycpf"}
+  [1m[35mFrequency Load (0.3ms)[0m  SELECT  `frequencies`.* FROM `frequencies` WHERE `frequencies`.`id` = 0 LIMIT 1
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find Frequency with 'id'=findbycpf):
+  app/controllers/frequencies_controller.rb:98:in `set_frequency'
+
+
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.2ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.7ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.0ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (28.3ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (26.9ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (53.4ms)
+
+
+Started GET "/frequencies/findbycpf/" for 127.0.0.1 at 2015-12-28 02:21:55 -0200
+Processing by FrequenciesController#show as */*
+  Parameters: {"id"=>"findbycpf"}
+  [1m[36mFrequency Load (0.3ms)[0m  [1mSELECT  `frequencies`.* FROM `frequencies` WHERE `frequencies`.`id` = 0 LIMIT 1[0m
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find Frequency with 'id'=findbycpf):
+  app/controllers/frequencies_controller.rb:98:in `set_frequency'
+
+
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.2ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.7ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.1ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (28.4ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (25.6ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (52.3ms)
+
+
+Started GET "/frequencies/findbycpf/" for 127.0.0.1 at 2015-12-28 02:21:56 -0200
+Processing by FrequenciesController#show as */*
+  Parameters: {"id"=>"findbycpf"}
+  [1m[35mFrequency Load (0.3ms)[0m  SELECT  `frequencies`.* FROM `frequencies` WHERE `frequencies`.`id` = 0 LIMIT 1
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find Frequency with 'id'=findbycpf):
+  app/controllers/frequencies_controller.rb:98:in `set_frequency'
+
+
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.6ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.9ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.5ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (31.1ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (26.6ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (53.5ms)
+
+
+Started GET "/frequencies/findbycpf/" for 127.0.0.1 at 2015-12-28 02:21:56 -0200
+Processing by FrequenciesController#show as */*
+  Parameters: {"id"=>"findbycpf"}
+  [1m[36mFrequency Load (0.3ms)[0m  [1mSELECT  `frequencies`.* FROM `frequencies` WHERE `frequencies`.`id` = 0 LIMIT 1[0m
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find Frequency with 'id'=findbycpf):
+  app/controllers/frequencies_controller.rb:98:in `set_frequency'
+
+
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.3ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.8ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.1ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (28.8ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (26.2ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (55.0ms)
+
+
+Started GET "/frequencies/findbycpf/" for 127.0.0.1 at 2015-12-28 02:21:56 -0200
+Processing by FrequenciesController#show as */*
+  Parameters: {"id"=>"findbycpf"}
+  [1m[35mFrequency Load (0.3ms)[0m  SELECT  `frequencies`.* FROM `frequencies` WHERE `frequencies`.`id` = 0 LIMIT 1
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find Frequency with 'id'=findbycpf):
+  app/controllers/frequencies_controller.rb:98:in `set_frequency'
+
+
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.5ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.8ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.1ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (28.9ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (26.1ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (53.9ms)
+
+
+Started GET "/frequencies/findbycpf/" for 127.0.0.1 at 2015-12-28 02:21:56 -0200
+Processing by FrequenciesController#show as */*
+  Parameters: {"id"=>"findbycpf"}
+  [1m[36mFrequency Load (0.3ms)[0m  [1mSELECT  `frequencies`.* FROM `frequencies` WHERE `frequencies`.`id` = 0 LIMIT 1[0m
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find Frequency with 'id'=findbycpf):
+  app/controllers/frequencies_controller.rb:98:in `set_frequency'
+
+
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.5ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.8ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.1ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (29.6ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (26.3ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (53.5ms)
+
+
+Started GET "/frequencies/findbycpf/" for 127.0.0.1 at 2015-12-28 02:21:57 -0200
+Processing by FrequenciesController#show as */*
+  Parameters: {"id"=>"findbycpf"}
+  [1m[35mFrequency Load (0.3ms)[0m  SELECT  `frequencies`.* FROM `frequencies` WHERE `frequencies`.`id` = 0 LIMIT 1
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find Frequency with 'id'=findbycpf):
+  app/controllers/frequencies_controller.rb:98:in `set_frequency'
+
+
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.4ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.9ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.3ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (29.2ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (26.2ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (54.2ms)
+
+
+Started GET "/frequencies/findbycpf/" for 127.0.0.1 at 2015-12-28 02:21:57 -0200
+Processing by FrequenciesController#show as */*
+  Parameters: {"id"=>"findbycpf"}
+  [1m[36mFrequency Load (0.3ms)[0m  [1mSELECT  `frequencies`.* FROM `frequencies` WHERE `frequencies`.`id` = 0 LIMIT 1[0m
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find Frequency with 'id'=findbycpf):
+  app/controllers/frequencies_controller.rb:98:in `set_frequency'
+
+
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.9ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.9ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.3ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (30.4ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (27.9ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (55.9ms)
+
+
+Started GET "/frequencies/4/edit" for 127.0.0.1 at 2015-12-28 02:21:58 -0200
+Processing by FrequenciesController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mFrequency Load (0.3ms)[0m  SELECT  `frequencies`.* FROM `frequencies` WHERE `frequencies`.`id` = 4 LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mPerson Load (0.3ms)[0m  SELECT `people`.* FROM `people`
+  Rendered frequencies/_table_frequencies.html.erb (4.8ms)
+  Rendered frequencies/_form.html.erb (16.7ms)
+  Rendered frequencies/edit.html.erb within layouts/application (17.7ms)
+Completed 500 Internal Server Error in 23ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <% frequencies.each do |frequency| %>
+    2:   <tr>
+    3:     <td><%= frequency.frequency_date.strftime('%d/%m/%Y') %></td>
+    4:     <td><%= frequency.time_input.to_s(:time) %></td>
+  app/views/frequencies/_table_frequencies.html.erb:1:in `_app_views_frequencies__table_frequencies_html_erb___175647952__633849478'
+  app/views/frequencies/_form.html.erb:45:in `block in _app_views_frequencies__form_html_erb___581714432__634664038'
+  app/views/frequencies/_form.html.erb:1:in `_app_views_frequencies__form_html_erb___581714432__634664038'
+  app/views/frequencies/edit.html.erb:3:in `_app_views_frequencies_edit_html_erb__1028429181__643029288'
+
+
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (14.6ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.6ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (44.9ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (26.9ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (56.5ms)
+
+
+Started GET "/frequencies/4/edit" for 127.0.0.1 at 2015-12-28 02:21:59 -0200
+Processing by FrequenciesController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mFrequency Load (0.5ms)[0m  [1mSELECT  `frequencies`.* FROM `frequencies` WHERE `frequencies`.`id` = 4 LIMIT 1[0m
+  [1m[35mUser Load (0.7ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT `people`.* FROM `people`[0m
+  Rendered frequencies/_table_frequencies.html.erb (4.9ms)
+  Rendered frequencies/_form.html.erb (16.6ms)
+  Rendered frequencies/edit.html.erb within layouts/application (17.4ms)
+Completed 500 Internal Server Error in 25ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <% frequencies.each do |frequency| %>
+    2:   <tr>
+    3:     <td><%= frequency.frequency_date.strftime('%d/%m/%Y') %></td>
+    4:     <td><%= frequency.time_input.to_s(:time) %></td>
+  app/views/frequencies/_table_frequencies.html.erb:1:in `_app_views_frequencies__table_frequencies_html_erb___175647952__630580728'
+  app/views/frequencies/_form.html.erb:45:in `block in _app_views_frequencies__form_html_erb___581714432__631858528'
+  app/views/frequencies/_form.html.erb:1:in `_app_views_frequencies__form_html_erb___581714432__631858528'
+  app/views/frequencies/edit.html.erb:3:in `_app_views_frequencies_edit_html_erb__1028429181__631788748'
+
+
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (14.5ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.6ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (44.9ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (27.4ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (56.0ms)
+
+
+Started GET "/people" for 127.0.0.1 at 2015-12-28 02:22:02 -0200
+Processing by PeopleController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mPerson Load (0.5ms)[0m  [1mSELECT `people`.* FROM `people`[0m
+  Rendered people/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 106ms (Views: 103.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/people/2/edit" for 127.0.0.1 at 2015-12-28 02:22:03 -0200
+Processing by PeopleController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mPerson Load (0.4ms)[0m  SELECT  `people`.* FROM `people` WHERE `people`.`id` = 2 LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered people/_form.html.erb (15.0ms)
+  Rendered people/edit.html.erb within layouts/application (16.3ms)
+Completed 200 OK in 138ms (Views: 135.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/frequencies" for 127.0.0.1 at 2015-12-28 02:22:06 -0200
+Processing by FrequenciesController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mFrequency Load (0.3ms)[0m  [1mSELECT `frequencies`.* FROM `frequencies`[0m
+  Rendered frequencies/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 107ms (Views: 104.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/people" for 127.0.0.1 at 2015-12-28 02:22:09 -0200
+Processing by PeopleController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT `people`.* FROM `people`[0m
+  Rendered people/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 120ms (Views: 117.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/people/1/edit" for 127.0.0.1 at 2015-12-28 02:22:11 -0200
+Processing by PeopleController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPerson Load (0.4ms)[0m  SELECT  `people`.* FROM `people` WHERE `people`.`id` = 1 LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered people/_form.html.erb (8.7ms)
+  Rendered people/edit.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 117ms (Views: 114.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/frequencies" for 127.0.0.1 at 2015-12-28 02:22:13 -0200
+Processing by FrequenciesController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mFrequency Load (0.3ms)[0m  [1mSELECT `frequencies`.* FROM `frequencies`[0m
+  Rendered frequencies/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 136ms (Views: 133.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/frequencies/new" for 127.0.0.1 at 2015-12-28 02:22:18 -0200
+Processing by FrequenciesController#new as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mPerson Load (0.4ms)[0m  [1mSELECT `people`.* FROM `people`[0m
+  [1m[35mFrequency Load (0.3ms)[0m  SELECT `frequencies`.* FROM `frequencies` WHERE `frequencies`.`person_id` IS NULL
+  Rendered frequencies/_table_frequencies.html.erb (0.9ms)
+  Rendered frequencies/_form.html.erb (12.9ms)
+  Rendered frequencies/new.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 119ms (Views: 115.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/frequencies" for 127.0.0.1 at 2015-12-28 02:22:22 -0200
+Processing by FrequenciesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mFrequency Load (0.3ms)[0m  SELECT `frequencies`.* FROM `frequencies`
+  Rendered frequencies/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 118ms (Views: 115.3ms | ActiveRecord: 0.7ms)
