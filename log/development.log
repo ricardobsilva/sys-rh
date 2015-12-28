@@ -36346,3 +36346,144 @@ XXXXXXXXXX #<Frequency:0xbbf68f4>
   Rendered frequencies/new.html.erb within layouts/application (76.7ms)
 Completed 200 OK in 785ms (Views: 777.4ms | ActiveRecord: 1.4ms)
 >>>>>>> e5fd7ea461ec928eb02c279d07663885a04f11d8
+
+
+Started GET "/" for 127.0.0.1 at 2015-12-28 02:05:40 -0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by FrequenciesController#index as HTML
+Completed 401 Unauthorized in 40ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-12-28 02:05:41 -0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (35.6ms)
+Completed 200 OK in 6577ms (Views: 6554.0ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/application.self-96e43dc6a6e82b550ae8a0e1bac81d33661216727a28e619b70e13d41f489607.css?body=1" for 127.0.0.1 at 2015-12-28 02:05:47 -0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-12-28 02:05:47 -0200
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-12-28 02:05:47 -0200
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-12-28 02:05:47 -0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-12-28 02:05:47 -0200
+
+
+Started GET "/assets/administrative_regions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:05:47 -0200
+
+
+Started GET "/assets/districts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:05:47 -0200
+
+
+Started GET "/assets/bonds.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:05:47 -0200
+
+
+Started GET "/assets/frequencies.self-77e327c4386c87fd3d150d8fd69e53bbecdce00172cbfdf06db02049b66e6cb7.js?body=1" for 127.0.0.1 at 2015-12-28 02:05:47 -0200
+
+
+Started GET "/assets/functions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:05:47 -0200
+
+
+Started GET "/assets/instituations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:05:47 -0200
+
+
+Started GET "/assets/locals.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:05:47 -0200
+
+
+Started GET "/assets/people.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:05:47 -0200
+
+
+Started GET "/assets/stockings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:05:47 -0200
+
+
+Started GET "/assets/type_bonds.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:05:47 -0200
+
+
+Started GET "/assets/type_locals.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:05:48 -0200
+
+
+Started GET "/assets/type_patios.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:05:48 -0200
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-28 02:05:48 -0200
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-12-28 02:05:52 -0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4a2OOLsRxt0VftXTFtxMx2Dkawkv7Uhv5m1T3ilySNo628ezArOYTVTwPBQa1nlYRoyAxiKkV95vHt3J1zFDJg==", "user"=>{"email"=>"admin@admin.com", "password"=>"[FILTERED]"}, "commit"=>"entrar"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`email` = 'admin@admin.com'  ORDER BY `users`.`id` ASC LIMIT 1
+Completed 401 Unauthorized in 57ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4a2OOLsRxt0VftXTFtxMx2Dkawkv7Uhv5m1T3ilySNo628ezArOYTVTwPBQa1nlYRoyAxiKkV95vHt3J1zFDJg==", "user"=>{"email"=>"admin@admin.com", "password"=>"[FILTERED]"}, "commit"=>"entrar"}
+  Rendered devise/sessions/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 252ms (Views: 94.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-12-28 02:06:01 -0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AZ8lxueERDYzz2zPYL8GSWBz5sr+f+wvTFyhnENs2ALa6WxNXiYapnJBhQhstTPWRhsNBfM2857FLy+LvS/T/g==", "user"=>{"email"=>"ricardo.b.silva13@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"entrar"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'ricardo.b.silva13@gmail.com'  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (38.4ms)[0m  [1mUPDATE `users` SET `last_sign_in_at` = '2015-11-25 03:52:17.000000', `current_sign_in_at` = '2015-12-28 04:06:02.148752', `sign_in_count` = 15, `updated_at` = '2015-12-28 04:06:02.150665' WHERE `users`.`id` = 2[0m
+  [1m[35m (48.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 289ms (ActiveRecord: 87.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-12-28 02:06:02 -0200
+Processing by FrequenciesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mFrequency Load (0.3ms)[0m  SELECT `frequencies`.* FROM `frequencies`
+  Rendered frequencies/index.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 140ms (Views: 123.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2015-12-28 02:06:09 -0200
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users`
+  Rendered users/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 135ms (Views: 130.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/people" for 127.0.0.1 at 2015-12-28 02:06:14 -0200
+Processing by PeopleController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mPerson Load (0.3ms)[0m  SELECT `people`.* FROM `people`
+  Rendered people/index.html.erb within layouts/application (18.1ms)
+Completed 200 OK in 157ms (Views: 133.5ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/people/1/edit" for 127.0.0.1 at 2015-12-28 02:06:18 -0200
+Processing by PeopleController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT  `people`.* FROM `people` WHERE `people`.`id` = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered people/_form.html.erb (39.1ms)
+  Rendered people/edit.html.erb within layouts/application (65.4ms)
+Completed 200 OK in 218ms (Views: 191.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/frequencies" for 127.0.0.1 at 2015-12-28 02:06:22 -0200
+Processing by FrequenciesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mFrequency Load (0.3ms)[0m  SELECT `frequencies`.* FROM `frequencies`
+  Rendered frequencies/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 116ms (Views: 113.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/frequencies/new" for 127.0.0.1 at 2015-12-28 02:06:26 -0200
+Processing by FrequenciesController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mPerson Load (0.4ms)[0m  SELECT `people`.* FROM `people`
+  [1m[36mFrequency Load (0.4ms)[0m  [1mSELECT `frequencies`.* FROM `frequencies` WHERE `frequencies`.`person_id` IS NULL[0m
+  Rendered frequencies/_table_frequencies.html.erb (1.7ms)
+  Rendered frequencies/_form.html.erb (61.8ms)
+  Rendered frequencies/new.html.erb within layouts/application (75.4ms)
+Completed 200 OK in 186ms (Views: 183.1ms | ActiveRecord: 1.0ms)
