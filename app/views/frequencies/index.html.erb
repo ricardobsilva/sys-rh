@@ -32,7 +32,7 @@
   <tbody id="table_content">
     <% @frequencies.each do |frequency| %>
       <tr>
-        <td><%= frequency.person_id %></td>
+        <td><%= frequency.person.try(:name) %></td>
         <td><%= frequency.frequency_date %></td>
         <td><%= frequency.time_input %></td>
         <td><%= frequency.time_output %></td>
