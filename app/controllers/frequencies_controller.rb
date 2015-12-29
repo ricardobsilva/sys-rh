@@ -40,6 +40,7 @@ class FrequenciesController < ApplicationController
       frequencies = @person.frequencies
       session[:id_user] = @person.id
     else
+      frequencies = @frequencies
       session.delete(:id_user)
     end
 
@@ -50,6 +51,7 @@ class FrequenciesController < ApplicationController
 
   # GET /frequencies/1/edit
   def edit
+    @frequencies = Frequency.where(person_id: @frequency.person_id)
   end
 
   # POST /frequencies
@@ -96,7 +98,6 @@ class FrequenciesController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_frequency
       @frequency = Frequency.find(params[:id])
-      #@frequency_for_person = Frequency.find_by(id)
     end
 
     def set_frequencies_for_person
@@ -105,6 +106,9 @@ class FrequenciesController < ApplicationController
 
     def set_frequencies_for_cpf
       @person = Person.where(cpf: params[:cpf]).first
+      if params[:cpf] == '0'
+        @frequencies = Frequency.all
+      end
     end
 
     def set_frequencies_for_session
