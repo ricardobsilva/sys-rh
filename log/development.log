@@ -39559,3 +39559,176 @@ Processing by FrequenciesController#index as HTML
   [1m[35mCACHE (0.0ms)[0m  SELECT  `people`.* FROM `people` WHERE `people`.`id` = 2 LIMIT 1  [["id", 2]]
   Rendered frequencies/index.html.erb within layouts/application (7.5ms)
 Completed 200 OK in 119ms (Views: 114.7ms | ActiveRecord: 1.4ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2015-12-30 00:40:03 -0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"0XYp1vVZ7f44NFyzABJSC7co05FVUp8j+9trd2+gUMqu4ygtIrMNgRldo08QF2av5ZCLvYQxXEUXzo9+yZNq0A=="}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 65ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-12-30 00:40:03 -0200
+Processing by FrequenciesController#index as HTML
+Completed 401 Unauthorized in 8ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-12-30 00:40:03 -0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (21.1ms)
+Completed 200 OK in 351ms (Views: 348.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-12-30 00:40:12 -0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lKZ9etpW38JyxSeS4ruEQClxT+OxVF2QcTueMEvjGmSIzbS5VXiXgoEhF3Sin0KgTKprBPawDVvU7po7VyxWuw==", "user"=>{"email"=>"ricardo.b.silva13@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"entrar"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'ricardo.b.silva13@gmail.com'  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE `users` SET `last_sign_in_at` = '2015-12-30 02:31:03.000000', `current_sign_in_at` = '2015-12-30 02:40:12.968567', `sign_in_count` = 20, `updated_at` = '2015-12-30 02:40:12.970615' WHERE `users`.`id` = 2[0m
+  [1m[35m (55.5ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 228ms (ActiveRecord: 56.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-12-30 00:40:13 -0200
+Processing by FrequenciesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mFrequency Load (0.3ms)[0m  SELECT `frequencies`.* FROM `frequencies`
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT  `people`.* FROM `people` WHERE `people`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `people`.* FROM `people` WHERE `people`.`id` = 1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `people`.* FROM `people` WHERE `people`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mPerson Load (0.4ms)[0m  SELECT  `people`.* FROM `people` WHERE `people`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `people`.* FROM `people` WHERE `people`.`id` = 2 LIMIT 1[0m  [["id", 2]]
+  Rendered frequencies/index.html.erb within layouts/application (49.7ms)
+Completed 200 OK in 159ms (Views: 152.1ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/frequencies/findbycpf/123123123" for 127.0.0.1 at 2015-12-30 00:40:25 -0200
+Processing by FrequenciesController#find_by_cpf as */*
+  Parameters: {"cpf"=>"123123123"}
+  [1m[35mPerson Load (0.3ms)[0m  SELECT  `people`.* FROM `people` WHERE `people`.`cpf` = '123123123'  ORDER BY `people`.`id` ASC LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered frequencies/_table_frequencies_index.html.erb (7.5ms)
+Completed 500 Internal Server Error in 21ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <% frequencies.each do |frequency| %>
+    2:   <tr>
+    3:     <td><%= frequency.person.try(:name) %></td>
+    4:     <td><%= frequency.frequency_date.strftime('%d/%m/%Y') %></td>
+  app/views/frequencies/_table_frequencies_index.html.erb:1:in `_app_views_frequencies__table_frequencies_index_html_erb__157676351__636191918'
+  app/controllers/frequencies_controller.rb:47:in `find_by_cpf'
+
+
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.8ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.9ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb (17.5ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (26.4ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (53.1ms)
+
+
+Started GET "/frequencies/findbycpf/123123123" for 127.0.0.1 at 2015-12-30 00:40:26 -0200
+Processing by FrequenciesController#find_by_cpf as */*
+  Parameters: {"cpf"=>"123123123"}
+  [1m[35mPerson Load (0.3ms)[0m  SELECT  `people`.* FROM `people` WHERE `people`.`cpf` = '123123123'  ORDER BY `people`.`id` ASC LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered frequencies/_table_frequencies_index.html.erb (8.2ms)
+Completed 500 Internal Server Error in 18ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <% frequencies.each do |frequency| %>
+    2:   <tr>
+    3:     <td><%= frequency.person.try(:name) %></td>
+    4:     <td><%= frequency.frequency_date.strftime('%d/%m/%Y') %></td>
+  app/views/frequencies/_table_frequencies_index.html.erb:1:in `_app_views_frequencies__table_frequencies_index_html_erb__157676351__636191918'
+  app/controllers/frequencies_controller.rb:47:in `find_by_cpf'
+
+
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.9ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.0ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb (17.0ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (25.8ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/ricardo/.rvm/gems/ruby-2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (51.9ms)
+
+
+Started GET "/frequencies" for 127.0.0.1 at 2015-12-30 00:40:27 -0200
+Processing by FrequenciesController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mFrequency Load (0.3ms)[0m  [1mSELECT `frequencies`.* FROM `frequencies`[0m
+  [1m[35mPerson Load (0.3ms)[0m  SELECT  `people`.* FROM `people` WHERE `people`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `people`.* FROM `people` WHERE `people`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `people`.* FROM `people` WHERE `people`.`id` = 1 LIMIT 1  [["id", 1]]
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT  `people`.* FROM `people` WHERE `people`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `people`.* FROM `people` WHERE `people`.`id` = 2 LIMIT 1  [["id", 2]]
+  Rendered frequencies/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 119ms (Views: 116.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/people" for 127.0.0.1 at 2015-12-30 00:40:30 -0200
+Processing by PeopleController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mPerson Load (0.3ms)[0m  SELECT `people`.* FROM `people`
+  Rendered people/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 109ms (Views: 105.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/people/1/edit" for 127.0.0.1 at 2015-12-30 00:40:31 -0200
+Processing by PeopleController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPerson Load (0.4ms)[0m  [1mSELECT  `people`.* FROM `people` WHERE `people`.`id` = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered people/_form.html.erb (14.5ms)
+  Rendered people/edit.html.erb within layouts/application (16.4ms)
+Completed 200 OK in 134ms (Views: 129.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/frequencies" for 127.0.0.1 at 2015-12-30 00:40:34 -0200
+Processing by FrequenciesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mFrequency Load (0.4ms)[0m  SELECT `frequencies`.* FROM `frequencies`
+  [1m[36mPerson Load (0.4ms)[0m  [1mSELECT  `people`.* FROM `people` WHERE `people`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `people`.* FROM `people` WHERE `people`.`id` = 1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `people`.* FROM `people` WHERE `people`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mPerson Load (0.3ms)[0m  SELECT  `people`.* FROM `people` WHERE `people`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `people`.* FROM `people` WHERE `people`.`id` = 2 LIMIT 1[0m  [["id", 2]]
+  Rendered frequencies/index.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 132ms (Views: 128.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/frequencies/findbycpf/234234" for 127.0.0.1 at 2015-12-30 00:40:35 -0200
+Processing by FrequenciesController#find_by_cpf as */*
+  Parameters: {"cpf"=>"234234"}
+  [1m[35mPerson Load (0.4ms)[0m  SELECT  `people`.* FROM `people` WHERE `people`.`cpf` = '234234'  ORDER BY `people`.`id` ASC LIMIT 1
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mFrequency Load (0.4ms)[0m  SELECT `frequencies`.* FROM `frequencies` WHERE `frequencies`.`person_id` = 1
+  Rendered frequencies/_table_frequencies_index.html.erb (3.4ms)
+Completed 200 OK in 26ms (Views: 8.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/frequencies" for 127.0.0.1 at 2015-12-30 00:40:37 -0200
+Processing by FrequenciesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mFrequency Load (0.3ms)[0m  SELECT `frequencies`.* FROM `frequencies`
+  [1m[36mPerson Load (0.2ms)[0m  [1mSELECT  `people`.* FROM `people` WHERE `people`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `people`.* FROM `people` WHERE `people`.`id` = 1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `people`.* FROM `people` WHERE `people`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mPerson Load (0.4ms)[0m  SELECT  `people`.* FROM `people` WHERE `people`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `people`.* FROM `people` WHERE `people`.`id` = 2 LIMIT 1[0m  [["id", 2]]
+  Rendered frequencies/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 120ms (Views: 117.0ms | ActiveRecord: 1.3ms)
