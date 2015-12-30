@@ -39446,3 +39446,116 @@ Processing by FrequenciesController#index as HTML
   [1m[35mCACHE (0.0ms)[0m  SELECT  `people`.* FROM `people` WHERE `people`.`id` = 2 LIMIT 1  [["id", 2]]
   Rendered frequencies/index.html.erb within layouts/application (7.2ms)
 Completed 200 OK in 107ms (Views: 103.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/frequencies" for 127.0.0.1 at 2015-12-30 00:30:38 -0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by FrequenciesController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mFrequency Load (0.4ms)[0m  [1mSELECT `frequencies`.* FROM `frequencies`[0m
+  [1m[35mPerson Load (0.4ms)[0m  SELECT  `people`.* FROM `people` WHERE `people`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `people`.* FROM `people` WHERE `people`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `people`.* FROM `people` WHERE `people`.`id` = 1 LIMIT 1  [["id", 1]]
+  [1m[36mPerson Load (0.5ms)[0m  [1mSELECT  `people`.* FROM `people` WHERE `people`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `people`.* FROM `people` WHERE `people`.`id` = 2 LIMIT 1  [["id", 2]]
+  Rendered frequencies/index.html.erb within layouts/application (48.9ms)
+Completed 200 OK in 6245ms (Views: 6196.9ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-12-30 00:30:44 -0200
+
+
+Started GET "/assets/application.self-96e43dc6a6e82b550ae8a0e1bac81d33661216727a28e619b70e13d41f489607.css?body=1" for 127.0.0.1 at 2015-12-30 00:30:44 -0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-12-30 00:30:44 -0200
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-12-30 00:30:44 -0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-12-30 00:30:44 -0200
+
+
+Started GET "/assets/administrative_regions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-30 00:30:44 -0200
+
+
+Started GET "/assets/bonds.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-30 00:30:44 -0200
+
+
+Started GET "/assets/districts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-30 00:30:44 -0200
+
+
+Started GET "/assets/frequencies.self-47e84b8633e299e853829b4743b29fba1a30f73564598a472b0f6545f2ad1992.js?body=1" for 127.0.0.1 at 2015-12-30 00:30:44 -0200
+
+
+Started GET "/assets/functions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-30 00:30:44 -0200
+
+
+Started GET "/assets/instituations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-30 00:30:44 -0200
+
+
+Started GET "/assets/locals.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-30 00:30:44 -0200
+
+
+Started GET "/assets/people.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-30 00:30:44 -0200
+
+
+Started GET "/assets/stockings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-30 00:30:44 -0200
+
+
+Started GET "/assets/type_bonds.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-30 00:30:44 -0200
+
+
+Started GET "/assets/type_locals.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-30 00:30:44 -0200
+
+
+Started GET "/assets/type_patios.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-30 00:30:45 -0200
+
+
+Started GET "/assets/application.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-12-30 00:30:45 -0200
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2015-12-30 00:30:54 -0200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"CuftRsZXTGvitD11CSIfrMMeB36H+/gQ37Xi2fzoWt6EjBR7bmRevQBKxFMi/AIWGOFkJPM2sChEkGn/iPmrSA=="}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 10ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-12-30 00:30:54 -0200
+Processing by FrequenciesController#index as HTML
+Completed 401 Unauthorized in 9ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-12-30 00:30:54 -0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (21.5ms)
+Completed 200 OK in 137ms (Views: 133.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-12-30 00:31:02 -0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ewl9hEH0zHDAbMpYfO7HGl2dR2IaqopYOeg1iqEZ13nfqsqgQrPXj9QO0VHioBxlj4+U+Jefqr7xCHd+zfBp0Q==", "user"=>{"email"=>"ricardo.b.silva13@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"entrar"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`email` = 'ricardo.b.silva13@gmail.com'  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE `users` SET `last_sign_in_at` = '2015-12-30 02:13:58.000000', `current_sign_in_at` = '2015-12-30 02:31:03.147863', `sign_in_count` = 19, `updated_at` = '2015-12-30 02:31:03.149867' WHERE `users`.`id` = 2
+  [1m[36m (56.9ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 229ms (ActiveRecord: 57.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-12-30 00:31:03 -0200
+Processing by FrequenciesController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mFrequency Load (0.3ms)[0m  [1mSELECT `frequencies`.* FROM `frequencies`[0m
+  [1m[35mPerson Load (0.3ms)[0m  SELECT  `people`.* FROM `people` WHERE `people`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `people`.* FROM `people` WHERE `people`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `people`.* FROM `people` WHERE `people`.`id` = 1 LIMIT 1  [["id", 1]]
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT  `people`.* FROM `people` WHERE `people`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `people`.* FROM `people` WHERE `people`.`id` = 2 LIMIT 1  [["id", 2]]
+  Rendered frequencies/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 119ms (Views: 114.7ms | ActiveRecord: 1.4ms)
