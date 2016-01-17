@@ -1,5 +1,6 @@
 class FrequenciesController < ApplicationController
   before_action :set_frequency, only: [:show, :edit, :update, :destroy]
+  before_action :set_frequencies, only: [:create_report]
   before_action :set_frequencies_for_person , only: [:frequency_list]
   before_action :set_frequencies_for_session , only: [:new]
   before_action :set_frequencies_for_cpf , only: [:find_by_cpf]
@@ -94,6 +95,17 @@ class FrequenciesController < ApplicationController
     end
   end
 
+  def create_report
+    if !@frequencies.blank?
+      respond_to do |format|
+        format.xls # { send_data @frequencies.to_csv(col_sep: "\t") }
+        format.csv { send_data @frequencies.to_csv}
+      end
+    else
+      redirect_to root_path , notice: "Nenhum dado encontrado"
+    end
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_frequency
@@ -113,6 +125,12 @@ class FrequenciesController < ApplicationController
 
     def set_frequencies_for_session
       @frequencies = Frequency.where(person_id: session[:id_user])
+    end
+
+    def set_frequencies
+      @month = params[:date][:month]
+      @year = params[:date][:year]
+      @frequencies = Frequency.by_month_and_year(@month,@year)
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
