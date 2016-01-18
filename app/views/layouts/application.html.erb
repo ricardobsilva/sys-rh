@@ -41,66 +41,67 @@
         </ul>
         <form class="navbar-form navbar-left" role="search">
           <div class="form-group">
-            
+
           </div>
-         
+
         </form>
         <ul class="nav navbar-nav navbar-right">
-          <li><%= link_to "Frequencia" , frequencies_path %></li>
+          <li><%= link_to "Frequencia" , '#' , {data:{toggle: 'modal' ,target: '#myModal'}}%></li>
+          <li><%= link_to "Gerar relatório" , frequencies_path %></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">cadastros <span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li class="dropdown-header"><strong>.</strong></li>
             	<li class="dropdown-header"><strong>Cadastros Gerais</strong></li>
             	<li class="dropdown-header"><strong>.</strong></li>
-              <li><%= 
-                      #if policy(TypeInsurance).index?  
-                        link_to "pessoas" , people_path 
+              <li><%=
+                      #if policy(TypeInsurance).index?
+                        link_to "pessoas" , people_path
                       #end
                       %>
               </li>
-              <li><%#= 
-                      #if policy(TypeInsurance).index?  
-                        link_to "usuarios" , users_path 
+              <li><%#=
+                      #if policy(TypeInsurance).index?
+                        link_to "usuarios" , users_path
                       #end
                   %>
               </li>
-              <li><%= 
-                      #if policy(TypeInsurance).index?  
-                        link_to "locais" , locals_path 
+              <li><%=
+                      #if policy(TypeInsurance).index?
+                        link_to "locais" , locals_path
                       #end
                       %>
               </li>
-              <li><%= 
-                      #if policy(TypeInsurance).index?  
-                        link_to "tipos de local" , type_locals_path 
+              <li><%=
+                      #if policy(TypeInsurance).index?
+                        link_to "tipos de local" , type_locals_path
                       #end
                       %>
               </li>
-              <li><%= 
-                      #if policy(TypeInsurance).index?  
-                        link_to "usuários" , users_path 
+              <li><%=
+                      #if policy(TypeInsurance).index?
+                        link_to "usuários" , users_path
                       #end
                       %>
               </li>
               <li class="dropdown-header"><strong>.</strong></li>
               <li class="dropdown-header"><strong>Localização</strong></li>
               <li class="dropdown-header"><strong>.</strong></li>
-              <li><%= 
-                      #if policy(TypeInsurance).index?  
-                        link_to "regiões administrativas" , administrative_regions_path 
+              <li><%=
+                      #if policy(TypeInsurance).index?
+                        link_to "regiões administrativas" , administrative_regions_path
                       #end
                       %></li>
-              <li><%= 
-                      #if policy(TypeInsurance).index?  
-                        link_to "bairros" ,districts_path 
+              <li><%=
+                      #if policy(TypeInsurance).index?
+                        link_to "bairros" ,districts_path
                       #end
                       %>
               </li>
               <li>
-                <%= 
-                      #if policy(TypeInsurance).index?  
-                        link_to "tipos de logradouro" , type_patios_path 
+                <%=
+                      #if policy(TypeInsurance).index?
+                        link_to "tipos de logradouro" , type_patios_path
                       #end
                       %>
               </li>
@@ -108,21 +109,21 @@
               <li class="dropdown-header"><strong>.</strong></li>
               <li class="dropdown-header"><strong>Profissional</strong></li>
               <li class="dropdown-header"><strong>.</strong></li>
-              <li><%= 
-                      #if policy(TypeInsurance).index?  
-                        link_to "vínculos" , bonds_path 
+              <li><%=
+                      #if policy(TypeInsurance).index?
+                        link_to "vínculos" , bonds_path
                       #end
                       %>
               </li>
-              <li><%= 
-                      #if policy(TypeInsurance).index?  
-                        link_to "funções" , functions_path 
+              <li><%=
+                      #if policy(TypeInsurance).index?
+                        link_to "funções" , functions_path
                       #end
                       %>
               </li>
-              <li><%= 
-                      #if policy(TypeInsurance).index?  
-                        link_to "instituições" , instituations_path 
+              <li><%=
+                      #if policy(TypeInsurance).index?
+                        link_to "instituições" , instituations_path
                       #end
                       %></li>
               <!--<li role="separator" class="divider"></li>
@@ -134,8 +135,8 @@
           <ul class="dropdown-menu">
             <li>
                      <%#= link_to (edit_user_path(current_user)) do%>
-                       
-                     <%#end%></li> 
+
+                     <%#end%></li>
                      <li><%= link_to t('menu.logout') , destroy_user_session_path, method: :delete %></li>
           </ul>
         </li>
@@ -144,9 +145,13 @@
     </div><!-- /.container-fluid -->
   </nav>
 <div class="container">
-<% end if%>  
+<% end if%>
 
-	<%= yield %>
+    <%= yield %>
+    <%= render 'layouts/modal',
+             locals: { frequencies: @frequencies},
+             layout: false
+    %>
 </div>
 </body>
 </html>

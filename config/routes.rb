@@ -7,6 +7,7 @@ Rails.application.routes.draw do
 
     collection do
       get 'findbycpf/:cpf' , to: 'frequencies#find_by_cpf'
+      post 'report' , to: 'frequencies#create_report' , defaults: {format: 'xls'}
     end
   end
 
